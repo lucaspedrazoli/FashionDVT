@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		75693FBD2173A9F900FE893E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75693FBC2173A9F900FE893E /* AppDelegate.swift */; };
-		75693FBF2173A9F900FE893E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75693FBE2173A9F900FE893E /* ViewController.swift */; };
+		75693FBF2173A9F900FE893E /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75693FBE2173A9F900FE893E /* StartViewController.swift */; };
 		75693FC22173A9F900FE893E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75693FC02173A9F900FE893E /* Main.storyboard */; };
 		75693FC42173A9FC00FE893E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75693FC32173A9FC00FE893E /* Assets.xcassets */; };
 		75693FC72173A9FC00FE893E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75693FC52173A9FC00FE893E /* LaunchScreen.storyboard */; };
 		75693FD02173B08A00FE893E /* rocket.json in Resources */ = {isa = PBXBuildFile; fileRef = 75693FCF2173B08A00FE893E /* rocket.json */; };
 		75693FD22173B32D00FE893E /* spinning_cat.json in Resources */ = {isa = PBXBuildFile; fileRef = 75693FD12173B32D00FE893E /* spinning_cat.json */; };
+		75693FD52173B78200FE893E /* AnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75693FD42173B78200FE893E /* AnimationView.swift */; };
+		75693FD72173B85600FE893E /* GalleryMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75693FD62173B85600FE893E /* GalleryMenuViewController.swift */; };
 		FCB0C5EE8A06D2EF5D3F0517 /* Pods_FashionDVT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1AEE6BDC1AF84533EAB4C60 /* Pods_FashionDVT.framework */; };
 /* End PBXBuildFile section */
 
@@ -22,13 +24,15 @@
 		5A69C9D2E79012BC70DA0C4B /* Pods-FashionDVT.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FashionDVT.release.xcconfig"; path = "Pods/Target Support Files/Pods-FashionDVT/Pods-FashionDVT.release.xcconfig"; sourceTree = "<group>"; };
 		75693FB92173A9F900FE893E /* FashionDVT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FashionDVT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75693FBC2173A9F900FE893E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		75693FBE2173A9F900FE893E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		75693FBE2173A9F900FE893E /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		75693FC12173A9F900FE893E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		75693FC32173A9FC00FE893E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		75693FC62173A9FC00FE893E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		75693FC82173A9FC00FE893E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		75693FCF2173B08A00FE893E /* rocket.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = rocket.json; sourceTree = "<group>"; };
 		75693FD12173B32D00FE893E /* spinning_cat.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = spinning_cat.json; sourceTree = "<group>"; };
+		75693FD42173B78200FE893E /* AnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationView.swift; sourceTree = "<group>"; };
+		75693FD62173B85600FE893E /* GalleryMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryMenuViewController.swift; sourceTree = "<group>"; };
 		F1AEE6BDC1AF84533EAB4C60 /* Pods_FashionDVT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FashionDVT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -83,8 +87,10 @@
 		75693FBB2173A9F900FE893E /* FashionDVT */ = {
 			isa = PBXGroup;
 			children = (
+				75693FD32173B77200FE893E /* Components */,
 				75693FBC2173A9F900FE893E /* AppDelegate.swift */,
-				75693FBE2173A9F900FE893E /* ViewController.swift */,
+				75693FBE2173A9F900FE893E /* StartViewController.swift */,
+				75693FD62173B85600FE893E /* GalleryMenuViewController.swift */,
 				75693FC02173A9F900FE893E /* Main.storyboard */,
 				75693FC32173A9FC00FE893E /* Assets.xcassets */,
 				75693FC52173A9FC00FE893E /* LaunchScreen.storyboard */,
@@ -100,6 +106,14 @@
 				75693FCF2173B08A00FE893E /* rocket.json */,
 			);
 			path = LottieFiles;
+			sourceTree = "<group>";
+		};
+		75693FD32173B77200FE893E /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				75693FD42173B78200FE893E /* AnimationView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,7 +230,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75693FBF2173A9F900FE893E /* ViewController.swift in Sources */,
+				75693FD52173B78200FE893E /* AnimationView.swift in Sources */,
+				75693FBF2173A9F900FE893E /* StartViewController.swift in Sources */,
+				75693FD72173B85600FE893E /* GalleryMenuViewController.swift in Sources */,
 				75693FBD2173A9F900FE893E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
