@@ -48,7 +48,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="2000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DzP-nr-hux">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DzP-nr-hux">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="2000"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FhD-wG-DgF">
@@ -132,6 +132,15 @@
                     <size key="freeformSize" width="320" height="2000"/>
                     <connections>
                         <outlet property="pic1" destination="nwC-jm-hM5" id="PR9-da-F83"/>
+                        <outlet property="pic10" destination="Xku-IN-0kN" id="1Ya-vx-3TH"/>
+                        <outlet property="pic2" destination="WVF-fd-bmY" id="n3V-i1-y6Q"/>
+                        <outlet property="pic3" destination="ohl-mS-Hjl" id="UfA-a4-3gr"/>
+                        <outlet property="pic4" destination="l5k-TW-9N7" id="YM4-bq-Q3Y"/>
+                        <outlet property="pic5" destination="BVk-Tg-3Nd" id="N8T-Bh-LTN"/>
+                        <outlet property="pic6" destination="QJ2-iW-rYG" id="uAg-nt-e0g"/>
+                        <outlet property="pic7" destination="Vuf-Fg-mOh" id="8Qz-wG-d3K"/>
+                        <outlet property="pic8" destination="btC-Ja-ocK" id="GH5-F6-Jip"/>
+                        <outlet property="pic9" destination="JO8-rD-SpP" id="zqa-T3-A0o"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o9g-uF-y9d" userLabel="First Responder" sceneMemberID="firstResponder"/>

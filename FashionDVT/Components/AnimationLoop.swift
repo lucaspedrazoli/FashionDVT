@@ -6,5 +6,6 @@ class AnimationLoop: LOTAnimationView {
     super.awakeFromNib()
     contentMode = .scaleAspectFill
     loopAnimation = true
+    play()
   }
 }
