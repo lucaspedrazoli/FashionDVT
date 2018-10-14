@@ -12,6 +12,8 @@
 		75693FC22173A9F900FE893E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75693FC02173A9F900FE893E /* Main.storyboard */; };
 		75693FC42173A9FC00FE893E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75693FC32173A9FC00FE893E /* Assets.xcassets */; };
 		75693FC72173A9FC00FE893E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75693FC52173A9FC00FE893E /* LaunchScreen.storyboard */; };
+		75693FD02173B08A00FE893E /* rocket.json in Resources */ = {isa = PBXBuildFile; fileRef = 75693FCF2173B08A00FE893E /* rocket.json */; };
+		75693FD22173B32D00FE893E /* spinning_cat.json in Resources */ = {isa = PBXBuildFile; fileRef = 75693FD12173B32D00FE893E /* spinning_cat.json */; };
 		FCB0C5EE8A06D2EF5D3F0517 /* Pods_FashionDVT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1AEE6BDC1AF84533EAB4C60 /* Pods_FashionDVT.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +27,8 @@
 		75693FC32173A9FC00FE893E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		75693FC62173A9FC00FE893E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		75693FC82173A9FC00FE893E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75693FCF2173B08A00FE893E /* rocket.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = rocket.json; sourceTree = "<group>"; };
+		75693FD12173B32D00FE893E /* spinning_cat.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = spinning_cat.json; sourceTree = "<group>"; };
 		F1AEE6BDC1AF84533EAB4C60 /* Pods_FashionDVT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FashionDVT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -60,6 +64,7 @@
 		75693FB02173A9F900FE893E = {
 			isa = PBXGroup;
 			children = (
+				75693FCE2173B08000FE893E /* LottieFiles */,
 				75693FBB2173A9F900FE893E /* FashionDVT */,
 				75693FBA2173A9F900FE893E /* Products */,
 				47B5EF675DA7BF9C1A6B6839 /* Pods */,
@@ -86,6 +91,15 @@
 				75693FC82173A9FC00FE893E /* Info.plist */,
 			);
 			path = FashionDVT;
+			sourceTree = "<group>";
+		};
+		75693FCE2173B08000FE893E /* LottieFiles */ = {
+			isa = PBXGroup;
+			children = (
+				75693FD12173B32D00FE893E /* spinning_cat.json */,
+				75693FCF2173B08A00FE893E /* rocket.json */,
+			);
+			path = LottieFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,7 +164,9 @@
 			files = (
 				75693FC72173A9FC00FE893E /* LaunchScreen.storyboard in Resources */,
 				75693FC42173A9FC00FE893E /* Assets.xcassets in Resources */,
+				75693FD22173B32D00FE893E /* spinning_cat.json in Resources */,
 				75693FC22173A9F900FE893E /* Main.storyboard in Resources */,
+				75693FD02173B08A00FE893E /* rocket.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,7 +367,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L8A5CGJRMF;
 				INFOPLIST_FILE = FashionDVT/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.lucaspedrazoli.FashionDVT;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -367,7 +386,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L8A5CGJRMF;
 				INFOPLIST_FILE = FashionDVT/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.lucaspedrazoli.FashionDVT;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
