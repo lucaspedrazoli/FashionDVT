@@ -16,6 +16,7 @@
 		75693FD22173B32D00FE893E /* spinning_cat.json in Resources */ = {isa = PBXBuildFile; fileRef = 75693FD12173B32D00FE893E /* spinning_cat.json */; };
 		75693FD52173B78200FE893E /* AnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75693FD42173B78200FE893E /* AnimationView.swift */; };
 		75693FD72173B85600FE893E /* GalleryMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75693FD62173B85600FE893E /* GalleryMenuViewController.swift */; };
+		75693FD92173BDCE00FE893E /* AnimationLoop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75693FD82173BDCE00FE893E /* AnimationLoop.swift */; };
 		FCB0C5EE8A06D2EF5D3F0517 /* Pods_FashionDVT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1AEE6BDC1AF84533EAB4C60 /* Pods_FashionDVT.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +34,7 @@
 		75693FD12173B32D00FE893E /* spinning_cat.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = spinning_cat.json; sourceTree = "<group>"; };
 		75693FD42173B78200FE893E /* AnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationView.swift; sourceTree = "<group>"; };
 		75693FD62173B85600FE893E /* GalleryMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryMenuViewController.swift; sourceTree = "<group>"; };
+		75693FD82173BDCE00FE893E /* AnimationLoop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationLoop.swift; sourceTree = "<group>"; };
 		F1AEE6BDC1AF84533EAB4C60 /* Pods_FashionDVT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FashionDVT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -112,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				75693FD42173B78200FE893E /* AnimationView.swift */,
+				75693FD82173BDCE00FE893E /* AnimationLoop.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -232,6 +235,7 @@
 			files = (
 				75693FD52173B78200FE893E /* AnimationView.swift in Sources */,
 				75693FBF2173A9F900FE893E /* StartViewController.swift in Sources */,
+				75693FD92173BDCE00FE893E /* AnimationLoop.swift in Sources */,
 				75693FD72173B85600FE893E /* GalleryMenuViewController.swift in Sources */,
 				75693FBD2173A9F900FE893E /* AppDelegate.swift in Sources */,
 			);
