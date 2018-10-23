@@ -26,6 +26,10 @@ class GalleryMenuViewController: UIViewController {
     pic8.setAnimation(named: "like")
     pic9.setAnimation(named: "one")
     pic10.setAnimation(named: "thumbs_up")
+  }
+
+  override func viewDidAppear(_ animated: Bool) {
+    super.viewDidAppear(true)
     scroll.contentSize = CGSize(width: view.frame.width, height: 2000)
   }
 
