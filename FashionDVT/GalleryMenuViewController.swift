@@ -2,6 +2,7 @@ import UIKit
 
 class GalleryMenuViewController: UIViewController {
 
+  @IBOutlet weak var scroll: UIScrollView!
   @IBOutlet weak var pic1: AnimationLoop!
   @IBOutlet weak var pic2: AnimationLoop!
   @IBOutlet weak var pic3: AnimationLoop!
@@ -25,6 +26,7 @@ class GalleryMenuViewController: UIViewController {
     pic8.setAnimation(named: "like")
     pic9.setAnimation(named: "one")
     pic10.setAnimation(named: "thumbs_up")
+    scroll.contentSize = CGSize(width: view.frame.width, height: 2000)
   }
 
 }
