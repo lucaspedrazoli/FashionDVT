@@ -2,7 +2,8 @@ import UIKit
 
 class PhotoTextViewController: UIViewController {
     
-    @IBOutlet weak var textView: UITextView!
+  @IBOutlet weak var textView: UITextView!
+  @IBOutlet weak var customView: UIView!
 
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -20,3 +21,22 @@ class PhotoTextViewController: UIViewController {
   }
 }
 
+class CustomView: UIView {
+  
+  var startPosition: CGPoint?
+  var originalHeight: CGFloat = 0
+  
+  override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+    let touch = touches.first
+    startPosition = touch?.location(in: self)
+    originalHeight = self.frame.height
+  }
+  
+  override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
+    let touch = touches.first
+    let endPosition = touch?.location(in: self)
+    let difference = endPosition!.y - startPosition!.y
+    let newFrame = CGRect(x: frame.origin.x, y: frame.origin.y, width: frame.width, height: originalHeight + difference)
+    self.frame = newFrame
+  }
+}
