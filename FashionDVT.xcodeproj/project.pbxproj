@@ -26,6 +26,10 @@
 		75693FE92173BE9700FE893E /* ace_of_cards.json in Resources */ = {isa = PBXBuildFile; fileRef = 75693FE02173BE9700FE893E /* ace_of_cards.json */; };
 		75693FEA2173BE9700FE893E /* empty.json in Resources */ = {isa = PBXBuildFile; fileRef = 75693FE12173BE9700FE893E /* empty.json */; };
 		75693FEB2173BE9700FE893E /* green_monster.json in Resources */ = {isa = PBXBuildFile; fileRef = 75693FE22173BE9700FE893E /* green_monster.json */; };
+		75C676A8217F635D003FB0A0 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C676A7217F635D003FB0A0 /* PhotoViewController.swift */; };
+		75C676AB217F63C2003FB0A0 /* capa.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 75C676AA217F63C2003FB0A0 /* capa.jpg */; };
+		75C676AD217F6770003FB0A0 /* PhotoTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C676AC217F6770003FB0A0 /* PhotoTextViewController.swift */; };
+		75C676AF217F67D8003FB0A0 /* menu_3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 75C676AE217F67D8003FB0A0 /* menu_3.jpg */; };
 		FCB0C5EE8A06D2EF5D3F0517 /* Pods_FashionDVT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1AEE6BDC1AF84533EAB4C60 /* Pods_FashionDVT.framework */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +57,10 @@
 		75693FE02173BE9700FE893E /* ace_of_cards.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ace_of_cards.json; sourceTree = "<group>"; };
 		75693FE12173BE9700FE893E /* empty.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = empty.json; sourceTree = "<group>"; };
 		75693FE22173BE9700FE893E /* green_monster.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = green_monster.json; sourceTree = "<group>"; };
+		75C676A7217F635D003FB0A0 /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
+		75C676AA217F63C2003FB0A0 /* capa.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = capa.jpg; sourceTree = "<group>"; };
+		75C676AC217F6770003FB0A0 /* PhotoTextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoTextViewController.swift; sourceTree = "<group>"; };
+		75C676AE217F67D8003FB0A0 /* menu_3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = menu_3.jpg; sourceTree = "<group>"; };
 		F1AEE6BDC1AF84533EAB4C60 /* Pods_FashionDVT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FashionDVT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -88,6 +96,7 @@
 		75693FB02173A9F900FE893E = {
 			isa = PBXGroup;
 			children = (
+				75C676A9217F639E003FB0A0 /* Photos */,
 				75693FCE2173B08000FE893E /* LottieFiles */,
 				75693FBB2173A9F900FE893E /* FashionDVT */,
 				75693FBA2173A9F900FE893E /* Products */,
@@ -111,6 +120,8 @@
 				75693FBC2173A9F900FE893E /* AppDelegate.swift */,
 				75693FBE2173A9F900FE893E /* StartViewController.swift */,
 				75693FD62173B85600FE893E /* GalleryMenuViewController.swift */,
+				75C676A7217F635D003FB0A0 /* PhotoViewController.swift */,
+				75C676AC217F6770003FB0A0 /* PhotoTextViewController.swift */,
 				75693FC02173A9F900FE893E /* Main.storyboard */,
 				75693FC32173A9FC00FE893E /* Assets.xcassets */,
 				75693FC52173A9FC00FE893E /* LaunchScreen.storyboard */,
@@ -144,6 +155,15 @@
 				75693FD82173BDCE00FE893E /* AnimationLoop.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		75C676A9217F639E003FB0A0 /* Photos */ = {
+			isa = PBXGroup;
+			children = (
+				75C676AA217F63C2003FB0A0 /* capa.jpg */,
+				75C676AE217F67D8003FB0A0 /* menu_3.jpg */,
+			);
+			path = Photos;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,7 +226,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75C676AF217F67D8003FB0A0 /* menu_3.jpg in Resources */,
 				75693FC72173A9FC00FE893E /* LaunchScreen.storyboard in Resources */,
+				75C676AB217F63C2003FB0A0 /* capa.jpg in Resources */,
 				75693FE42173BE9700FE893E /* like.json in Resources */,
 				75693FEB2173BE9700FE893E /* green_monster.json in Resources */,
 				75693FEA2173BE9700FE893E /* empty.json in Resources */,
@@ -271,7 +293,9 @@
 			files = (
 				75693FD52173B78200FE893E /* AnimationView.swift in Sources */,
 				75693FBF2173A9F900FE893E /* StartViewController.swift in Sources */,
+				75C676AD217F6770003FB0A0 /* PhotoTextViewController.swift in Sources */,
 				75693FD92173BDCE00FE893E /* AnimationLoop.swift in Sources */,
+				75C676A8217F635D003FB0A0 /* PhotoViewController.swift in Sources */,
 				75693FD72173B85600FE893E /* GalleryMenuViewController.swift in Sources */,
 				75693FBD2173A9F900FE893E /* AppDelegate.swift in Sources */,
 			);

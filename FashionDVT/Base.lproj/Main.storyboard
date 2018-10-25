@@ -33,7 +33,7 @@
                     </view>
                     <connections>
                         <outlet property="animationView" destination="3dU-uG-elk" id="emx-if-Xg4"/>
-                        <segue destination="abi-ek-Ozf" kind="presentation" identifier="show" id="PnO-QG-QgR"/>
+                        <segue destination="abi-ek-Ozf" kind="presentation" identifier="show" modalTransitionStyle="crossDissolve" id="PnO-QG-QgR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -144,11 +144,88 @@
                         <outlet property="pic8" destination="btC-Ja-ocK" id="GH5-F6-Jip"/>
                         <outlet property="pic9" destination="JO8-rD-SpP" id="zqa-T3-A0o"/>
                         <outlet property="scroll" destination="DzP-nr-hux" id="5hC-xZ-Qfs"/>
+                        <outletCollection property="animations" destination="nwC-jm-hM5" collectionClass="NSMutableArray" id="PLP-XF-lAz"/>
+                        <outletCollection property="animations" destination="WVF-fd-bmY" collectionClass="NSMutableArray" id="8GS-na-w8f"/>
+                        <outletCollection property="animations" destination="ohl-mS-Hjl" collectionClass="NSMutableArray" id="txo-NC-1Is"/>
+                        <outletCollection property="animations" destination="l5k-TW-9N7" collectionClass="NSMutableArray" id="qet-Gv-Zlb"/>
+                        <outletCollection property="animations" destination="BVk-Tg-3Nd" collectionClass="NSMutableArray" id="Djj-t3-n35"/>
+                        <outletCollection property="animations" destination="QJ2-iW-rYG" collectionClass="NSMutableArray" id="YtA-Km-yZE"/>
+                        <outletCollection property="animations" destination="Vuf-Fg-mOh" collectionClass="NSMutableArray" id="P7Q-Sb-tRW"/>
+                        <outletCollection property="animations" destination="btC-Ja-ocK" collectionClass="NSMutableArray" id="VHd-Ia-Hyh"/>
+                        <outletCollection property="animations" destination="JO8-rD-SpP" collectionClass="NSMutableArray" id="cJT-ZQ-jG8"/>
+                        <outletCollection property="animations" destination="Xku-IN-0kN" collectionClass="NSMutableArray" id="yaL-lI-gLf"/>
+                        <segue destination="yyr-n1-SXb" kind="presentation" identifier="next" modalTransitionStyle="crossDissolve" id="uyW-rL-kH7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o9g-uF-y9d" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="900" y="132.04225352112675"/>
         </scene>
+        <!--Photo View Controller-->
+        <scene sceneID="bAS-K6-CKc">
+            <objects>
+                <viewController id="yyr-n1-SXb" customClass="PhotoViewController" customModule="FashionDVT" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lPB-0Q-Otn">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="capa.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="tMx-Cl-afp">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="tMx-Cl-afp" firstAttribute="leading" secondItem="5qZ-6H-pG5" secondAttribute="leading" id="0To-67-apa"/>
+                            <constraint firstItem="tMx-Cl-afp" firstAttribute="bottom" secondItem="5qZ-6H-pG5" secondAttribute="bottom" id="Bgq-ZU-eyF"/>
+                            <constraint firstItem="tMx-Cl-afp" firstAttribute="trailing" secondItem="5qZ-6H-pG5" secondAttribute="trailing" id="LXz-Ra-cBy"/>
+                            <constraint firstItem="tMx-Cl-afp" firstAttribute="top" secondItem="lPB-0Q-Otn" secondAttribute="top" id="XVt-UR-C0h"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="5qZ-6H-pG5"/>
+                    </view>
+                    <connections>
+                        <outlet property="photo" destination="tMx-Cl-afp" id="zGA-Pe-6hc"/>
+                        <segue destination="rns-lH-wsx" kind="presentation" identifier="next" modalTransitionStyle="crossDissolve" id="nG2-Hq-UZD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ofm-PN-ABK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1711.875" y="130.98591549295776"/>
+        </scene>
+        <!--Photo Text View Controller-->
+        <scene sceneID="K2I-p4-oCl">
+            <objects>
+                <viewController id="rns-lH-wsx" customClass="PhotoTextViewController" customModule="FashionDVT" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZPR-BI-u18">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="5fj-Mn-Tej">
+                                <rect key="frame" x="41" y="355" width="240" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="menu_3.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Avy-6C-Ihy">
+                                <rect key="frame" x="41" y="84" width="238" height="178"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="oAe-yA-6OJ"/>
+                    </view>
+                    <connections>
+                        <outlet property="textView" destination="5fj-Mn-Tej" id="NxQ-tX-Z8u"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mnl-ht-kQI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2454.375" y="133.09859154929578"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="capa.jpg" width="564" height="849"/>
+        <image name="menu_3.jpg" width="540" height="700"/>
+    </resources>
 </document>
