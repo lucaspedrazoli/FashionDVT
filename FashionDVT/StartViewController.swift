@@ -7,9 +7,11 @@ class StartViewController: UIViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
-    animationView.setAnimation(named: "rocket")
+    animationView.setAnimation(named: "intro_dvt")
     animationView.play{ finished in
       self.performSegue(withIdentifier: "show", sender: nil)
     }
   }
+
+  
 }

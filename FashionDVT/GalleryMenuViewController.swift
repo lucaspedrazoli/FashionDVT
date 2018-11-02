@@ -18,8 +18,8 @@ class GalleryMenuViewController: UIViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
-    pic1.setAnimation(named: "spinning_cat")
-    pic2.setAnimation(named: "ace_of_cards")
+    pic1.setAnimation(named: "test5")
+    pic2.setAnimation(named: "test6")
     pic3.setAnimation(named: "cat_paw")
     pic4.setAnimation(named: "deadpool")
     pic5.setAnimation(named: "empty")
