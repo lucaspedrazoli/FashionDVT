@@ -63,63 +63,12 @@
                         <outlet property="button" destination="P6n-3T-eRK" id="hSz-yh-SZ4"/>
                         <outlet property="image" destination="tuz-tL-dSG" id="gyi-EW-Kas"/>
                         <outlet property="label" destination="StJ-ra-Itz" id="Ktx-Bw-NGE"/>
-                        <segue destination="uG8-Cu-uyI" kind="presentation" identifier="showText" id="d5U-fs-btt"/>
+                        <segue destination="xKp-9O-SA0" kind="presentation" identifier="showMenuGallery" id="q2g-hf-Ixe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-502.5" y="130.98591549295776"/>
-        </scene>
-        <!--Text Intro View Controller-->
-        <scene sceneID="SRy-sx-ueH">
-            <objects>
-                <viewController id="uG8-Cu-uyI" customClass="TextIntroViewController" customModule="FashionDVT" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="cSZ-Sq-HpC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jAX-zy-yZ6" customClass="RQShineLabel">
-                                <rect key="frame" x="16" y="82" width="288" height="367"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="367" id="6SK-y3-GcP"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="36"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hQw-4n-Gv4" customClass="TransitionButton" customModule="TransitionButton">
-                                <rect key="frame" x="16" y="457" width="288" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="ltn-FC-h3d"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="hQw-4n-Gv4" firstAttribute="centerX" secondItem="cSZ-Sq-HpC" secondAttribute="centerX" id="F73-se-Y9j"/>
-                            <constraint firstItem="jAX-zy-yZ6" firstAttribute="top" secondItem="OT6-nu-Jx4" secondAttribute="top" constant="62" id="NZr-ZH-v1Y"/>
-                            <constraint firstItem="OT6-nu-Jx4" firstAttribute="trailing" secondItem="hQw-4n-Gv4" secondAttribute="trailing" constant="16" id="Y0f-rx-P1h"/>
-                            <constraint firstItem="OT6-nu-Jx4" firstAttribute="bottom" secondItem="hQw-4n-Gv4" secondAttribute="bottom" constant="81" id="Zbj-eT-Fq3"/>
-                            <constraint firstItem="OT6-nu-Jx4" firstAttribute="trailing" secondItem="jAX-zy-yZ6" secondAttribute="trailing" constant="16" id="anc-3N-u0D"/>
-                            <constraint firstItem="hQw-4n-Gv4" firstAttribute="leading" secondItem="OT6-nu-Jx4" secondAttribute="leading" constant="16" id="t2u-mu-3Kc"/>
-                            <constraint firstItem="jAX-zy-yZ6" firstAttribute="leading" secondItem="OT6-nu-Jx4" secondAttribute="leading" constant="16" id="ug6-PI-2s8"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="OT6-nu-Jx4"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="5Xt-lH-QyP"/>
-                    <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
-                        <userDefinedRuntimeAttribute type="string" keyPath="heroModalAnimationTypeString" value="fade"/>
-                    </userDefinedRuntimeAttributes>
-                    <connections>
-                        <outlet property="button" destination="hQw-4n-Gv4" id="qhj-zz-jvI"/>
-                        <outlet property="label" destination="jAX-zy-yZ6" id="KM0-QX-ts3"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="cc5-Gw-auY" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="317" y="131"/>
         </scene>
         <!--Gallery View Controller-->
         <scene sceneID="qoZ-Qw-ugh">
@@ -133,12 +82,12 @@
                     </view>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
-                        <userDefinedRuntimeAttribute type="string" keyPath="heroModalAnimationTypeString" value="zoom"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="heroModalAnimationTypeString" value="slide(right)"/>
                     </userDefinedRuntimeAttributes>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="we7-ve-zga" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1061" y="131"/>
+            <point key="canvasLocation" x="293" y="131"/>
         </scene>
     </scenes>
     <resources>
