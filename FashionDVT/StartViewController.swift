@@ -9,9 +9,7 @@ class StartViewController: UIViewController {
     super.viewDidLoad()
     animationView.setAnimation(named: "intro_dvt")
     animationView.play{ finished in
-      self.performSegue(withIdentifier: "show", sender: nil)
+      self.performSegue(withIdentifier: "showText", sender: nil)
     }
   }
-
-  
 }

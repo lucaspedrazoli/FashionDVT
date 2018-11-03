@@ -1,16 +1,20 @@
 PODS:
   - lottie-ios (2.5.0)
+  - RQShineLabel (0.1.3)
 
 DEPENDENCIES:
   - lottie-ios
+  - RQShineLabel
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - lottie-ios
+    - RQShineLabel
 
 SPEC CHECKSUMS:
   lottie-ios: d699fdee68d7b63e721d949388b015fef1aaa4ac
+  RQShineLabel: ae66343d6c779a8efdf61241734ddcec5d79d351
 
-PODFILE CHECKSUM: f8500132f3a5a270e3e566e6cbefd342918d32d1
+PODFILE CHECKSUM: 2a9fd21a77d68ecf9211a59df72d62ccc8c837d4
 
 COCOAPODS: 1.5.3

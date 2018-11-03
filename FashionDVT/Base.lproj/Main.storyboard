@@ -33,205 +33,46 @@
                     </view>
                     <connections>
                         <outlet property="animationView" destination="3dU-uG-elk" id="emx-if-Xg4"/>
-                        <segue destination="abi-ek-Ozf" kind="presentation" identifier="show" modalTransitionStyle="crossDissolve" id="PnO-QG-QgR"/>
+                        <segue destination="uG8-Cu-uyI" kind="presentation" identifier="showText" modalTransitionStyle="crossDissolve" id="knP-rA-zdF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
+            <point key="canvasLocation" x="135" y="132.04225352112675"/>
         </scene>
-        <!--Gallery Menu View Controller-->
-        <scene sceneID="8EY-Ez-MZv">
+        <!--Text Intro View Controller-->
+        <scene sceneID="SRy-sx-ueH">
             <objects>
-                <viewController id="abi-ek-Ozf" customClass="GalleryMenuViewController" customModule="FashionDVT" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="k6s-ke-JFz">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="2000"/>
+                <viewController id="uG8-Cu-uyI" customClass="TextIntroViewController" customModule="FashionDVT" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cSZ-Sq-HpC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DzP-nr-hux">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="2000"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FhD-wG-DgF">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="2000"/>
-                                        <subviews>
-                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nwC-jm-hM5" customClass="AnimationLoop" customModule="FashionDVT" customModuleProvider="target">
-                                                <rect key="frame" x="8" y="15" width="166" height="171"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            </view>
-                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BVk-Tg-3Nd" customClass="AnimationLoop" customModule="FashionDVT" customModuleProvider="target">
-                                                <rect key="frame" x="51" y="802" width="166" height="171"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            </view>
-                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ohl-mS-Hjl" customClass="AnimationLoop" customModule="FashionDVT" customModuleProvider="target">
-                                                <rect key="frame" x="15" y="418" width="166" height="171"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            </view>
-                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="l5k-TW-9N7" customClass="AnimationLoop" customModule="FashionDVT" customModuleProvider="target">
-                                                <rect key="frame" x="146" y="608" width="166" height="171"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            </view>
-                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QJ2-iW-rYG" customClass="AnimationLoop" customModule="FashionDVT" customModuleProvider="target">
-                                                <rect key="frame" x="100" y="996" width="166" height="171"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            </view>
-                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vuf-Fg-mOh" customClass="AnimationLoop" customModule="FashionDVT" customModuleProvider="target">
-                                                <rect key="frame" x="28" y="1228" width="166" height="171"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            </view>
-                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="btC-Ja-ocK" customClass="AnimationLoop" customModule="FashionDVT" customModuleProvider="target">
-                                                <rect key="frame" x="115" y="1425" width="166" height="171"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            </view>
-                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xku-IN-0kN" customClass="AnimationLoop" customModule="FashionDVT" customModuleProvider="target">
-                                                <rect key="frame" x="15" y="1821" width="166" height="171"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            </view>
-                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JO8-rD-SpP" customClass="AnimationLoop" customModule="FashionDVT" customModuleProvider="target">
-                                                <rect key="frame" x="85" y="1621" width="166" height="171"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            </view>
-                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WVF-fd-bmY" customClass="AnimationLoop" customModule="FashionDVT" customModuleProvider="target">
-                                                <rect key="frame" x="85" y="213" width="166" height="171"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            </view>
-                                        </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </view>
-                                </subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jAX-zy-yZ6" customClass="RQShineLabel">
+                                <rect key="frame" x="16" y="82" width="288" height="367"/>
                                 <constraints>
-                                    <constraint firstItem="FhD-wG-DgF" firstAttribute="centerY" secondItem="DzP-nr-hux" secondAttribute="centerY" id="2Fc-id-e9a"/>
-                                    <constraint firstAttribute="trailing" secondItem="FhD-wG-DgF" secondAttribute="trailing" id="Bqc-Wu-J2y"/>
-                                    <constraint firstItem="FhD-wG-DgF" firstAttribute="top" secondItem="DzP-nr-hux" secondAttribute="top" id="JmR-h1-C1A"/>
-                                    <constraint firstItem="FhD-wG-DgF" firstAttribute="centerX" secondItem="DzP-nr-hux" secondAttribute="centerX" id="MIa-qs-JhR"/>
-                                    <constraint firstAttribute="bottom" secondItem="FhD-wG-DgF" secondAttribute="bottom" id="cOI-Ll-IoQ"/>
-                                    <constraint firstItem="FhD-wG-DgF" firstAttribute="leading" secondItem="DzP-nr-hux" secondAttribute="leading" id="om5-Iu-tLx"/>
+                                    <constraint firstAttribute="height" constant="367" id="6SK-y3-GcP"/>
                                 </constraints>
-                                <connections>
-                                    <outlet property="delegate" destination="abi-ek-Ozf" id="hLL-fV-xOE"/>
-                                </connections>
-                            </scrollView>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="36"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="DzP-nr-hux" firstAttribute="bottom" secondItem="aQB-f7-Viu" secondAttribute="bottom" id="0Ld-dV-Y6E"/>
-                            <constraint firstItem="DzP-nr-hux" firstAttribute="centerY" secondItem="k6s-ke-JFz" secondAttribute="centerY" id="GKp-s3-ofv"/>
-                            <constraint firstItem="DzP-nr-hux" firstAttribute="leading" secondItem="k6s-ke-JFz" secondAttribute="leading" id="IMM-qq-K3K"/>
-                            <constraint firstItem="DzP-nr-hux" firstAttribute="top" secondItem="k6s-ke-JFz" secondAttribute="top" id="Xfm-eq-g1l"/>
-                            <constraint firstItem="DzP-nr-hux" firstAttribute="trailing" secondItem="aQB-f7-Viu" secondAttribute="trailing" id="XlC-nu-4IA"/>
+                            <constraint firstItem="jAX-zy-yZ6" firstAttribute="top" secondItem="OT6-nu-Jx4" secondAttribute="top" constant="62" id="NZr-ZH-v1Y"/>
+                            <constraint firstItem="OT6-nu-Jx4" firstAttribute="trailing" secondItem="jAX-zy-yZ6" secondAttribute="trailing" constant="16" id="anc-3N-u0D"/>
+                            <constraint firstItem="jAX-zy-yZ6" firstAttribute="leading" secondItem="OT6-nu-Jx4" secondAttribute="leading" constant="16" id="ug6-PI-2s8"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="aQB-f7-Viu"/>
-                    </view>
-                    <size key="freeformSize" width="320" height="2000"/>
-                    <connections>
-                        <outlet property="pic1" destination="nwC-jm-hM5" id="PR9-da-F83"/>
-                        <outlet property="pic10" destination="Xku-IN-0kN" id="1Ya-vx-3TH"/>
-                        <outlet property="pic2" destination="WVF-fd-bmY" id="n3V-i1-y6Q"/>
-                        <outlet property="pic3" destination="ohl-mS-Hjl" id="UfA-a4-3gr"/>
-                        <outlet property="pic4" destination="l5k-TW-9N7" id="YM4-bq-Q3Y"/>
-                        <outlet property="pic5" destination="BVk-Tg-3Nd" id="N8T-Bh-LTN"/>
-                        <outlet property="pic6" destination="QJ2-iW-rYG" id="uAg-nt-e0g"/>
-                        <outlet property="pic7" destination="Vuf-Fg-mOh" id="8Qz-wG-d3K"/>
-                        <outlet property="pic8" destination="btC-Ja-ocK" id="GH5-F6-Jip"/>
-                        <outlet property="pic9" destination="JO8-rD-SpP" id="zqa-T3-A0o"/>
-                        <outlet property="scroll" destination="DzP-nr-hux" id="5hC-xZ-Qfs"/>
-                        <outletCollection property="animations" destination="nwC-jm-hM5" collectionClass="NSMutableArray" id="PLP-XF-lAz"/>
-                        <outletCollection property="animations" destination="WVF-fd-bmY" collectionClass="NSMutableArray" id="8GS-na-w8f"/>
-                        <outletCollection property="animations" destination="ohl-mS-Hjl" collectionClass="NSMutableArray" id="txo-NC-1Is"/>
-                        <outletCollection property="animations" destination="l5k-TW-9N7" collectionClass="NSMutableArray" id="qet-Gv-Zlb"/>
-                        <outletCollection property="animations" destination="BVk-Tg-3Nd" collectionClass="NSMutableArray" id="Djj-t3-n35"/>
-                        <outletCollection property="animations" destination="QJ2-iW-rYG" collectionClass="NSMutableArray" id="YtA-Km-yZE"/>
-                        <outletCollection property="animations" destination="Vuf-Fg-mOh" collectionClass="NSMutableArray" id="P7Q-Sb-tRW"/>
-                        <outletCollection property="animations" destination="btC-Ja-ocK" collectionClass="NSMutableArray" id="VHd-Ia-Hyh"/>
-                        <outletCollection property="animations" destination="JO8-rD-SpP" collectionClass="NSMutableArray" id="cJT-ZQ-jG8"/>
-                        <outletCollection property="animations" destination="Xku-IN-0kN" collectionClass="NSMutableArray" id="yaL-lI-gLf"/>
-                        <segue destination="yyr-n1-SXb" kind="presentation" identifier="next" modalTransitionStyle="crossDissolve" id="uyW-rL-kH7"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="o9g-uF-y9d" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="900" y="132.04225352112675"/>
-        </scene>
-        <!--Photo View Controller-->
-        <scene sceneID="bAS-K6-CKc">
-            <objects>
-                <viewController id="yyr-n1-SXb" customClass="PhotoViewController" customModule="FashionDVT" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="lPB-0Q-Otn">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="capa.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="tMx-Cl-afp">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="tMx-Cl-afp" firstAttribute="leading" secondItem="5qZ-6H-pG5" secondAttribute="leading" id="0To-67-apa"/>
-                            <constraint firstItem="tMx-Cl-afp" firstAttribute="bottom" secondItem="5qZ-6H-pG5" secondAttribute="bottom" id="Bgq-ZU-eyF"/>
-                            <constraint firstItem="tMx-Cl-afp" firstAttribute="trailing" secondItem="5qZ-6H-pG5" secondAttribute="trailing" id="LXz-Ra-cBy"/>
-                            <constraint firstItem="tMx-Cl-afp" firstAttribute="top" secondItem="lPB-0Q-Otn" secondAttribute="top" id="XVt-UR-C0h"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="5qZ-6H-pG5"/>
+                        <viewLayoutGuide key="safeArea" id="OT6-nu-Jx4"/>
                     </view>
                     <connections>
-                        <outlet property="photo" destination="tMx-Cl-afp" id="zGA-Pe-6hc"/>
-                        <segue destination="rns-lH-wsx" kind="presentation" identifier="next" modalTransitionStyle="crossDissolve" id="nG2-Hq-UZD"/>
+                        <outlet property="label" destination="jAX-zy-yZ6" id="KM0-QX-ts3"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ofm-PN-ABK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cc5-Gw-auY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1711.875" y="130.98591549295776"/>
-        </scene>
-        <!--Photo Text View Controller-->
-        <scene sceneID="K2I-p4-oCl">
-            <objects>
-                <viewController id="rns-lH-wsx" customClass="PhotoTextViewController" customModule="FashionDVT" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ZPR-BI-u18">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="5fj-Mn-Tej">
-                                <rect key="frame" x="46" y="228" width="240" height="200"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="menu_3.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Avy-6C-Ihy">
-                                <rect key="frame" x="40" y="33" width="238" height="178"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Peg-jy-yux" customClass="CustomView" customModule="FashionDVT" customModuleProvider="target">
-                                <rect key="frame" x="82.5" y="457" width="155" height="91"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </view>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="oAe-yA-6OJ"/>
-                    </view>
-                    <connections>
-                        <outlet property="customView" destination="Peg-jy-yux" id="DXc-ye-A9w"/>
-                        <outlet property="textView" destination="5fj-Mn-Tej" id="NxQ-tX-Z8u"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Mnl-ht-kQI" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2454.375" y="133.09859154929578"/>
+            <point key="canvasLocation" x="937.5" y="130.98591549295776"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="capa.jpg" width="564" height="849"/>
-        <image name="menu_3.jpg" width="540" height="700"/>
-    </resources>
 </document>
