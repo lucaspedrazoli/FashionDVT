@@ -1,20 +1,24 @@
 PODS:
   - lottie-ios (2.5.0)
   - RQShineLabel (0.1.3)
+  - TransitionButton (0.5.2)
 
 DEPENDENCIES:
   - lottie-ios
   - RQShineLabel
+  - TransitionButton
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - lottie-ios
     - RQShineLabel
+    - TransitionButton
 
 SPEC CHECKSUMS:
   lottie-ios: d699fdee68d7b63e721d949388b015fef1aaa4ac
   RQShineLabel: ae66343d6c779a8efdf61241734ddcec5d79d351
+  TransitionButton: fb271583d9c9e4bb116b97103047e5157653f233
 
-PODFILE CHECKSUM: 2a9fd21a77d68ecf9211a59df72d62ccc8c837d4
+PODFILE CHECKSUM: 8fff7989563610f20933be5e5614b3e8d4043d0c
 
 COCOAPODS: 1.5.3
