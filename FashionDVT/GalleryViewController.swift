@@ -1,5 +1,6 @@
 import UIKit
 import Hero
+import ViewAnimator
 
 class GalleryViewController: UIViewController {
 

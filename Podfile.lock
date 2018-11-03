@@ -3,12 +3,14 @@ PODS:
   - lottie-ios (2.5.0)
   - RQShineLabel (0.1.3)
   - TransitionButton (0.5.2)
+  - ViewAnimator (2.2.0)
 
 DEPENDENCIES:
   - Hero
   - lottie-ios
   - RQShineLabel
   - TransitionButton
+  - ViewAnimator
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -16,13 +18,15 @@ SPEC REPOS:
     - lottie-ios
     - RQShineLabel
     - TransitionButton
+    - ViewAnimator
 
 SPEC CHECKSUMS:
   Hero: bac92350d7201a1a940003e0767c7b52ce7c99a1
   lottie-ios: d699fdee68d7b63e721d949388b015fef1aaa4ac
   RQShineLabel: ae66343d6c779a8efdf61241734ddcec5d79d351
   TransitionButton: fb271583d9c9e4bb116b97103047e5157653f233
+  ViewAnimator: a849844cc3698620e1a562b510ed0c28aeafcdc5
 
-PODFILE CHECKSUM: 85ed106753638de0c44b16e992ca90186ce4bb63
+PODFILE CHECKSUM: dc947c6fd8c79f42c9694e96bb00616b9145ec2e
 
 COCOAPODS: 1.5.3

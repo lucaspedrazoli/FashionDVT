@@ -6,4 +6,5 @@ target 'FashionDVT' do
   pod 'RQShineLabel'
   pod 'TransitionButton'
   pod 'Hero'
+  pod 'ViewAnimator'
 end
