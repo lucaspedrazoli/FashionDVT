@@ -17,6 +17,7 @@
 		75693FD52173B78200FE893E /* AnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75693FD42173B78200FE893E /* AnimationView.swift */; };
 		75693FD92173BDCE00FE893E /* AnimationLoop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75693FD82173BDCE00FE893E /* AnimationLoop.swift */; };
 		757DC1FE218D1D5700D361E5 /* TextIntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757DC1FD218D1D5700D361E5 /* TextIntroViewController.swift */; };
+		757DC200218D2A5D00D361E5 /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757DC1FF218D2A5D00D361E5 /* GalleryViewController.swift */; };
 		75C676AB217F63C2003FB0A0 /* capa.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 75C676AA217F63C2003FB0A0 /* capa.jpg */; };
 		75C676AF217F67D8003FB0A0 /* menu_3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 75C676AE217F67D8003FB0A0 /* menu_3.jpg */; };
 		FCB0C5EE8A06D2EF5D3F0517 /* Pods_FashionDVT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1AEE6BDC1AF84533EAB4C60 /* Pods_FashionDVT.framework */; };
@@ -37,6 +38,7 @@
 		75693FD42173B78200FE893E /* AnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationView.swift; sourceTree = "<group>"; };
 		75693FD82173BDCE00FE893E /* AnimationLoop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationLoop.swift; sourceTree = "<group>"; };
 		757DC1FD218D1D5700D361E5 /* TextIntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextIntroViewController.swift; sourceTree = "<group>"; };
+		757DC1FF218D2A5D00D361E5 /* GalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
 		75C676AA217F63C2003FB0A0 /* capa.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = capa.jpg; sourceTree = "<group>"; };
 		75C676AE217F67D8003FB0A0 /* menu_3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = menu_3.jpg; sourceTree = "<group>"; };
 		F1AEE6BDC1AF84533EAB4C60 /* Pods_FashionDVT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FashionDVT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -107,6 +109,7 @@
 				75693FBC2173A9F900FE893E /* AppDelegate.swift */,
 				75693FBE2173A9F900FE893E /* StartViewController.swift */,
 				757DC1FD218D1D5700D361E5 /* TextIntroViewController.swift */,
+				757DC1FF218D2A5D00D361E5 /* GalleryViewController.swift */,
 				75693FC02173A9F900FE893E /* Main.storyboard */,
 				75693FC32173A9FC00FE893E /* Assets.xcassets */,
 				75693FC52173A9FC00FE893E /* LaunchScreen.storyboard */,
@@ -221,12 +224,14 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-FashionDVT/Pods-FashionDVT-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Hero/Hero.framework",
 				"${BUILT_PRODUCTS_DIR}/RQShineLabel/RQShineLabel.framework",
 				"${BUILT_PRODUCTS_DIR}/TransitionButton/TransitionButton.framework",
 				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hero.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RQShineLabel.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TransitionButton.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
@@ -264,6 +269,7 @@
 				75693FD52173B78200FE893E /* AnimationView.swift in Sources */,
 				75693FBF2173A9F900FE893E /* StartViewController.swift in Sources */,
 				757DC1FE218D1D5700D361E5 /* TextIntroViewController.swift in Sources */,
+				757DC200218D2A5D00D361E5 /* GalleryViewController.swift in Sources */,
 				75693FD92173BDCE00FE893E /* AnimationLoop.swift in Sources */,
 				75693FBD2173A9F900FE893E /* AppDelegate.swift in Sources */,
 			);

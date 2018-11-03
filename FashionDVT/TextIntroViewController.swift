@@ -1,6 +1,7 @@
 import UIKit
 import RQShineLabel
 import TransitionButton
+import Hero
 
 class TextIntroViewController: UIViewController {
 
@@ -10,27 +11,28 @@ class TextIntroViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     buttonLayout()
-    button.startAnimation()
     labelLayout()
     label.shine(completion: {
+      self.button.startAnimation()
       self.label.fadeOut(completion: {
         self.button.stopAnimation()
       })
     })
   }
 
-  @IBAction func navigate() {
-    button.stopAnimation(animationStyle: .expand, completion: {
-      let secondVC = UIViewController()
-      self.present(secondVC, animated: true, completion: nil)
+  @IBAction func navigate(sender: UIButton) {
+    button.stopAnimation(animationStyle: .expand, completion: { [unowned self] in
+      let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+      let gallery = storyBoard.instantiateViewController(withIdentifier: "Gallery") as! GalleryViewController
+      self.present(gallery, animated: true, completion: nil)
     })
   }
 
   private func buttonLayout() {
     button.layer.borderColor = UIColor.white.cgColor
-    button.layer.borderWidth = 2
-    button.cornerRadius = 20
-    button.spinnerColor = .red
+    button.layer.borderWidth = 1
+    button.cornerRadius = 5
+    button.spinnerColor = .white
     button.setTitle("iniciar", for: .normal)
     button.setTitleColor(.white, for: .normal)
     button.addTarget(self, action: #selector(navigate), for: .touchUpInside)
@@ -44,6 +46,4 @@ class TextIntroViewController: UIViewController {
   label.shineDuration = 4
   }
 }
-
-
 

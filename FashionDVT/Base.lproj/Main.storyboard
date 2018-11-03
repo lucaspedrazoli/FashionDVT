@@ -31,14 +31,15 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="G4f-AJ-Igh"/>
                     <connections>
                         <outlet property="animationView" destination="3dU-uG-elk" id="emx-if-Xg4"/>
-                        <segue destination="uG8-Cu-uyI" kind="presentation" identifier="showText" modalTransitionStyle="crossDissolve" id="knP-rA-zdF"/>
+                        <segue destination="uG8-Cu-uyI" kind="presentation" identifier="showText" id="d5U-fs-btt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="135" y="132.04225352112675"/>
+            <point key="canvasLocation" x="-501" y="131"/>
         </scene>
         <!--Text Intro View Controller-->
         <scene sceneID="SRy-sx-ueH">
@@ -77,6 +78,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="OT6-nu-Jx4"/>
                     </view>
+                    <navigationItem key="navigationItem" id="5Xt-lH-QyP"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="heroModalAnimationTypeString" value="fade"/>
+                    </userDefinedRuntimeAttributes>
                     <connections>
                         <outlet property="button" destination="hQw-4n-Gv4" id="qhj-zz-jvI"/>
                         <outlet property="label" destination="jAX-zy-yZ6" id="KM0-QX-ts3"/>
@@ -84,7 +90,26 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cc5-Gw-auY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="937.5" y="130.98591549295776"/>
+            <point key="canvasLocation" x="317" y="131"/>
+        </scene>
+        <!--Gallery View Controller-->
+        <scene sceneID="qoZ-Qw-ugh">
+            <objects>
+                <viewController storyboardIdentifier="Gallery" id="xKp-9O-SA0" customClass="GalleryViewController" customModule="FashionDVT" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rK0-So-gtk">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="2Xy-H2-22x"/>
+                    </view>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="heroModalAnimationTypeString" value="zoomIn"/>
+                    </userDefinedRuntimeAttributes>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="we7-ve-zga" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1061" y="131"/>
         </scene>
     </scenes>
 </document>

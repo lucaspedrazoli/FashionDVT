@@ -5,4 +5,5 @@ target 'FashionDVT' do
   pod 'lottie-ios'
   pod 'RQShineLabel'
   pod 'TransitionButton'
+  pod 'Hero'
 end
