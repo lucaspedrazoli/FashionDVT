@@ -20,6 +20,8 @@
 		757DC200218D2A5D00D361E5 /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757DC1FF218D2A5D00D361E5 /* GalleryViewController.swift */; };
 		75C676AB217F63C2003FB0A0 /* capa.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 75C676AA217F63C2003FB0A0 /* capa.jpg */; };
 		75C676AF217F67D8003FB0A0 /* menu_3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 75C676AE217F67D8003FB0A0 /* menu_3.jpg */; };
+		75FF8F98218E332A00E7FA6A /* photo_test.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 75FF8F96218E332A00E7FA6A /* photo_test.jpg */; };
+		75FF8F99218E332A00E7FA6A /* capa.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 75FF8F97218E332A00E7FA6A /* capa.jpg */; };
 		FCB0C5EE8A06D2EF5D3F0517 /* Pods_FashionDVT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1AEE6BDC1AF84533EAB4C60 /* Pods_FashionDVT.framework */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +43,8 @@
 		757DC1FF218D2A5D00D361E5 /* GalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
 		75C676AA217F63C2003FB0A0 /* capa.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = capa.jpg; sourceTree = "<group>"; };
 		75C676AE217F67D8003FB0A0 /* menu_3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = menu_3.jpg; sourceTree = "<group>"; };
+		75FF8F96218E332A00E7FA6A /* photo_test.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = photo_test.jpg; sourceTree = "<group>"; };
+		75FF8F97218E332A00E7FA6A /* capa.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = capa.jpg; sourceTree = "<group>"; };
 		F1AEE6BDC1AF84533EAB4C60 /* Pods_FashionDVT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FashionDVT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -76,6 +80,8 @@
 		75397F49218CE90D007816E5 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				75FF8F97218E332A00E7FA6A /* capa.jpg */,
+				75FF8F96218E332A00E7FA6A /* photo_test.jpg */,
 				75397F58218D12EA007816E5 /* image_intro.png */,
 			);
 			path = images;
@@ -208,8 +214,10 @@
 				75693FC72173A9FC00FE893E /* LaunchScreen.storyboard in Resources */,
 				75C676AB217F63C2003FB0A0 /* capa.jpg in Resources */,
 				75397F57218D12C3007816E5 /* intro_dvt.json in Resources */,
+				75FF8F99218E332A00E7FA6A /* capa.jpg in Resources */,
 				75397F59218D12EA007816E5 /* image_intro.png in Resources */,
 				75693FC42173A9FC00FE893E /* Assets.xcassets in Resources */,
+				75FF8F98218E332A00E7FA6A /* photo_test.jpg in Resources */,
 				75693FC22173A9F900FE893E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

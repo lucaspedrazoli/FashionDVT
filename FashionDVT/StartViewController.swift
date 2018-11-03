@@ -1,15 +1,41 @@
 import UIKit
-import Lottie
+import RQShineLabel
 
 class StartViewController: UIViewController {
 
-  @IBOutlet var animationView: AnimationView!
+  @IBOutlet weak var image: UIImageView!
+  @IBOutlet weak var label: RQShineLabel!
+  @IBOutlet weak var button: UIButton!
 
   override func viewDidLoad() {
     super.viewDidLoad()
-    animationView.setAnimation(named: "intro_dvt")
-    animationView.play{ finished in
-      self.performSegue(withIdentifier: "showText", sender: nil)
-    }
+    button.backgroundColor = .clear
+    presentationText()
+  }
+
+  private func addPanGesture() {
+    image.isUserInteractionEnabled = true
+  }
+
+  private func presentationText() {
+    label.text = "Novos Designers"
+    label.shine(completion: {
+      self.label.fadeOut(completion: {
+        self.nextText()
+      })
+    })
+  }
+
+  private func nextText() {
+    label.text = "Deslize >"
+    label.shine(completion: {
+      self.label.fadeOut(completion: {
+        self.presentationText()
+      })
+    })
+  }
+
+  @IBAction func next() {
+    self.performSegue(withIdentifier: "showText", sender: nil)
   }
 }
