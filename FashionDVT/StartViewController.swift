@@ -31,8 +31,8 @@ class StartViewController: UIViewController {
 
   private func nextText() {
     label.text = "Deslize >"
+    self.addSwipeGesture()
     label.shine(completion: {
-      self.addSwipeGesture()
       self.label.fadeOut(completion: {
         self.presentationText()
       })
