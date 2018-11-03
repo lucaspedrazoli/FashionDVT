@@ -10,6 +10,13 @@ class GalleryViewController: UIViewController, UICollectionViewDelegate, UIColle
     super.viewDidLoad()
   }
 
+  override func viewDidAppear(_ animated: Bool) {
+    super.viewDidAppear(true)
+    let rotateAnimation = AnimationType.rotate(angle: CGFloat.pi/6)
+    let cells = collectionView.visibleCells
+    UIView.animate(views: cells, animations: [rotateAnimation])
+  }
+
   func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
     let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
     cell.backgroundColor = .black
