@@ -13,8 +13,11 @@ class StartViewController: UIViewController {
     presentationText()
   }
 
-  private func addPanGesture() {
+  private func addSwipeGesture() {
     image.isUserInteractionEnabled = true
+    let swipe = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipe(sender:)))
+    swipe.direction = .right
+    image.addGestureRecognizer(swipe)
   }
 
   private func presentationText() {
@@ -29,13 +32,14 @@ class StartViewController: UIViewController {
   private func nextText() {
     label.text = "Deslize >"
     label.shine(completion: {
+      self.addSwipeGesture()
       self.label.fadeOut(completion: {
         self.presentationText()
       })
     })
   }
 
-  @IBAction func next() {
+  @IBAction func handleSwipe(sender: UISwipeGestureRecognizer) {
     self.performSegue(withIdentifier: "showText", sender: nil)
   }
 }
