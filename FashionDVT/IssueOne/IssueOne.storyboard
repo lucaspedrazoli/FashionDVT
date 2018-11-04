@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="UN0-4d-e4Z">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Issue One View Controller-->
+        <scene sceneID="dKr-xu-I97">
+            <objects>
+                <viewController storyboardIdentifier="IssueOne" id="UN0-4d-e4Z" customClass="IssueOneViewController" customModule="FashionDVT" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QfW-l7-eOu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kyu-td-A3p" customClass="AnimationView" customModule="FashionDVT" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Kyu-td-A3p" firstAttribute="trailing" secondItem="Nz5-dL-iGU" secondAttribute="trailing" id="U2i-oG-Udd"/>
+                            <constraint firstItem="Kyu-td-A3p" firstAttribute="top" secondItem="QfW-l7-eOu" secondAttribute="top" id="X8O-aD-E8o"/>
+                            <constraint firstItem="Kyu-td-A3p" firstAttribute="leading" secondItem="Nz5-dL-iGU" secondAttribute="leading" id="a9i-D6-hYV"/>
+                            <constraint firstItem="Kyu-td-A3p" firstAttribute="bottom" secondItem="Nz5-dL-iGU" secondAttribute="bottom" id="rGd-Bc-lRa"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Nz5-dL-iGU"/>
+                    </view>
+                    <connections>
+                        <outlet property="animationView" destination="Kyu-td-A3p" id="AOl-gs-kI3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eIx-Vn-7Jc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="93.599999999999994" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,3 +1,4 @@
+import UIKit
 import Lottie
 
 class AnimationView: LOTAnimationView {
