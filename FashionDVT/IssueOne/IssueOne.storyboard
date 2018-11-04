@@ -37,11 +37,31 @@
                     </userDefinedRuntimeAttributes>
                     <connections>
                         <outlet property="animationView" destination="Kyu-td-A3p" id="AOl-gs-kI3"/>
+                        <segue destination="9I0-Ve-ItE" kind="show" identifier="next" id="ibw-y8-hOe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eIx-Vn-7Jc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="93.599999999999994" y="138.98050974512745"/>
+        </scene>
+        <!--Issue One Page1 View Controller-->
+        <scene sceneID="YD6-Ed-W19">
+            <objects>
+                <viewController id="9I0-Ve-ItE" customClass="IssueOnePage1ViewController" customModule="FashionDVT" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LWl-6m-Oxo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="ehN-db-wbf"/>
+                    </view>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="heroModalAnimationTypeString" value="pagiIn(right)"/>
+                    </userDefinedRuntimeAttributes>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k0F-cs-4SA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="890" y="139"/>
         </scene>
     </scenes>
 </document>
