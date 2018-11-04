@@ -9,14 +9,18 @@ class GalleryViewController: UIViewController, UICollectionViewDelegate, UIColle
   override func viewDidLoad() {
     super.viewDidLoad()
     collectionView.register(UINib(nibName: "PhotoCell", bundle: Bundle.main), forCellWithReuseIdentifier: "photoCell")
+    collectionView.alpha = 0
     collectionLayout()
   }
 
   override func viewDidAppear(_ animated: Bool) {
     super.viewDidAppear(true)
     let fromAnimation = AnimationType.from(direction: .bottom, offset: 30.0)
-    let cells = collectionView.visibleCells
-    UIView.animate(views: cells, animations: [fromAnimation])
+    let cells = self.collectionView.visibleCells
+    UIView.animate(withDuration: 1, animations: {
+      self.collectionView.alpha = 1
+      UIView.animate(views: cells, animations: [fromAnimation])
+    })
   }
 
   func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
