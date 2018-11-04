@@ -94,7 +94,7 @@
                                 </connections>
                             </collectionView>
                         </subviews>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Y3K-ar-Qg1" firstAttribute="leading" secondItem="2Xy-H2-22x" secondAttribute="leading" id="5GI-kz-E7t"/>
                             <constraint firstItem="Y3K-ar-Qg1" firstAttribute="top" secondItem="rK0-So-gtk" secondAttribute="top" id="GSF-8C-q8T"/>
