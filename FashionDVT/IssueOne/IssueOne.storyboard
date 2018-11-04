@@ -66,6 +66,11 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2cf-xv-e9H" customClass="AnimationLoop" customModule="FashionDVT" customModuleProvider="target">
+                                <rect key="frame" x="175" y="447" width="184" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -84,6 +89,7 @@
                         <userDefinedRuntimeAttribute type="string" keyPath="heroModalAnimationTypeString" value="zoomOut"/>
                     </userDefinedRuntimeAttributes>
                     <connections>
+                        <outlet property="arrow" destination="2cf-xv-e9H" id="9vL-96-qES"/>
                         <outlet property="image" destination="jQX-UZ-Jb0" id="hFP-kC-LDG"/>
                         <outlet property="label" destination="JUz-QB-pxD" id="Vvp-Mr-2i1"/>
                     </connections>
