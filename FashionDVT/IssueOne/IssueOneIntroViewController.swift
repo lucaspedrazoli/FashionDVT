@@ -7,6 +7,7 @@ class IssueOneViewController: UIViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
+    animationView.setAnimation(named: "intro_ensou")
     animationView.play(completion: { _ in
 
     })

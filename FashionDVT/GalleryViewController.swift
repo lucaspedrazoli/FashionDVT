@@ -32,6 +32,12 @@ class GalleryViewController: UIViewController, UICollectionViewDelegate, UIColle
     return cell
   }
 
+  func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+    let storyBoard: UIStoryboard = UIStoryboard(name: "IssueOne", bundle: Bundle.main)
+    let intro = storyBoard.instantiateViewController(withIdentifier: "IssueOne") as! IssueOneViewController
+    self.present(intro, animated: true, completion: nil)
+  }
+
   func numberOfSections(in collectionView: UICollectionView) -> Int {
     return 1
   }
