@@ -12,9 +12,9 @@ class GalleryViewController: UIViewController, UICollectionViewDelegate, UIColle
 
   override func viewDidAppear(_ animated: Bool) {
     super.viewDidAppear(true)
-    let rotateAnimation = AnimationType.rotate(angle: CGFloat.pi/6)
+    let fromAnimation = AnimationType.from(direction: .bottom, offset: 30.0)
     let cells = collectionView.visibleCells
-    UIView.animate(views: cells, animations: [rotateAnimation])
+    UIView.animate(views: cells, animations: [fromAnimation])
   }
 
   func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -28,6 +28,6 @@ class GalleryViewController: UIViewController, UICollectionViewDelegate, UIColle
   }
 
   func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-    return 10
+    return 50
   }
 }
