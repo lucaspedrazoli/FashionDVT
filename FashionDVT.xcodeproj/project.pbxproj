@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		75397F57218D12C3007816E5 /* intro_dvt.json in Resources */ = {isa = PBXBuildFile; fileRef = 75397F56218D12C2007816E5 /* intro_dvt.json */; };
 		75397F59218D12EA007816E5 /* image_intro.png in Resources */ = {isa = PBXBuildFile; fileRef = 75397F58218D12EA007816E5 /* image_intro.png */; };
+		753B2C5A218E8B2600FFE2D4 /* PhotoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 753B2C59218E8B2600FFE2D4 /* PhotoCell.xib */; };
+		753B2C5C218E8C1200FFE2D4 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753B2C5B218E8C1200FFE2D4 /* PhotoCell.swift */; };
 		75693FBD2173A9F900FE893E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75693FBC2173A9F900FE893E /* AppDelegate.swift */; };
 		75693FBF2173A9F900FE893E /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75693FBE2173A9F900FE893E /* StartViewController.swift */; };
 		75693FC22173A9F900FE893E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75693FC02173A9F900FE893E /* Main.storyboard */; };
@@ -28,6 +30,8 @@
 		5A69C9D2E79012BC70DA0C4B /* Pods-FashionDVT.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FashionDVT.release.xcconfig"; path = "Pods/Target Support Files/Pods-FashionDVT/Pods-FashionDVT.release.xcconfig"; sourceTree = "<group>"; };
 		75397F56218D12C2007816E5 /* intro_dvt.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = intro_dvt.json; sourceTree = "<group>"; };
 		75397F58218D12EA007816E5 /* image_intro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image_intro.png; sourceTree = "<group>"; };
+		753B2C59218E8B2600FFE2D4 /* PhotoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoCell.xib; sourceTree = "<group>"; };
+		753B2C5B218E8C1200FFE2D4 /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
 		75693FB92173A9F900FE893E /* FashionDVT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FashionDVT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75693FBC2173A9F900FE893E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		75693FBE2173A9F900FE893E /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
@@ -111,6 +115,8 @@
 				75693FBE2173A9F900FE893E /* StartViewController.swift */,
 				757DC1FD218D1D5700D361E5 /* TextIntroViewController.swift */,
 				757DC1FF218D2A5D00D361E5 /* GalleryViewController.swift */,
+				753B2C59218E8B2600FFE2D4 /* PhotoCell.xib */,
+				753B2C5B218E8C1200FFE2D4 /* PhotoCell.swift */,
 				75693FC02173A9F900FE893E /* Main.storyboard */,
 				75693FC32173A9FC00FE893E /* Assets.xcassets */,
 				75693FC52173A9FC00FE893E /* LaunchScreen.storyboard */,
@@ -196,6 +202,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				753B2C5A218E8B2600FFE2D4 /* PhotoCell.xib in Resources */,
 				75693FC72173A9FC00FE893E /* LaunchScreen.storyboard in Resources */,
 				75397F57218D12C3007816E5 /* intro_dvt.json in Resources */,
 				75FF8F99218E332A00E7FA6A /* capa.jpg in Resources */,
@@ -260,6 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				753B2C5C218E8C1200FFE2D4 /* PhotoCell.swift in Sources */,
 				75693FD52173B78200FE893E /* AnimationView.swift in Sources */,
 				75693FBF2173A9F900FE893E /* StartViewController.swift in Sources */,
 				757DC1FE218D1D5700D361E5 /* TextIntroViewController.swift in Sources */,
