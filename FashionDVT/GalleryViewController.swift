@@ -15,7 +15,7 @@ class GalleryViewController: UIViewController, UICollectionViewDelegate, UIColle
 
   override func viewDidAppear(_ animated: Bool) {
     super.viewDidAppear(true)
-    let fromAnimation = AnimationType.from(direction: .bottom, offset: 10.0)
+    let fromAnimation = AnimationType.from(direction: .left, offset: 60.0)
     let cells = self.collectionView.visibleCells
     UIView.animate(withDuration: 0.5, animations: {
       self.collectionView.alpha = 1
