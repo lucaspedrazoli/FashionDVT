@@ -23,6 +23,7 @@
 		753B2C73218F5CB200FFE2D4 /* IssueOneIntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753B2C72218F5CB200FFE2D4 /* IssueOneIntroViewController.swift */; };
 		753B2C75218F606200FFE2D4 /* intro_ensou.json in Resources */ = {isa = PBXBuildFile; fileRef = 753B2C74218F606200FFE2D4 /* intro_ensou.json */; };
 		753B2C77218F61EF00FFE2D4 /* IssueOnePage1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753B2C76218F61EF00FFE2D4 /* IssueOnePage1ViewController.swift */; };
+		753B2C79218F8DE500FFE2D4 /* pauta1_photo4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 753B2C78218F8DE500FFE2D4 /* pauta1_photo4.jpg */; };
 		75693FBD2173A9F900FE893E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75693FBC2173A9F900FE893E /* AppDelegate.swift */; };
 		75693FBF2173A9F900FE893E /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75693FBE2173A9F900FE893E /* StartViewController.swift */; };
 		75693FC22173A9F900FE893E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75693FC02173A9F900FE893E /* Main.storyboard */; };
@@ -56,6 +57,7 @@
 		753B2C72218F5CB200FFE2D4 /* IssueOneIntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueOneIntroViewController.swift; sourceTree = "<group>"; };
 		753B2C74218F606200FFE2D4 /* intro_ensou.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = intro_ensou.json; sourceTree = "<group>"; };
 		753B2C76218F61EF00FFE2D4 /* IssueOnePage1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueOnePage1ViewController.swift; sourceTree = "<group>"; };
+		753B2C78218F8DE500FFE2D4 /* pauta1_photo4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pauta1_photo4.jpg; sourceTree = "<group>"; };
 		75693FB92173A9F900FE893E /* FashionDVT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FashionDVT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75693FBC2173A9F900FE893E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		75693FBE2173A9F900FE893E /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 		75397F49218CE90D007816E5 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				753B2C78218F8DE500FFE2D4 /* pauta1_photo4.jpg */,
 				753B2C6D218F5A8D00FFE2D4 /* img_ani1.png */,
 				753B2C6B218F442400FFE2D4 /* capa8.jpg */,
 				753B2C66218F437300FFE2D4 /* capa5.png */,
@@ -261,6 +264,7 @@
 				75FF8F98218E332A00E7FA6A /* photo_test.jpg in Resources */,
 				753B2C6E218F5A8E00FFE2D4 /* img_ani1.png in Resources */,
 				753B2C5E218F3CE900FFE2D4 /* capa1.jpg in Resources */,
+				753B2C79218F8DE500FFE2D4 /* pauta1_photo4.jpg in Resources */,
 				753B2C75218F606200FFE2D4 /* intro_ensou.json in Resources */,
 				753B2C6A218F437400FFE2D4 /* capa6.png in Resources */,
 				75693FC22173A9F900FE893E /* Main.storyboard in Resources */,
