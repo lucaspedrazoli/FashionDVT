@@ -14,7 +14,7 @@ class GalleryViewController: UIViewController, UICollectionViewDelegate, UIColle
     layout.minimumInteritemSpacing = 0
     layout.minimumLineSpacing = 0
     layout.sectionInset = UIEdgeInsets(top: 20, left: 0, bottom: 10, right: 0)
-    layout.itemSize = CGSize(width: screenWidth/4, height: screenWidth/4)
+    layout.itemSize = CGSize(width: screenWidth/2, height: screenWidth/2)
     collectionView.collectionViewLayout = layout
   }
 
