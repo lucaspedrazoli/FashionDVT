@@ -5,8 +5,8 @@ import ViewAnimator
 class GalleryViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
 
   @IBOutlet weak var collectionView: UICollectionView!
-  let images: [UIImage?] = [UIImage(named: "capa1"),UIImage(named: "capa2"),UIImage(named: "capa3"),UIImage(named: "capa4"),UIImage(named: "capa1"),UIImage(named: "capa1"),UIImage(named: "capa1"),UIImage(named: "capa1"),UIImage(named: "capa1"),UIImage(named: "capa1")]
-  let titles: [String] = ["ENSOU","Aline Rocha","A Arte","We.Me 3D","Rebeld","Cachaça","Boca de pelo","MC Nego ban","Computador","Maconha"]
+  let images: [UIImage?] = [UIImage(named: "capa1"),UIImage(named: "capa2"),UIImage(named: "capa3"),UIImage(named: "capa4"),UIImage(named: "capa5"),UIImage(named: "capa6"),UIImage(named: "capa7"),UIImage(named: "capa8")]
+  let titles: [String] = ["ENSOU","Aline Rocha","A Arte","We.Me 3D","Lacre 21","Ricardo Benucci","Editorial","Filme Indigo"]
 
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -37,7 +37,7 @@ class GalleryViewController: UIViewController, UICollectionViewDelegate, UIColle
   }
 
   func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-    return 10
+    return images.count
   }
 
   private func collectionLayout() {
