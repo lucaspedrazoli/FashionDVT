@@ -22,7 +22,7 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Kyu-td-A3p" firstAttribute="trailing" secondItem="Nz5-dL-iGU" secondAttribute="trailing" id="U2i-oG-Udd"/>
                             <constraint firstItem="Kyu-td-A3p" firstAttribute="top" secondItem="QfW-l7-eOu" secondAttribute="top" id="X8O-aD-E8o"/>
@@ -31,6 +31,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Nz5-dL-iGU"/>
                     </view>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="heroModalAnimationTypeString" value="zoom"/>
+                    </userDefinedRuntimeAttributes>
                     <connections>
                         <outlet property="animationView" destination="Kyu-td-A3p" id="AOl-gs-kI3"/>
                     </connections>
