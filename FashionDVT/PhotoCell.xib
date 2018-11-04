@@ -22,18 +22,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="312" height="251"/>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ENSOU" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WdL-YY-vkb">
-                        <rect key="frame" x="109.5" y="108" width="93" height="35"/>
+                        <rect key="frame" x="20" y="108" width="272" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="XJ2-nQ-PTq"/>
+                        </constraints>
                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="29"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
             </view>
             <constraints>
+                <constraint firstAttribute="trailing" secondItem="WdL-YY-vkb" secondAttribute="trailing" constant="20" id="1rX-VY-lYZ"/>
                 <constraint firstItem="WdL-YY-vkb" firstAttribute="centerX" secondItem="rbF-QN-3Mu" secondAttribute="centerX" id="6D5-xK-Jh2"/>
                 <constraint firstItem="pGJ-sM-MpJ" firstAttribute="top" secondItem="rbF-QN-3Mu" secondAttribute="top" id="6nU-9p-Tjh"/>
                 <constraint firstAttribute="trailing" secondItem="pGJ-sM-MpJ" secondAttribute="trailing" id="7eN-up-lmQ"/>
                 <constraint firstItem="WdL-YY-vkb" firstAttribute="centerY" secondItem="rbF-QN-3Mu" secondAttribute="centerY" id="DzO-je-3rO"/>
                 <constraint firstAttribute="bottom" secondItem="pGJ-sM-MpJ" secondAttribute="bottom" id="ZwJ-Sh-hVU"/>
+                <constraint firstItem="WdL-YY-vkb" firstAttribute="leading" secondItem="rbF-QN-3Mu" secondAttribute="leading" constant="20" id="efq-Oa-56p"/>
                 <constraint firstItem="pGJ-sM-MpJ" firstAttribute="leading" secondItem="rbF-QN-3Mu" secondAttribute="leading" id="l6a-uN-UWh"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="nMh-cu-Mge"/>

@@ -5,6 +5,8 @@ import ViewAnimator
 class GalleryViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
 
   @IBOutlet weak var collectionView: UICollectionView!
+  let images: [UIImage?] = [UIImage(named: "capa1"),UIImage(named: "capa2"),UIImage(named: "capa3"),UIImage(named: "capa4"),UIImage(named: "capa1"),UIImage(named: "capa1"),UIImage(named: "capa1"),UIImage(named: "capa1"),UIImage(named: "capa1"),UIImage(named: "capa1")]
+  let titles: [String] = ["ENSOU","Aline Rocha","A Arte","We.Me 3D","Rebeld","Cachaça","Boca de pelo","MC Nego ban","Computador","Maconha"]
 
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -24,7 +26,9 @@ class GalleryViewController: UIViewController, UICollectionViewDelegate, UIColle
   }
 
   func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-    let cell = PhotoCell.dequeueFor(collectionView, indexPath: indexPath)
+    let title = titles[indexPath.row]
+    let image = images[indexPath.row]
+    let cell = PhotoCell.dequeueFor(collectionView, indexPath: indexPath, title: title, image: image!)
     return cell
   }
 
@@ -33,7 +37,7 @@ class GalleryViewController: UIViewController, UICollectionViewDelegate, UIColle
   }
 
   func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-    return 50
+    return 10
   }
 
   private func collectionLayout() {

@@ -12,6 +12,9 @@
 		753B2C5A218E8B2600FFE2D4 /* PhotoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 753B2C59218E8B2600FFE2D4 /* PhotoCell.xib */; };
 		753B2C5C218E8C1200FFE2D4 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753B2C5B218E8C1200FFE2D4 /* PhotoCell.swift */; };
 		753B2C5E218F3CE900FFE2D4 /* capa1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 753B2C5D218F3CE800FFE2D4 /* capa1.jpg */; };
+		753B2C62218F408C00FFE2D4 /* capa2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 753B2C5F218F408C00FFE2D4 /* capa2.jpg */; };
+		753B2C63218F408C00FFE2D4 /* capa3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 753B2C60218F408C00FFE2D4 /* capa3.jpg */; };
+		753B2C64218F408C00FFE2D4 /* capa4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 753B2C61218F408C00FFE2D4 /* capa4.jpg */; };
 		75693FBD2173A9F900FE893E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75693FBC2173A9F900FE893E /* AppDelegate.swift */; };
 		75693FBF2173A9F900FE893E /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75693FBE2173A9F900FE893E /* StartViewController.swift */; };
 		75693FC22173A9F900FE893E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75693FC02173A9F900FE893E /* Main.storyboard */; };
@@ -34,6 +37,9 @@
 		753B2C59218E8B2600FFE2D4 /* PhotoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoCell.xib; sourceTree = "<group>"; };
 		753B2C5B218E8C1200FFE2D4 /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
 		753B2C5D218F3CE800FFE2D4 /* capa1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = capa1.jpg; sourceTree = "<group>"; };
+		753B2C5F218F408C00FFE2D4 /* capa2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = capa2.jpg; sourceTree = "<group>"; };
+		753B2C60218F408C00FFE2D4 /* capa3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = capa3.jpg; sourceTree = "<group>"; };
+		753B2C61218F408C00FFE2D4 /* capa4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = capa4.jpg; sourceTree = "<group>"; };
 		75693FB92173A9F900FE893E /* FashionDVT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FashionDVT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75693FBC2173A9F900FE893E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		75693FBE2173A9F900FE893E /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
@@ -82,6 +88,9 @@
 		75397F49218CE90D007816E5 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				753B2C5F218F408C00FFE2D4 /* capa2.jpg */,
+				753B2C60218F408C00FFE2D4 /* capa3.jpg */,
+				753B2C61218F408C00FFE2D4 /* capa4.jpg */,
 				753B2C5D218F3CE800FFE2D4 /* capa1.jpg */,
 				75FF8F97218E332A00E7FA6A /* capa.jpg */,
 				75FF8F96218E332A00E7FA6A /* photo_test.jpg */,
@@ -206,6 +215,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				753B2C5A218E8B2600FFE2D4 /* PhotoCell.xib in Resources */,
+				753B2C64218F408C00FFE2D4 /* capa4.jpg in Resources */,
+				753B2C63218F408C00FFE2D4 /* capa3.jpg in Resources */,
+				753B2C62218F408C00FFE2D4 /* capa2.jpg in Resources */,
 				75693FC72173A9FC00FE893E /* LaunchScreen.storyboard in Resources */,
 				75397F57218D12C3007816E5 /* intro_dvt.json in Resources */,
 				75FF8F99218E332A00E7FA6A /* capa.jpg in Resources */,
