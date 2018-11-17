@@ -8,6 +8,7 @@ class TextView: UITextView, UIGestureRecognizerDelegate {
     backgroundColor = color
     layer.borderColor = UIColor.black.cgColor
     layer.borderWidth = 0.3
+    isScrollEnabled = false
     addDragGesture()
   }
 
