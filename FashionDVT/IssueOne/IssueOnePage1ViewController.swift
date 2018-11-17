@@ -1,23 +1,20 @@
 import UIKit
 import RQShineLabel
-import Lottie
 
 class IssueOnePage1ViewController: UIViewController {
 
   @IBOutlet weak var image: UIImageView!
   @IBOutlet weak var label: RQShineLabel!
-  @IBOutlet weak var arrow: AnimationLoop!
 
   override func viewDidLoad() {
     super.viewDidLoad()
-    animateArrow()
     labelLayout()
     startAnimation()
-    animateArrow()
+    self.addSwipeGesture()
   }
 
   @IBAction func handleSwipe(sender: UISwipeGestureRecognizer) {
-//    self.performSegue(withIdentifier: "showMenuGallery", sender: nil)
+    self.performSegue(withIdentifier: "showTextViewController", sender: nil)
   }
 
   private func labelLayout() {
@@ -26,12 +23,6 @@ class IssueOnePage1ViewController: UIViewController {
     label.shineDuration = 5
     label.fadeoutDuration = 3
     label.text = "\"São tempos de superficialidade, ansiedade e incerteza, e as pessoas buscam preencher esse vazio por meio do consumo desenfreado das coisas\""
-  }
-
-  private func animateArrow() {
-    self.arrow.backgroundColor = .clear
-    self.arrow.setAnimation(named: "accept_arrows")
-    self.addSwipeGesture()
   }
 
   private func addSwipeGesture() {
@@ -51,6 +42,7 @@ class IssueOnePage1ViewController: UIViewController {
 
   private func finishAnimation() {
     self.label.fadeOut(completion: {
+      self.addSwipeGesture()
       self.startAnimation()
     })
   }

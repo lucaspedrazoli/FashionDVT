@@ -1,7 +1,7 @@
 import UIKit
 import Lottie
 
-class IssueOneViewController: UIViewController {
+class IssueOneIntroViewController: UIViewController {
 
   @IBOutlet weak var animationView: AnimationView!
 
