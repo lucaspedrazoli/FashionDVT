@@ -26,7 +26,9 @@ class TextView: UITextView, UIGestureRecognizerDelegate {
     isUserInteractionEnabled = true
     flashScrollIndicators()
     for recognizer in gestureRecognizers ?? [] {
-      removeGestureRecognizer(recognizer)
+      if recognizer.name == "drag" {
+        removeGestureRecognizer(recognizer)
+      }
     }
 
   }
@@ -34,6 +36,7 @@ class TextView: UITextView, UIGestureRecognizerDelegate {
   private func addDragGesture() {
     let recognizer = UIPanGestureRecognizer(target: self, action: #selector(drag(_:)))
     recognizer.delegate = self
+    recognizer.name = "drag"
     addGestureRecognizer(recognizer)
   }
 
