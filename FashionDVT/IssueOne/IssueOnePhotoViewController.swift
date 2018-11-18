@@ -1,3 +1,4 @@
+import ViewAnimator
 import UIKit
 
 class IssueOnePhotoViewController: UIViewController {
@@ -19,7 +20,11 @@ class IssueOnePhotoViewController: UIViewController {
   }
 
   @IBAction func handleSwipe(sender: UISwipeGestureRecognizer) {
-    self.dismiss(animated: true, completion: nil)
+    let animation = AnimationType.zoom(scale: 0.5)
+    let gallery = navigationController?.viewControllers.first(where: {
+        $0 is IssueOneGalleryViewController
+    }) as? IssueOneGalleryViewController
+    gallery?.animation = animation
+   navigationController?.popViewController(animated: true)
   }
-
 }

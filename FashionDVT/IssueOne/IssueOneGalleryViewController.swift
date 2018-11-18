@@ -13,14 +13,11 @@ class IssueOneGalleryViewController: UIViewController, UICollectionViewDelegate,
     collectionView.register(UINib(nibName: "PhotoCell", bundle: Bundle.main), forCellWithReuseIdentifier: "photoCell")
     collectionView.alpha = 0
     collectionLayout()
-    let background = UIImageView(image: UIImage(named: "cloud"))
-    background.contentMode = .scaleAspectFit
-    collectionView.backgroundView = background
+
   }
 
   override func viewDidAppear(_ animated: Bool) {
     super.viewDidAppear(true)
-    animation = AnimationType.from(direction: .bottom, offset: 60.0)
     let cells = self.collectionView.visibleCells
     UIView.animate(withDuration: 0.5, animations: {
       self.collectionView.alpha = 1
