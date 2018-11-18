@@ -191,11 +191,45 @@ No fashion film produzido por elas, podemos ver um pouquinho mais sobre a coleç
                     </userDefinedRuntimeAttributes>
                     <connections>
                         <outlet property="collectionView" destination="Frc-gL-PUh" id="w7Y-AC-VCL"/>
+                        <segue destination="OZC-fi-2Lt" kind="show" identifier="showPhoto" id="e0o-ob-KwU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hyb-of-9J9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2328.8000000000002" y="141.67916041979012"/>
+        </scene>
+        <!--Issue One Photo View Controller-->
+        <scene sceneID="34L-Wl-EXA">
+            <objects>
+                <viewController id="OZC-fi-2Lt" customClass="IssueOnePhotoViewController" customModule="FashionDVT" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QZA-Te-M9e">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="75z-vo-n9M">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="75z-vo-n9M" firstAttribute="leading" secondItem="Vqf-P9-kE0" secondAttribute="leading" id="9CC-xn-jd2"/>
+                            <constraint firstItem="75z-vo-n9M" firstAttribute="top" secondItem="QZA-Te-M9e" secondAttribute="top" id="SZu-wo-JSq"/>
+                            <constraint firstItem="75z-vo-n9M" firstAttribute="trailing" secondItem="Vqf-P9-kE0" secondAttribute="trailing" id="dAV-3V-oUq"/>
+                            <constraint firstItem="75z-vo-n9M" firstAttribute="bottom" secondItem="Vqf-P9-kE0" secondAttribute="bottom" id="fYH-jp-x3F"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Vqf-P9-kE0"/>
+                    </view>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="heroModalAnimationTypeString" value="zoom"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="photo" destination="75z-vo-n9M" id="wEY-Fl-meB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nAk-1E-BJd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3016.8000000000002" y="142.57871064467767"/>
         </scene>
     </scenes>
     <resources>

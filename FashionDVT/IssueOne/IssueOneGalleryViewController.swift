@@ -5,6 +5,7 @@ import ViewAnimator
 class IssueOneGalleryViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
 
   @IBOutlet weak var collectionView: UICollectionView!
+  var animation: AnimationType = AnimationType.from(direction: .bottom, offset: 60.0)
   let images: [UIImage?] = [UIImage(named: "pauta1_photo7"),UIImage(named: "pauta1_photo1"),UIImage(named: "pauta1_photo9"),UIImage(named: "pauta1_photo_10"),UIImage(named: "pauta1_photo6"),UIImage(named: "pauta1_photo_11"),UIImage(named: "pauta1_photo3"),UIImage(named: "pauta1_photo5")]
 
   override func viewDidLoad() {
@@ -12,15 +13,18 @@ class IssueOneGalleryViewController: UIViewController, UICollectionViewDelegate,
     collectionView.register(UINib(nibName: "PhotoCell", bundle: Bundle.main), forCellWithReuseIdentifier: "photoCell")
     collectionView.alpha = 0
     collectionLayout()
+    let background = UIImageView(image: UIImage(named: "cloud"))
+    background.contentMode = .scaleAspectFit
+    collectionView.backgroundView = background
   }
 
   override func viewDidAppear(_ animated: Bool) {
     super.viewDidAppear(true)
-    let fromAnimation = AnimationType.from(direction: .bottom, offset: 60.0)
+    animation = AnimationType.from(direction: .bottom, offset: 60.0)
     let cells = self.collectionView.visibleCells
     UIView.animate(withDuration: 0.5, animations: {
       self.collectionView.alpha = 1
-      UIView.animate(views: cells, animations: [fromAnimation])
+      UIView.animate(views: cells, animations: [self.animation])
     })
   }
 
@@ -32,9 +36,8 @@ class IssueOneGalleryViewController: UIViewController, UICollectionViewDelegate,
   }
 
   func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-    let storyBoard: UIStoryboard = UIStoryboard(name: "IssueOne", bundle: Bundle.main)
-    let intro = storyBoard.instantiateViewController(withIdentifier: "IssueOne") as! IssueOneIntroViewController
-    self.present(intro, animated: true, completion: nil)
+    let name = images[indexPath.row]
+    performSegue(withIdentifier: "showPhoto", sender: name)
   }
 
   func numberOfSections(in collectionView: UICollectionView) -> Int {
@@ -43,6 +46,11 @@ class IssueOneGalleryViewController: UIViewController, UICollectionViewDelegate,
 
   func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
     return images.count
+  }
+
+  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    let destination = segue.destination as! IssueOnePhotoViewController
+    destination.image = (sender as! UIImage)
   }
 
   private func collectionLayout() {
