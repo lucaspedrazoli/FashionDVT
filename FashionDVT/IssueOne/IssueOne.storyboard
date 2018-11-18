@@ -105,7 +105,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" bouncesZoom="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="w4G-zE-0HC" customClass="TextView" customModule="FashionDVT" customModuleProvider="target">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" bouncesZoom="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="w4G-zE-0HC" customClass="TextView" customModule="FashionDVT" customModuleProvider="target">
                                 <rect key="frame" x="16" y="40" width="149" height="156"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -118,10 +118,24 @@ No fashion film produzido por elas, podemos ver um pouquinho mais sobre a coleç
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="22"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tAT-wR-AtM">
+                                <rect key="frame" x="292" y="584" width="83" height="83"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="83" id="AF6-Vs-gpl"/>
+                                    <constraint firstAttribute="height" constant="83" id="nez-LS-hM2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="18"/>
+                                <state key="normal" image="plus_icon"/>
+                                <connections>
+                                    <segue destination="Jro-0Y-1Mx" kind="show" id="LFO-Ix-XoI"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="tAT-wR-AtM" firstAttribute="trailing" secondItem="ebw-bv-yQX" secondAttribute="trailing" id="068-Hr-SXu"/>
                             <constraint firstItem="w4G-zE-0HC" firstAttribute="top" secondItem="ebw-bv-yQX" secondAttribute="top" constant="20" id="7hI-dK-ubH"/>
+                            <constraint firstItem="tAT-wR-AtM" firstAttribute="bottom" secondItem="ebw-bv-yQX" secondAttribute="bottom" id="8KW-Sk-AWy"/>
                             <constraint firstItem="w4G-zE-0HC" firstAttribute="leading" secondItem="ebw-bv-yQX" secondAttribute="leading" constant="16" id="LT9-oz-KJS"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ebw-bv-yQX"/>
@@ -131,6 +145,7 @@ No fashion film produzido por elas, podemos ver um pouquinho mais sobre a coleç
                         <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
                     </userDefinedRuntimeAttributes>
                     <connections>
+                        <outlet property="button" destination="tAT-wR-AtM" id="tyT-9v-Y7X"/>
                         <outlet property="textView" destination="w4G-zE-0HC" id="BKq-W9-bXC"/>
                     </connections>
                 </viewController>
@@ -138,9 +153,54 @@ No fashion film produzido por elas, podemos ver um pouquinho mais sobre a coleç
             </objects>
             <point key="canvasLocation" x="1628" y="138.98050974512745"/>
         </scene>
+        <!--Issue One Gallery View Controller-->
+        <scene sceneID="Pgz-4n-wmL">
+            <objects>
+                <viewController id="Jro-0Y-1Mx" customClass="IssueOneGalleryViewController" customModule="FashionDVT" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0Yu-9g-gSx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Frc-gL-PUh">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="i0e-sf-Q22">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Jro-0Y-1Mx" id="KKJ-iJ-63g"/>
+                                    <outlet property="delegate" destination="Jro-0Y-1Mx" id="Yz8-oL-co7"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Frc-gL-PUh" firstAttribute="top" secondItem="0Yu-9g-gSx" secondAttribute="top" id="DPX-qf-5oh"/>
+                            <constraint firstItem="Frc-gL-PUh" firstAttribute="bottom" secondItem="mI7-3g-bha" secondAttribute="bottom" id="Ie2-ap-geY"/>
+                            <constraint firstItem="Frc-gL-PUh" firstAttribute="trailing" secondItem="mI7-3g-bha" secondAttribute="trailing" id="fo3-v4-fEc"/>
+                            <constraint firstItem="Frc-gL-PUh" firstAttribute="leading" secondItem="mI7-3g-bha" secondAttribute="leading" id="gju-ir-Bz0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="mI7-3g-bha"/>
+                    </view>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="heroModalAnimationTypeString" value="cover(down)"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="collectionView" destination="Frc-gL-PUh" id="w7Y-AC-VCL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hyb-of-9J9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2328.8000000000002" y="141.67916041979012"/>
+        </scene>
     </scenes>
     <resources>
         <image name="pauta1_photo2.jpg" width="1365" height="2048"/>
         <image name="pauta1_photo4" width="1365" height="2048"/>
+        <image name="plus_icon" width="128" height="128"/>
     </resources>
 </document>
