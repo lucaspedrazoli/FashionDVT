@@ -4,6 +4,6 @@ extension UINavigationController {
 
   override open func viewDidLoad() {
     super.viewDidLoad()
-    isToolbarHidden = true
+    isNavigationBarHidden = true
   }
 }

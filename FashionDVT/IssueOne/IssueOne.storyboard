@@ -203,7 +203,7 @@ No fashion film produzido por elas, podemos ver um pouquinho mais sobre a coleç
                         <viewLayoutGuide key="safeArea" id="mI7-3g-bha"/>
                     </view>
                     <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="string" keyPath="heroModalAnimationTypeString" value="cover(down)"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="heroModalAnimationTypeString" value="pageIn(down)"/>
                     </userDefinedRuntimeAttributes>
                     <connections>
                         <outlet property="collectionView" destination="Frc-gL-PUh" id="w7Y-AC-VCL"/>
@@ -224,6 +224,9 @@ No fashion film produzido por elas, podemos ver um pouquinho mais sobre a coleç
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="75z-vo-n9M">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabledForSubviews" value="NO"/>
+                                </userDefinedRuntimeAttributes>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

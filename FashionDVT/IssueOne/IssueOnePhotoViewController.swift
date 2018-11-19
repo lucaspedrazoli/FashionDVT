@@ -20,11 +20,6 @@ class IssueOnePhotoViewController: UIViewController {
   }
 
   @objc func handleSwipe(sender: UISwipeGestureRecognizer) {
-    let animation = AnimationType.zoom(scale: 1)
-    let gallery = navigationController?.viewControllers.first(where: {
-        $0 is IssueOneGalleryViewController
-    }) as? IssueOneGalleryViewController
-    gallery?.animation = animation
    navigationController?.popViewController(animated: true)
   }
 }

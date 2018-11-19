@@ -5,7 +5,6 @@ import ViewAnimator
 class IssueOneGalleryViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
 
   @IBOutlet weak var collectionView: UICollectionView!
-  var animation: AnimationType = AnimationType.from(direction: .bottom, offset: 60.0)
   let images: [UIImage?] = [UIImage(named: "pauta1_photo7"),UIImage(named: "pauta1_photo1"),UIImage(named: "pauta1_photo9"),UIImage(named: "pauta1_photo_10"),UIImage(named: "pauta1_photo6"),UIImage(named: "pauta1_photo_11"),UIImage(named: "pauta1_photo3"),UIImage(named: "pauta1_photo5")]
 
   override func viewDidLoad() {
@@ -18,11 +17,14 @@ class IssueOneGalleryViewController: UIViewController, UICollectionViewDelegate,
 
   override func viewDidAppear(_ animated: Bool) {
     super.viewDidAppear(true)
-    let cells = self.collectionView.visibleCells
-    UIView.animate(withDuration: 0.5, animations: {
-      self.collectionView.alpha = 1
-      UIView.animate(views: cells, animations: [self.animation])
-    })
+    if collectionView.alpha == 0 {
+      let animation: AnimationType = AnimationType.from(direction: .bottom, offset: 60.0)
+      let cells = self.collectionView.visibleCells
+      UIView.animate(withDuration: 0.5, animations: {
+        self.collectionView.alpha = 1
+        UIView.animate(views: cells, animations: [animation])
+      })
+    }
   }
 
   func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
