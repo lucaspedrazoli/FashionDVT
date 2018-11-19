@@ -34,7 +34,7 @@ class GalleryViewController: UIViewController, UICollectionViewDelegate, UIColle
 
   func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
     let storyBoard: UIStoryboard = UIStoryboard(name: "IssueOne", bundle: Bundle.main)
-    let intro = storyBoard.instantiateViewController(withIdentifier: "IssueOne") as! IssueOneIntroViewController
+    let intro = storyBoard.instantiateViewController(withIdentifier: "IssueOneNav") as! UINavigationController
     self.present(intro, animated: true, completion: nil)
   }
 

@@ -19,8 +19,8 @@ class IssueOnePhotoViewController: UIViewController {
     photo.addGestureRecognizer(swipe)
   }
 
-  @IBAction func handleSwipe(sender: UISwipeGestureRecognizer) {
-    let animation = AnimationType.zoom(scale: 0.5)
+  @objc func handleSwipe(sender: UISwipeGestureRecognizer) {
+    let animation = AnimationType.zoom(scale: 1)
     let gallery = navigationController?.viewControllers.first(where: {
         $0 is IssueOneGalleryViewController
     }) as? IssueOneGalleryViewController
