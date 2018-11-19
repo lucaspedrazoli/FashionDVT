@@ -7,6 +7,7 @@ class GalleryViewController: UIViewController, UICollectionViewDelegate, UIColle
   @IBOutlet weak var collectionView: UICollectionView!
   let images: [UIImage?] = [UIImage(named: "capa1"),UIImage(named: "capa2"),UIImage(named: "capa3"),UIImage(named: "capa4"),UIImage(named: "capa5"),UIImage(named: "capa6"),UIImage(named: "capa7"),UIImage(named: "capa8")]
   let titles: [String] = ["ENSOU","Aline Rocha","A Arte","We.Me 3D","Lacre 21","Ricardo Benucci","Editorial","Filme Indigo"]
+  let issues = ["IssueOne","IssueTwo","IssueThree","IssueFour","IssueFive","IssueSix","IssueSeven","IssueEight"]
 
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -35,8 +36,9 @@ class GalleryViewController: UIViewController, UICollectionViewDelegate, UIColle
   }
 
   func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-    let storyBoard: UIStoryboard = UIStoryboard(name: "IssueOne", bundle: Bundle.main)
-    let intro = storyBoard.instantiateViewController(withIdentifier: "IssueOne") as! IssueOneIntroViewController
+    let issueName = issues[indexPath.row]
+    let storyBoard: UIStoryboard = UIStoryboard(name: issueName, bundle: Bundle.main)
+    let intro = storyBoard.instantiateViewController(withIdentifier: issueName)
     navigationController?.pushViewController(intro, animated: true)
   }
 
