@@ -20,6 +20,10 @@ class IssueOnePhotoViewController: UIViewController {
   }
 
   @objc func handleSwipe(sender: UISwipeGestureRecognizer) {
-   navigationController?.popViewController(animated: true)
+    UIView.animate(withDuration: 0.5, animations: {
+      self.photo.alpha = 0
+      self.navigationController?.popViewController(animated: true)
+    })
+    
   }
 }
