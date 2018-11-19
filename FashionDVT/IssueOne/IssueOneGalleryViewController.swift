@@ -12,7 +12,7 @@ class IssueOneGalleryViewController: UIViewController, UICollectionViewDelegate,
     collectionView.register(UINib(nibName: "PhotoCell", bundle: Bundle.main), forCellWithReuseIdentifier: "photoCell")
     collectionView.alpha = 0
     collectionLayout()
-
+    addSwipeGestures()
   }
 
   override func viewDidAppear(_ animated: Bool) {
@@ -62,5 +62,28 @@ class IssueOneGalleryViewController: UIViewController, UICollectionViewDelegate,
     layout.itemSize = CGSize(width: screenWidth/2, height: screenWidth/2)
     collectionView.collectionViewLayout = layout
   }
-
+  
+  private func addSwipeGestures() {
+    collectionView.isUserInteractionEnabled = true
+    let swipeLeft = UISwipeGestureRecognizer(target: self, action: #selector(swipeBack(sender:)))
+    let swipeDown = UISwipeGestureRecognizer(target: self, action: #selector(swipeQuit(sender:)))
+    swipeLeft.direction = .left
+    swipeDown.direction = .down
+    collectionView.addGestureRecognizer(swipeLeft)
+    collectionView.addGestureRecognizer(swipeDown)
+  }
+  
+  @objc func swipeQuit(sender: UISwipeGestureRecognizer) {
+    UIView.animate(withDuration: 0.5, animations: {
+      self.collectionView.alpha = 0
+      self.navigationController?.popToRootViewController(animated: true)
+    })
+  }
+  
+  @objc func swipeBack(sender: UISwipeGestureRecognizer) {
+    UIView.animate(withDuration: 0.5, animations: {
+      self.collectionView.alpha = 0
+      self.navigationController?.popViewController(animated: true)
+    })
+  }
 }

@@ -24,6 +24,5 @@ class IssueOnePhotoViewController: UIViewController {
       self.photo.alpha = 0
       self.navigationController?.popViewController(animated: true)
     })
-    
   }
 }

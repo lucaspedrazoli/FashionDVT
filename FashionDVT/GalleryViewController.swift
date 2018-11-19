@@ -17,12 +17,14 @@ class GalleryViewController: UIViewController, UICollectionViewDelegate, UIColle
 
   override func viewDidAppear(_ animated: Bool) {
     super.viewDidAppear(true)
-    let fromAnimation = AnimationType.from(direction: .left, offset: 60.0)
-    let cells = self.collectionView.visibleCells
-    UIView.animate(withDuration: 0.5, animations: {
-      self.collectionView.alpha = 1
-      UIView.animate(views: cells, animations: [fromAnimation])
-    })
+    if collectionView.alpha == 0 {
+      let fromAnimation = AnimationType.from(direction: .left, offset: 60.0)
+      let cells = self.collectionView.visibleCells
+      UIView.animate(withDuration: 0.5, animations: {
+        self.collectionView.alpha = 1
+        UIView.animate(views: cells, animations: [fromAnimation])
+      })
+    }
   }
 
   func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -34,8 +36,8 @@ class GalleryViewController: UIViewController, UICollectionViewDelegate, UIColle
 
   func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
     let storyBoard: UIStoryboard = UIStoryboard(name: "IssueOne", bundle: Bundle.main)
-    let intro = storyBoard.instantiateViewController(withIdentifier: "IssueOneNav") as! UINavigationController
-    self.present(intro, animated: true, completion: nil)
+    let intro = storyBoard.instantiateViewController(withIdentifier: "IssueOne") as! IssueOneIntroViewController
+    navigationController?.pushViewController(intro, animated: true)
   }
 
   func numberOfSections(in collectionView: UICollectionView) -> Int {

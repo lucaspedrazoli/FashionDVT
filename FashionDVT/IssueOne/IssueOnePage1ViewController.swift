@@ -10,11 +10,7 @@ class IssueOnePage1ViewController: UIViewController {
     super.viewDidLoad()
     labelLayout()
     startAnimation()
-    self.addSwipeGesture()
-  }
-
-  @IBAction func handleSwipe(sender: UISwipeGestureRecognizer) {
-    self.performSegue(withIdentifier: "showTextViewController", sender: nil)
+    self.addSwipeGestures()
   }
 
   private func labelLayout() {
@@ -23,13 +19,6 @@ class IssueOnePage1ViewController: UIViewController {
     label.shineDuration = 5
     label.fadeoutDuration = 3
     label.text = "\"São tempos de superficialidade, ansiedade e incerteza, e as pessoas buscam preencher esse vazio por meio do consumo desenfreado das coisas\""
-  }
-
-  private func addSwipeGesture() {
-    image.isUserInteractionEnabled = true
-    let swipe = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipe(sender:)))
-    swipe.direction = .right
-    image.addGestureRecognizer(swipe)
   }
 
   private func startAnimation() {
@@ -42,9 +31,40 @@ class IssueOnePage1ViewController: UIViewController {
 
   private func finishAnimation() {
     self.label.fadeOut(completion: {
-      self.addSwipeGesture()
+      self.addSwipeGestures()
       self.startAnimation()
     })
+  }
+  
+  private func addSwipeGestures() {
+    image.isUserInteractionEnabled = true
+    let swipeLeft = UISwipeGestureRecognizer(target: self, action: #selector(swipeBack(sender:)))
+    let swipeDown = UISwipeGestureRecognizer(target: self, action: #selector(swipeQuit(sender:)))
+    let swipe = UISwipeGestureRecognizer(target: self, action: #selector(swipeRight(sender:)))
+    swipe.direction = .right
+    swipeLeft.direction = .left
+    swipeDown.direction = .down
+    image.addGestureRecognizer(swipe)
+    image.addGestureRecognizer(swipeLeft)
+    image.addGestureRecognizer(swipeDown)
+  }
+  
+  @objc func swipeQuit(sender: UISwipeGestureRecognizer) {
+    UIView.animate(withDuration: 0.5, animations: {
+      self.image.alpha = 0
+      self.navigationController?.popToRootViewController(animated: true)
+    })
+  }
+  
+  @objc func swipeBack(sender: UISwipeGestureRecognizer) {
+    UIView.animate(withDuration: 0.5, animations: {
+      self.image.alpha = 0
+      self.navigationController?.popToRootViewController(animated: true)
+    })
+  }
+  
+  @objc func swipeRight(sender: UISwipeGestureRecognizer) {
+    self.performSegue(withIdentifier: "showTextViewController", sender: nil)
   }
 
 }

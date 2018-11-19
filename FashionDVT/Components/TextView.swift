@@ -3,6 +3,7 @@ import UIKit
 class TextView: UITextView, UIGestureRecognizerDelegate {
 
   lazy var completion: () -> Void = {}
+  var marginBottom: CGFloat = 150
 
   override func awakeFromNib() {
     super.awakeFromNib()
@@ -61,7 +62,7 @@ class TextView: UITextView, UIGestureRecognizerDelegate {
 
   private func changeSizeAnimation() {
     UIView.animate(withDuration: 0.3, animations: { [unowned self] in
-      self.frame.size.height = self.superview!.frame.height - 100
+      self.frame.size.height = self.superview!.frame.height - self.marginBottom
       self.frame.size.width = self.superview!.frame.width - 30
       }, completion: { [unowned self] (_) in
         self.textReadConfig()
