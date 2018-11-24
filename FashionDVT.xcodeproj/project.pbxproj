@@ -57,6 +57,7 @@
 		75D77AF021AA02F500AB24A0 /* IssueTwoSmallTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D77AEF21AA02F500AB24A0 /* IssueTwoSmallTextViewController.swift */; };
 		75D77AF221AA04C100AB24A0 /* IssueTwoTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D77AF121AA04C100AB24A0 /* IssueTwoTextViewController.swift */; };
 		75D77AF421AA072D00AB24A0 /* IssueTwoGalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D77AF321AA072D00AB24A0 /* IssueTwoGalleryViewController.swift */; };
+		75D77AF621AA0A0400AB24A0 /* IssueTwoPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D77AF521AA0A0400AB24A0 /* IssueTwoPhotoViewController.swift */; };
 		FCB0C5EE8A06D2EF5D3F0517 /* Pods_FashionDVT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1AEE6BDC1AF84533EAB4C60 /* Pods_FashionDVT.framework */; };
 /* End PBXBuildFile section */
 
@@ -115,6 +116,7 @@
 		75D77AEF21AA02F500AB24A0 /* IssueTwoSmallTextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueTwoSmallTextViewController.swift; sourceTree = "<group>"; };
 		75D77AF121AA04C100AB24A0 /* IssueTwoTextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueTwoTextViewController.swift; sourceTree = "<group>"; };
 		75D77AF321AA072D00AB24A0 /* IssueTwoGalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueTwoGalleryViewController.swift; sourceTree = "<group>"; };
+		75D77AF521AA0A0400AB24A0 /* IssueTwoPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueTwoPhotoViewController.swift; sourceTree = "<group>"; };
 		F1AEE6BDC1AF84533EAB4C60 /* Pods_FashionDVT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FashionDVT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -155,6 +157,7 @@
 				75D77AEF21AA02F500AB24A0 /* IssueTwoSmallTextViewController.swift */,
 				75D77AF121AA04C100AB24A0 /* IssueTwoTextViewController.swift */,
 				75D77AF321AA072D00AB24A0 /* IssueTwoGalleryViewController.swift */,
+				75D77AF521AA0A0400AB24A0 /* IssueTwoPhotoViewController.swift */,
 			);
 			path = IssueTwo;
 			sourceTree = "<group>";
@@ -499,6 +502,7 @@
 				759D59EF21A1C99500E285AC /* IssueOneGalleryViewController.swift in Sources */,
 				759D59ED21A08B2200E285AC /* TextView.swift in Sources */,
 				75D77AF221AA04C100AB24A0 /* IssueTwoTextViewController.swift in Sources */,
+				75D77AF621AA0A0400AB24A0 /* IssueTwoPhotoViewController.swift in Sources */,
 				753B2C73218F5CB200FFE2D4 /* IssueOneIntroViewController.swift in Sources */,
 				75693FBD2173A9F900FE893E /* AppDelegate.swift in Sources */,
 				7537C70221A2F23E00334171 /* UIViewController.swift in Sources */,

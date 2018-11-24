@@ -204,20 +204,34 @@ As bolsas, que são verdadeiras preciosidades, custam por volta de R$1.800 – d
             </objects>
             <point key="canvasLocation" x="1861.5999999999999" y="-163.26836581709148"/>
         </scene>
-        <!--View Controller-->
+        <!--Issue Two Photo View Controller-->
         <scene sceneID="tbH-pv-3qd">
             <objects>
-                <viewController id="PEp-kL-sTj" sceneMemberID="viewController">
+                <viewController id="PEp-kL-sTj" customClass="IssueTwoPhotoViewController" customModule="FashionDVT" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KGg-GI-Q7d">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DeH-P3-m6i">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="DeH-P3-m6i" firstAttribute="bottom" secondItem="QaE-lQ-02S" secondAttribute="bottom" id="9n9-4c-dm9"/>
+                            <constraint firstItem="DeH-P3-m6i" firstAttribute="leading" secondItem="QaE-lQ-02S" secondAttribute="leading" id="Cdr-y7-wwo"/>
+                            <constraint firstItem="DeH-P3-m6i" firstAttribute="top" secondItem="KGg-GI-Q7d" secondAttribute="top" id="D6I-3D-AcJ"/>
+                            <constraint firstItem="DeH-P3-m6i" firstAttribute="trailing" secondItem="QaE-lQ-02S" secondAttribute="trailing" id="xdI-DA-ef8"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="QaE-lQ-02S"/>
                     </view>
+                    <connections>
+                        <outlet property="photo" destination="DeH-P3-m6i" id="Ccg-fc-9Kv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="261-kq-af7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2606" y="-162"/>
+            <point key="canvasLocation" x="2605.5999999999999" y="-162.3688155922039"/>
         </scene>
     </scenes>
     <resources>

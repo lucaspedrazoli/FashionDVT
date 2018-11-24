@@ -48,7 +48,7 @@ class IssueTwoGalleryViewController: UIViewController, UICollectionViewDelegate,
   }
   
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-    let destination = segue.destination as! IssueOnePhotoViewController
+    let destination = segue.destination as! IssueTwoPhotoViewController
     destination.image = (sender as! UIImage)
   }
   
