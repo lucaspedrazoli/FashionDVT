@@ -15,7 +15,7 @@ class IssueOnePhotoViewController: UIViewController {
   private func addSwipeGesture() {
     photo.isUserInteractionEnabled = true
     let swipe = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipe(sender:)))
-    swipe.direction = .left
+    swipe.direction = .right
     photo.addGestureRecognizer(swipe)
   }
 

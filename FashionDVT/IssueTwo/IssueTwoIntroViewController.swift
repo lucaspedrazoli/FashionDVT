@@ -1,9 +1,15 @@
-//
-//  IssueTwoIntroViewController.swift
-//  FashionDVT
-//
-//  Created by Lucas Pedrazoli on 24/11/18.
-//  Copyright © 2018 Lucas Pedrazoli. All rights reserved.
-//
+import UIKit
+import Lottie
 
-import Foundation
+class IssueTwoViewController: UIViewController {
+  
+  @IBOutlet weak var animationView: AnimationView!
+  
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    animationView.setAnimation(named: "anima_aline_rocha")
+    animationView.play(completion: { _ in
+      self.performSegue(withIdentifier: "next", sender: nil)
+    })
+  }
+}

@@ -41,8 +41,8 @@ class IssueOnePage1ViewController: UIViewController {
     let swipeLeft = UISwipeGestureRecognizer(target: self, action: #selector(swipeBack(sender:)))
     let swipeDown = UISwipeGestureRecognizer(target: self, action: #selector(swipeQuit(sender:)))
     let swipe = UISwipeGestureRecognizer(target: self, action: #selector(swipeRight(sender:)))
-    swipe.direction = .right
-    swipeLeft.direction = .left
+    swipe.direction = .left
+    swipeLeft.direction = .right
     swipeDown.direction = .down
     image.addGestureRecognizer(swipe)
     image.addGestureRecognizer(swipeLeft)

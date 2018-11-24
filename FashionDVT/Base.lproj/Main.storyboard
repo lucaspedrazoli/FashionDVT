@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="capa.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="tuz-tL-dSG">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="capa" translatesAutoresizingMaskIntoConstraints="NO" id="tuz-tL-dSG">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
@@ -134,6 +134,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="capa.jpg" width="564" height="849"/>
+        <image name="capa" width="564" height="849"/>
     </resources>
 </document>
