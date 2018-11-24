@@ -56,6 +56,7 @@
 		75D77AEE21A9FF2900AB24A0 /* IssueTwoIntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D77AED21A9FF2900AB24A0 /* IssueTwoIntroViewController.swift */; };
 		75D77AF021AA02F500AB24A0 /* IssueTwoSmallTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D77AEF21AA02F500AB24A0 /* IssueTwoSmallTextViewController.swift */; };
 		75D77AF221AA04C100AB24A0 /* IssueTwoTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D77AF121AA04C100AB24A0 /* IssueTwoTextViewController.swift */; };
+		75D77AF421AA072D00AB24A0 /* IssueTwoGalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D77AF321AA072D00AB24A0 /* IssueTwoGalleryViewController.swift */; };
 		FCB0C5EE8A06D2EF5D3F0517 /* Pods_FashionDVT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1AEE6BDC1AF84533EAB4C60 /* Pods_FashionDVT.framework */; };
 /* End PBXBuildFile section */
 
@@ -113,6 +114,7 @@
 		75D77AED21A9FF2900AB24A0 /* IssueTwoIntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueTwoIntroViewController.swift; sourceTree = "<group>"; };
 		75D77AEF21AA02F500AB24A0 /* IssueTwoSmallTextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueTwoSmallTextViewController.swift; sourceTree = "<group>"; };
 		75D77AF121AA04C100AB24A0 /* IssueTwoTextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueTwoTextViewController.swift; sourceTree = "<group>"; };
+		75D77AF321AA072D00AB24A0 /* IssueTwoGalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueTwoGalleryViewController.swift; sourceTree = "<group>"; };
 		F1AEE6BDC1AF84533EAB4C60 /* Pods_FashionDVT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FashionDVT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -152,6 +154,7 @@
 				75D77AED21A9FF2900AB24A0 /* IssueTwoIntroViewController.swift */,
 				75D77AEF21AA02F500AB24A0 /* IssueTwoSmallTextViewController.swift */,
 				75D77AF121AA04C100AB24A0 /* IssueTwoTextViewController.swift */,
+				75D77AF321AA072D00AB24A0 /* IssueTwoGalleryViewController.swift */,
 			);
 			path = IssueTwo;
 			sourceTree = "<group>";
@@ -481,6 +484,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75D77AF421AA072D00AB24A0 /* IssueTwoGalleryViewController.swift in Sources */,
 				75D77AF021AA02F500AB24A0 /* IssueTwoSmallTextViewController.swift in Sources */,
 				753B2C5C218E8C1200FFE2D4 /* PhotoCell.swift in Sources */,
 				75693FD52173B78200FE893E /* AnimationView.swift in Sources */,

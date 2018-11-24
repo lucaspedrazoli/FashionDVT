@@ -158,24 +158,66 @@ As bolsas, que são verdadeiras preciosidades, custam por volta de R$1.800 – d
             </objects>
             <point key="canvasLocation" x="1128.8" y="-163.26836581709148"/>
         </scene>
-        <!--View Controller-->
+        <!--Issue Two Gallery View Controller-->
         <scene sceneID="UgA-KQ-o3n">
             <objects>
-                <viewController id="B0P-84-alP" sceneMemberID="viewController">
+                <viewController id="B0P-84-alP" customClass="IssueTwoGalleryViewController" customModule="FashionDVT" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ypz-pP-IYJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ckW-ac-0N8">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="KFD-GY-JqD">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="B0P-84-alP" id="AeY-4r-hZU"/>
+                                    <outlet property="delegate" destination="B0P-84-alP" id="mMs-4Z-wHr"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ckW-ac-0N8" firstAttribute="leading" secondItem="RHX-Dv-8Bm" secondAttribute="leading" id="65Z-nP-Pht"/>
+                            <constraint firstItem="ckW-ac-0N8" firstAttribute="bottom" secondItem="RHX-Dv-8Bm" secondAttribute="bottom" id="Hdy-rH-xwD"/>
+                            <constraint firstItem="ckW-ac-0N8" firstAttribute="top" secondItem="Ypz-pP-IYJ" secondAttribute="top" id="RCo-Jf-bdG"/>
+                            <constraint firstItem="ckW-ac-0N8" firstAttribute="trailing" secondItem="RHX-Dv-8Bm" secondAttribute="trailing" id="XBV-Gi-Whv"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="RHX-Dv-8Bm"/>
                     </view>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
                         <userDefinedRuntimeAttribute type="string" keyPath="heroModalAnimationTypeString" value="pageIn(down)"/>
                     </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="collectionView" destination="ckW-ac-0N8" id="VOa-Er-5qU"/>
+                        <segue destination="PEp-kL-sTj" kind="show" identifier="showPhoto" id="YGU-Wy-0RA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EzX-OI-TGM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1862" y="-163"/>
+            <point key="canvasLocation" x="1861.5999999999999" y="-163.26836581709148"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tbH-pv-3qd">
+            <objects>
+                <viewController id="PEp-kL-sTj" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KGg-GI-Q7d">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="QaE-lQ-02S"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="261-kq-af7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2606" y="-162"/>
         </scene>
     </scenes>
     <resources>
