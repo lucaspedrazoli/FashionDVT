@@ -35,7 +35,7 @@
                                 </state>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="StJ-ra-Itz" customClass="RQShineLabel">
-                                <rect key="frame" x="125" y="423.5" width="83.5" height="44.5"/>
+                                <rect key="frame" x="125" y="423" width="83.5" height="44.5"/>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="37"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -134,6 +134,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="capa" width="564" height="849"/>
+        <image name="capa" width="2339" height="3097"/>
     </resources>
 </document>
