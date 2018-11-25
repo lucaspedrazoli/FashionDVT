@@ -9,29 +9,51 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Test View Controller-->
+        <!--Issue Four Intro View Controller-->
         <scene sceneID="P2G-Xi-mJs">
             <objects>
-                <viewController storyboardIdentifier="IssueFour" id="izn-cF-cNa" customClass="TestViewController" customModule="FashionDVT" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="IssueFour" id="izn-cF-cNa" customClass="IssueFourIntroViewController" customModule="FashionDVT" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5B8-W2-phv">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pSc-52-P5f">
-                                <rect key="frame" x="175" y="309" width="25" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0AB-XF-8Nc" customClass="AnimationView" customModule="FashionDVT" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="0AB-XF-8Nc" firstAttribute="leading" secondItem="xiG-oy-k1J" secondAttribute="leading" id="8ZY-hB-0Gs"/>
+                            <constraint firstItem="0AB-XF-8Nc" firstAttribute="trailing" secondItem="xiG-oy-k1J" secondAttribute="trailing" id="RsL-dy-aCy"/>
+                            <constraint firstItem="0AB-XF-8Nc" firstAttribute="bottom" secondItem="xiG-oy-k1J" secondAttribute="bottom" id="Sg1-dU-Uir"/>
+                            <constraint firstItem="0AB-XF-8Nc" firstAttribute="top" secondItem="5B8-W2-phv" secondAttribute="top" id="lWI-W3-0Ka"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="xiG-oy-k1J"/>
                     </view>
+                    <connections>
+                        <outlet property="animationView" destination="0AB-XF-8Nc" id="w4S-Bp-Ovw"/>
+                        <segue destination="4tC-Pp-AqP" kind="show" identifier="next" id="fMa-AX-kFK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rPH-jx-KWZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="100" y="140"/>
+            <point key="canvasLocation" x="100" y="139.880059970015"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="J6w-01-8Ln">
+            <objects>
+                <viewController id="4tC-Pp-AqP" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GHx-vX-J2P">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="KQm-lN-zG2"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2hX-Zf-VfY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="839" y="142"/>
         </scene>
     </scenes>
 </document>
