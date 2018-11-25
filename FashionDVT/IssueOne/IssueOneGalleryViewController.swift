@@ -28,9 +28,8 @@ class IssueOneGalleryViewController: UIViewController, UICollectionViewDelegate,
   }
 
   func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-    let title = ""
     let image = images[indexPath.row]
-    let cell = PhotoCell.dequeueFor(collectionView, indexPath: indexPath, title: title, image: image!)
+    let cell = PhotoCell.dequeueFor(collectionView, indexPath: indexPath, image: image!)
     return cell
   }
 

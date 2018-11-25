@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -21,31 +21,18 @@
                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="capa1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="pGJ-sM-MpJ">
                         <rect key="frame" x="0.0" y="0.0" width="312" height="251"/>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ENSOU" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WdL-YY-vkb">
-                        <rect key="frame" x="20" y="196" width="272" height="35"/>
-                        <constraints>
-                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="XJ2-nQ-PTq"/>
-                        </constraints>
-                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="29"/>
-                        <nil key="highlightedColor"/>
-                    </label>
                 </subviews>
             </view>
             <constraints>
-                <constraint firstAttribute="trailing" secondItem="WdL-YY-vkb" secondAttribute="trailing" constant="20" id="1rX-VY-lYZ"/>
-                <constraint firstItem="WdL-YY-vkb" firstAttribute="centerX" secondItem="rbF-QN-3Mu" secondAttribute="centerX" id="6D5-xK-Jh2"/>
                 <constraint firstItem="pGJ-sM-MpJ" firstAttribute="top" secondItem="rbF-QN-3Mu" secondAttribute="top" id="6nU-9p-Tjh"/>
                 <constraint firstAttribute="trailing" secondItem="pGJ-sM-MpJ" secondAttribute="trailing" id="7eN-up-lmQ"/>
                 <constraint firstAttribute="bottom" secondItem="pGJ-sM-MpJ" secondAttribute="bottom" id="ZwJ-Sh-hVU"/>
-                <constraint firstAttribute="bottom" secondItem="WdL-YY-vkb" secondAttribute="bottom" constant="20" id="b0X-Et-aAv"/>
-                <constraint firstItem="WdL-YY-vkb" firstAttribute="leading" secondItem="rbF-QN-3Mu" secondAttribute="leading" constant="20" id="efq-Oa-56p"/>
                 <constraint firstItem="pGJ-sM-MpJ" firstAttribute="leading" secondItem="rbF-QN-3Mu" secondAttribute="leading" id="l6a-uN-UWh"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="nMh-cu-Mge"/>
             <size key="customSize" width="312" height="251"/>
             <connections>
                 <outlet property="image" destination="pGJ-sM-MpJ" id="H3y-Fb-abz"/>
-                <outlet property="label" destination="WdL-YY-vkb" id="mfH-lD-QNb"/>
             </connections>
             <point key="canvasLocation" x="49.600000000000001" y="151.57421289355324"/>
         </collectionViewCell>
