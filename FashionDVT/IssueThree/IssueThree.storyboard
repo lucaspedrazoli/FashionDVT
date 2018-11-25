@@ -40,24 +40,145 @@
             </objects>
             <point key="canvasLocation" x="60" y="164.16791604197903"/>
         </scene>
-        <!--View Controller-->
+        <!--Issue Three Text View Controller-->
         <scene sceneID="R49-da-Rlx">
             <objects>
-                <viewController id="TxB-74-iMG" sceneMemberID="viewController">
+                <viewController id="TxB-74-iMG" customClass="IssueThreeTextViewController" customModule="FashionDVT" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="x3T-Cv-g2h">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pauta3_photo1" translatesAutoresizingMaskIntoConstraints="NO" id="kAK-4G-lcH">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" bouncesZoom="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Iwd-pT-MsP" customClass="TextView" customModule="FashionDVT" customModuleProvider="target">
+                                <rect key="frame" x="16" y="36" width="149" height="156"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="149" id="ohS-ts-alk"/>
+                                    <constraint firstAttribute="height" constant="156" id="wQh-Gp-JnX"/>
+                                </constraints>
+                                <mutableString key="text">O projeto “A arte” foi o tema do encontro com Heloísa Gomez, formada em moda em 2016 e estudante de artes visuais. Depois de brilhar com esse trabalho no Salão Satélite de Milão em 2017 e de expor as peças na SP-Arte do mesmo ano, ela conta como foram os processos para tudo ficar do jeitinho que ela queria!
+Helô, como gosta de chamada, se inspirou no pensamento japonês, o Wabisabi, que consiste em valorizar a beleza da imperfeição. Dentro desse pensamento existe o Kintsugi, arte japonesa que põe esse pensamento em prática reconectando pedaços de cerâmica ou porcelana quebrados com prata ou ouro. E foram as técnicas do Kintsugi que a orientaram para criar uma coleção de roupas femininas.
+A partir daí surgiu a ideia de quebrar diversos pratos e utilizar os cacos para dar forma aos recortes de tecido que formariam as roupas. 
+O processo é assim: primeiro, a seda é posicionada sob um pedaço de plástico bolha e por cima vão os tufos de lã. Para que a seda e a lã se transformem em uma coisa só, Helô borrifa uma mistura de água e sabão, enrola tudo e pressiona. Os fios de lã acabam ficando entremeados com a seda, e o resultado é um tecido super resistente. Por conta da água, a seda acaba encolhendo bastante. Vários testes foram feitos até que ela conseguisse chegar na fórmula perfeita.
+Aí entra a parte divertida e até terapêutica do processo: quebrar os pratos! Os cacos formados são colocados em cima do tecido e recortados, mantendo a forma mas ampliando o tamanho. Esses retalhos são posicionados no manequim e por meio da moulage as peças vão ganhando forma. Porém, ao invés de costurar esses pedaços, eles são unidos pelo mesmo processo citado acima. Como o tecido que se forma é bastante resistente, isso permitiu que as peças não tivessem costura com linha. E, como a seda encolhe por causa do contato com a água e sabão, as peças ganham um plissado mais orgânico. Nos acessórios da coleção também foram utilizados cacos de cerâmica.
+Este ano, Heloísa inaugurou uma marca de streetwear masculina, lançada em setembro, a OMEZ Company. Caso você queira comprar uma das peças ou saber mais informações, entre em contato com a Helô! O insta dela é @heloisavivancos e o site é www.heloisavivancos.com
+</mutableString>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="22"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZnU-qQ-EEA">
+                                <rect key="frame" x="292" y="584" width="83" height="83"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="83" id="E5O-53-mWF"/>
+                                    <constraint firstAttribute="height" constant="83" id="wFu-KW-fQG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="18"/>
+                                <state key="normal" image="plus_icon"/>
+                                <connections>
+                                    <segue destination="0Rm-mg-bxD" kind="show" id="GNc-aB-TUP"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Iwd-pT-MsP" firstAttribute="top" secondItem="VHV-Tq-6i6" secondAttribute="top" constant="16" id="JF4-ti-RhH"/>
+                            <constraint firstItem="ZnU-qQ-EEA" firstAttribute="bottom" secondItem="VHV-Tq-6i6" secondAttribute="bottom" id="OXT-ww-QyS"/>
+                            <constraint firstItem="ZnU-qQ-EEA" firstAttribute="trailing" secondItem="VHV-Tq-6i6" secondAttribute="trailing" id="bvC-JM-fPw"/>
+                            <constraint firstItem="Iwd-pT-MsP" firstAttribute="leading" secondItem="VHV-Tq-6i6" secondAttribute="leading" constant="16" id="p8b-R3-IFD"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="VHV-Tq-6i6"/>
                     </view>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
                         <userDefinedRuntimeAttribute type="string" keyPath="heroModalAnimationTypeString" value="zoomOut"/>
                     </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="button" destination="ZnU-qQ-EEA" id="GAb-2A-2FK"/>
+                        <outlet property="image" destination="kAK-4G-lcH" id="Yor-MS-8dg"/>
+                        <outlet property="textView" destination="Iwd-pT-MsP" id="brq-Pr-lvH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ryg-NT-KLv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="783" y="164"/>
+            <point key="canvasLocation" x="781.60000000000002" y="163.26836581709148"/>
+        </scene>
+        <!--Issue Three Gallery View Controller-->
+        <scene sceneID="J4q-7Q-QuP">
+            <objects>
+                <viewController id="0Rm-mg-bxD" customClass="IssueThreeGalleryViewController" customModule="FashionDVT" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1W6-Xl-S7K">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="9bk-OB-3FX">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="kxv-WE-oaF">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="0Rm-mg-bxD" id="yQV-dp-a4U"/>
+                                    <outlet property="delegate" destination="0Rm-mg-bxD" id="0FP-r4-9XG"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="9bk-OB-3FX" firstAttribute="trailing" secondItem="e5J-pV-iFj" secondAttribute="trailing" id="TG5-Ul-HJ4"/>
+                            <constraint firstItem="9bk-OB-3FX" firstAttribute="bottom" secondItem="e5J-pV-iFj" secondAttribute="bottom" id="XYn-oH-3ph"/>
+                            <constraint firstItem="9bk-OB-3FX" firstAttribute="leading" secondItem="e5J-pV-iFj" secondAttribute="leading" id="rTm-WI-h0K"/>
+                            <constraint firstItem="9bk-OB-3FX" firstAttribute="top" secondItem="1W6-Xl-S7K" secondAttribute="top" id="sYZ-Lt-sPQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="e5J-pV-iFj"/>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="9bk-OB-3FX" id="8IK-2j-4dJ"/>
+                        <segue destination="TDQ-WZ-EXq" kind="show" identifier="showPhoto" id="FYg-rb-XsX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AxC-WR-o8d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1532" y="163.26836581709148"/>
+        </scene>
+        <!--Issue Three Photo View Controller-->
+        <scene sceneID="XZ2-pi-rVp">
+            <objects>
+                <viewController id="TDQ-WZ-EXq" customClass="IssueThreePhotoViewController" customModule="FashionDVT" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fGZ-9i-l4i">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Sb2-qT-5Oe">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Sb2-qT-5Oe" firstAttribute="bottom" secondItem="fBN-pV-Uvi" secondAttribute="bottom" id="68k-ML-VMM"/>
+                            <constraint firstItem="Sb2-qT-5Oe" firstAttribute="leading" secondItem="fBN-pV-Uvi" secondAttribute="leading" id="Sh0-3v-E1B"/>
+                            <constraint firstItem="Sb2-qT-5Oe" firstAttribute="trailing" secondItem="fBN-pV-Uvi" secondAttribute="trailing" id="mUc-LO-avz"/>
+                            <constraint firstItem="Sb2-qT-5Oe" firstAttribute="top" secondItem="fGZ-9i-l4i" secondAttribute="top" id="oim-P5-hjk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fBN-pV-Uvi"/>
+                    </view>
+                    <connections>
+                        <outlet property="photo" destination="Sb2-qT-5Oe" id="alY-gW-WqS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Qt-QU-Szj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2276" y="160.56971514242881"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="pauta3_photo1" width="3456" height="5184"/>
+        <image name="plus_icon" width="128" height="128"/>
+    </resources>
 </document>
