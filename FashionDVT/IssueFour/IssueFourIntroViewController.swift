@@ -7,7 +7,7 @@ class IssueFourIntroViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    animationView.setAnimation(named: "anima_weme")
+    animationView.setAnimation(named: "anima_weme_v2")
     animationView.play(completion: { _ in
       self.performSegue(withIdentifier: "next", sender: nil)
     })
