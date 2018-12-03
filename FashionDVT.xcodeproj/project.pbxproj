@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		750A813521B540B0003F2CB2 /* anima_benucci_v2.json in Resources */ = {isa = PBXBuildFile; fileRef = 750A813421B540B0003F2CB2 /* anima_benucci_v2.json */; };
+		750A813921B54601003F2CB2 /* IssueFiveTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750A813821B54600003F2CB2 /* IssueFiveTextViewController.swift */; };
+		750A813B21B54737003F2CB2 /* IssueFiveGalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750A813A21B54737003F2CB2 /* IssueFiveGalleryViewController.swift */; };
 		7537C6F321A2EF2F00334171 /* IssueTwo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7537C6F221A2EF2F00334171 /* IssueTwo.storyboard */; };
 		7537C6F521A2F07800334171 /* IssueThree.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7537C6F421A2F07800334171 /* IssueThree.storyboard */; };
 		7537C6F721A2F08400334171 /* IssueFour.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7537C6F621A2F08400334171 /* IssueFour.storyboard */; };
@@ -77,6 +79,8 @@
 		07441D0B86FF60F7EE3984B7 /* Pods-FashionDVT.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FashionDVT.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FashionDVT/Pods-FashionDVT.debug.xcconfig"; sourceTree = "<group>"; };
 		5A69C9D2E79012BC70DA0C4B /* Pods-FashionDVT.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FashionDVT.release.xcconfig"; path = "Pods/Target Support Files/Pods-FashionDVT/Pods-FashionDVT.release.xcconfig"; sourceTree = "<group>"; };
 		750A813421B540B0003F2CB2 /* anima_benucci_v2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = anima_benucci_v2.json; sourceTree = "<group>"; };
+		750A813821B54600003F2CB2 /* IssueFiveTextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueFiveTextViewController.swift; sourceTree = "<group>"; };
+		750A813A21B54737003F2CB2 /* IssueFiveGalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueFiveGalleryViewController.swift; sourceTree = "<group>"; };
 		7537C6F221A2EF2F00334171 /* IssueTwo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = IssueTwo.storyboard; sourceTree = "<group>"; };
 		7537C6F421A2F07800334171 /* IssueThree.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = IssueThree.storyboard; sourceTree = "<group>"; };
 		7537C6F621A2F08400334171 /* IssueFour.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = IssueFour.storyboard; sourceTree = "<group>"; };
@@ -212,6 +216,8 @@
 			children = (
 				7537C6F821A2F08E00334171 /* IssueFive.storyboard */,
 				75D77B0421AA1D2600AB24A0 /* IssueFiveIntroViewController.swift */,
+				750A813821B54600003F2CB2 /* IssueFiveTextViewController.swift */,
+				750A813A21B54737003F2CB2 /* IssueFiveGalleryViewController.swift */,
 			);
 			name = IssueFive;
 			sourceTree = "<group>";
@@ -569,6 +575,7 @@
 				75693FBF2173A9F900FE893E /* StartViewController.swift in Sources */,
 				75D77AEE21A9FF2900AB24A0 /* IssueTwoIntroViewController.swift in Sources */,
 				753B2C77218F61EF00FFE2D4 /* IssueOnePage1ViewController.swift in Sources */,
+				750A813B21B54737003F2CB2 /* IssueFiveGalleryViewController.swift in Sources */,
 				757DC200218D2A5D00D361E5 /* GalleryViewController.swift in Sources */,
 				75D77B1D21AA2A9500AB24A0 /* IssueThreePhotoViewController.swift in Sources */,
 				759D59E721A087CD00E285AC /* IssueOneTextViewController.swift in Sources */,
@@ -578,6 +585,7 @@
 				75693FD92173BDCE00FE893E /* AnimationLoop.swift in Sources */,
 				757D9C1F21B41517000BD139 /* IssueSixIntroViewController.swift in Sources */,
 				759D5A0521A1D34D00E285AC /* UINavigationController.swift in Sources */,
+				750A813921B54601003F2CB2 /* IssueFiveTextViewController.swift in Sources */,
 				75D77B1B21AA28D100AB24A0 /* IssueThreeGalleryViewController.swift in Sources */,
 				759D59EF21A1C99500E285AC /* IssueOneGalleryViewController.swift in Sources */,
 				759D59ED21A08B2200E285AC /* TextView.swift in Sources */,

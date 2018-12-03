@@ -4,6 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -40,20 +41,120 @@
             </objects>
             <point key="canvasLocation" x="56.799999999999997" y="155.17241379310346"/>
         </scene>
-        <!--View Controller-->
+        <!--Issue Five Text View Controller-->
         <scene sceneID="jUk-JI-fCE">
             <objects>
-                <viewController id="Vkq-zB-HpP" sceneMemberID="viewController">
+                <viewController id="Vkq-zB-HpP" customClass="IssueFiveTextViewController" customModule="FashionDVT" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vbJ-NH-XDf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pauta5_photo1" translatesAutoresizingMaskIntoConstraints="NO" id="F0a-CC-KJC">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" bouncesZoom="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="lhY-nB-r9u" customClass="TextView" customModule="FashionDVT" customModuleProvider="target">
+                                <rect key="frame" x="16" y="35" width="149" height="156"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="156" id="Hon-QS-wF7"/>
+                                    <constraint firstAttribute="width" constant="149" id="sKs-Wh-A2L"/>
+                                </constraints>
+                                <mutableString key="text">Com foco nos millennials, a marca de maquiagem Lacre 21 trata o empoderamento feminino com frequência. "A empresa nasceu a partir do momento em que percebemos que faltava uma marca de maquiagem no mercado nacional que tivesse um posicionamento definido e que tratasse dessas questões tão em voga atualmente" nos conta Maira Okamoto, gerente de produto da Lacre 21. A ideia é que nas campanhas só tenham pessoas comuns, na maior vibe gente como a gente. Com isso, a marca propõe tratar de assuntos como a desconstrução do padrão de beleza de forma intensa, porém leve e fun.
+O lançamento da marca, que aconteceu em setembro deste ano na Beauty Fair, os levou para as melhores perfumarias do país.
+Os preços vão de R$15 a R$39 e nós da redação indicamos a base (R$30,90), carro chefe da marca com cobertura média e disponível em 16 tons. O glitter em gel (R$39,00), com ótima fixação, também é um produto super legal e que promete - e cumpre! - fazer toda a diferença!
+O e-commerce foi lançado em setembro deste ano, com envios para todo o Brasil. Para ficar de olho!
+
+</mutableString>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="22"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1HM-Wz-QUw">
+                                <rect key="frame" x="292" y="584" width="83" height="83"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="83" id="1m9-5o-X5D"/>
+                                    <constraint firstAttribute="height" constant="83" id="aN4-uy-fpN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="18"/>
+                                <state key="normal" image="plus_icon"/>
+                                <connections>
+                                    <segue destination="ZKZ-D6-seq" kind="show" id="OzD-ta-7Sv"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="1HM-Wz-QUw" firstAttribute="bottom" secondItem="GNb-js-kRI" secondAttribute="bottom" id="0OZ-KP-cs4"/>
+                            <constraint firstItem="F0a-CC-KJC" firstAttribute="bottom" secondItem="GNb-js-kRI" secondAttribute="bottom" id="YN1-Aw-IkJ"/>
+                            <constraint firstItem="F0a-CC-KJC" firstAttribute="leading" secondItem="GNb-js-kRI" secondAttribute="leading" id="YT9-So-8SL"/>
+                            <constraint firstItem="F0a-CC-KJC" firstAttribute="top" secondItem="vbJ-NH-XDf" secondAttribute="top" id="mAh-Va-eF6"/>
+                            <constraint firstItem="F0a-CC-KJC" firstAttribute="trailing" secondItem="GNb-js-kRI" secondAttribute="trailing" id="prv-3q-PgL"/>
+                            <constraint firstItem="lhY-nB-r9u" firstAttribute="leading" secondItem="GNb-js-kRI" secondAttribute="leading" constant="16" id="r4J-PI-maW"/>
+                            <constraint firstItem="1HM-Wz-QUw" firstAttribute="trailing" secondItem="GNb-js-kRI" secondAttribute="trailing" id="vQ8-9Z-71l"/>
+                            <constraint firstItem="lhY-nB-r9u" firstAttribute="top" secondItem="GNb-js-kRI" secondAttribute="top" constant="15" id="xfF-sb-rT2"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="GNb-js-kRI"/>
                     </view>
+                    <connections>
+                        <outlet property="image" destination="F0a-CC-KJC" id="164-0s-8Au"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o5k-CE-nQX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="791" y="155"/>
+            <point key="canvasLocation" x="789.60000000000002" y="154.27286356821591"/>
+        </scene>
+        <!--Issue Five Gallery View Controller-->
+        <scene sceneID="Dpg-Gv-SKI">
+            <objects>
+                <viewController id="ZKZ-D6-seq" customClass="IssueFiveGalleryViewController" customModule="FashionDVT" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="61h-l4-jm6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="qr3-FF-CJ0">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="fO7-2j-9cd">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="9Vx-w7-7kR">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="ZKZ-D6-seq" id="O9B-r3-NUB"/>
+                                    <outlet property="delegate" destination="ZKZ-D6-seq" id="Ohn-c1-kzI"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="qr3-FF-CJ0" firstAttribute="leading" secondItem="5cM-wM-LKi" secondAttribute="leading" id="Mvn-bX-RME"/>
+                            <constraint firstItem="qr3-FF-CJ0" firstAttribute="bottom" secondItem="5cM-wM-LKi" secondAttribute="bottom" id="OFE-sL-1ue"/>
+                            <constraint firstItem="qr3-FF-CJ0" firstAttribute="trailing" secondItem="5cM-wM-LKi" secondAttribute="trailing" id="brw-o8-MvG"/>
+                            <constraint firstItem="qr3-FF-CJ0" firstAttribute="top" secondItem="61h-l4-jm6" secondAttribute="top" id="p8K-Jf-YIz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="5cM-wM-LKi"/>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="qr3-FF-CJ0" id="2a7-rE-H5w"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Asa-4q-bRD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1509.5999999999999" y="152.47376311844079"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="pauta5_photo1" width="3264" height="4928"/>
+        <image name="plus_icon" width="128" height="128"/>
+    </resources>
 </document>
