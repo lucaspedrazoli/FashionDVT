@@ -42,4 +42,8 @@ class StartViewController: UIViewController {
   @IBAction func handleSwipe(sender: UISwipeGestureRecognizer) {
     self.performSegue(withIdentifier: "showMenuGallery", sender: nil)
   }
+  
+  @IBAction func next() {
+    self.performSegue(withIdentifier: "showMenuGallery", sender: nil)
+  }
 }
