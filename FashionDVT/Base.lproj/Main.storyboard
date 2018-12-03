@@ -42,8 +42,8 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="StJ-ra-Itz" customClass="RQShineLabel">
-                                <rect key="frame" x="125" y="423.5" width="83.5" height="44.5"/>
-                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="37"/>
+                                <rect key="frame" x="121" y="425" width="91" height="41.5"/>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="37"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>

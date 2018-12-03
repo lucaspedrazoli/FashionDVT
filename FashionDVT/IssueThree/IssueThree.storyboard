@@ -67,7 +67,7 @@ O processo é assim: primeiro, a seda é posicionada sob um pedaço de plástico
 Aí entra a parte divertida e até terapêutica do processo: quebrar os pratos! Os cacos formados são colocados em cima do tecido e recortados, mantendo a forma mas ampliando o tamanho. Esses retalhos são posicionados no manequim e por meio da moulage as peças vão ganhando forma. Porém, ao invés de costurar esses pedaços, eles são unidos pelo mesmo processo citado acima. Como o tecido que se forma é bastante resistente, isso permitiu que as peças não tivessem costura com linha. E, como a seda encolhe por causa do contato com a água e sabão, as peças ganham um plissado mais orgânico. Nos acessórios da coleção também foram utilizados cacos de cerâmica.
 Este ano, Heloísa inaugurou uma marca de streetwear masculina, lançada em setembro, a OMEZ Company. Caso você queira comprar uma das peças ou saber mais informações, entre em contato com a Helô! O insta dela é @heloisavivancos e o site é www.heloisavivancos.com
 </string>
-                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="22"/>
+                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="22"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZnU-qQ-EEA">

@@ -68,7 +68,7 @@ A segunda coleção desenvolvida por ela manteve esse cunho ambiental. Batizada 
 Além disso, ela trabalhou em parceria com a influencer Enoara Monteiro, do Tocantins. A coleção, que foi lançada em outubro desse ano, foi inspirada no Capim Dourado e tem 20% do valor das vendas doados para uma instituição que ajuda pessoas em situação de risco.
 Todas as peças da We.Me 3D são superleves, com brincos que chegam a pesar apenas 0,5g. No site é possível personalizar os produtos, com 15 opções de cores disponíveis - o difícil é conseguir decidir entre as opções! Os braceletes e chockers foram pensados para que pessoas com pulsos e pescoços mais gordinhos ou mais finos pudessem usar! Ou seja, além de ajudar o meio ambiente e das pessoas que vivem nele, a marca também é democrática! 
 </mutableString>
-                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="22"/>
+                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="22"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9EH-Ao-TBx">

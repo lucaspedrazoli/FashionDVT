@@ -4,6 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -59,7 +60,7 @@
                                 </constraints>
                                 <string key="text">"São tempos de superficialidade, ansiedade e incerteza, e as pessoas buscam preencher esse vazio por meio do consumo desenfreado das coisas"
 </string>
-                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="35"/>
+                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="35"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -104,7 +105,7 @@
                                     <constraint firstAttribute="height" constant="156" id="mTk-qX-cl2"/>
                                     <constraint firstAttribute="width" constant="149" id="zes-RE-PO5"/>
                                 </constraints>
-                                <mutableString key="text">Foi durante o curso de Design de Moda da Belas Artes que a então estudante Aline Rocha percebeu que não queria criar algo que tivesse que ser descartado com pouco tempo de uso por causa da má qualidade. Além disso, um de seus obstáculos foi descobrir qual material de resíduo ela usaria e como o transformaria em algo luxuoso. 
+                                <string key="text">Foi durante o curso de Design de Moda da Belas Artes que a então estudante Aline Rocha percebeu que não queria criar algo que tivesse que ser descartado com pouco tempo de uso por causa da má qualidade. Além disso, um de seus obstáculos foi descobrir qual material de resíduo ela usaria e como o transformaria em algo luxuoso. 
 Nesse percurso, percebeu que adorou gemas preciosas e semi-preciosas. Durante o processo de formatação do projeto de conclusão de curso, veio o insight de usar o que sobra da lapidação das pedras e aplicar isso em bolsas que ela mesma desenha. Foi assim que nasceu sua marca, batizada de Aline Rocha Handmade (@alinerochahandmade). 
 Imersa nos conceitos do slow fashion, a marca prioriza o processo de fabricação e o seu tempo de amadurecimento. Hoje, já formada, a designer usa diversas pedras, sempre de origem brasileira. Como o Brasil é muito grande em território e existe uma variedade enorme de gemas brasileiras – ametista, olho de tigre, quartzo e esmeralda… isso só pra citar algumas – ela conta que teve certa dificuldade em achar fornecedores espalhados pelo país.
 Outra característica das suas criações é o tempo que elas demandam. Depois de desenhar as peças, Aline terceiriza a costura e a montagem da bolsa. Ela utiliza dois tipos de couro: o de cabra e o mestiço. Após costurada, a peça volta para ela, e é aí que a "mágica" do trabalho dela acontece. É o momento de escolher as pedras de acordo com a matéria-prima e o desenho criado, para então aplicá-las na bolsa. A coleção atual foi toda inspirada na fauna, o que, como você pode imaginar, traz uma certa complexidade a esses desenhos. 
@@ -115,8 +116,8 @@ Uma das preocupações que Aline teve foi com a textura que as lascas de pedra t
 A designer até pensou em lixar o desenho depois que estivesse pronto, para tirar a textura. Mas ela percebeu que era justamente a textura o diferencial do material utilizado. E, como não corria o risco de machucar ninguém ou estragar uma peça de roupa, ela optou por preservar a essa aparência.
 Em junho deste ano, Aline participou pela primeira vez de um grande evento de designers, a MADE (Mercado de Arte Design) expondo as peças. Ainda assim, a marca ainda caminha em babysteps. Ela está trabalhando para lançar o site ainda este ano também.
 As bolsas, que são verdadeiras preciosidades, custam por volta de R$1.800 – dependendo do valor das pedras que são utilizadas e, principalmente, do tempo de produção e da complexidade do desenho. Dedicação, talento e sofisticação ao alcance das mãos.
-</mutableString>
-                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="22"/>
+</string>
+                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="22"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hEO-pW-mpZ">

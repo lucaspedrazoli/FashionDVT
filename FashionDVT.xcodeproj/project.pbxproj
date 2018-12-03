@@ -13,6 +13,7 @@
 		750A813D21B54D1E003F2CB2 /* IssueFourTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750A813C21B54D1E003F2CB2 /* IssueFourTextViewController.swift */; };
 		750A813F21B54E49003F2CB2 /* IssueFourGalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750A813E21B54E49003F2CB2 /* IssueFourGalleryViewController.swift */; };
 		750A814121B54F10003F2CB2 /* IssueFourPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750A814021B54F10003F2CB2 /* IssueFourPhotoViewController.swift */; };
+		750A814321B55B1A003F2CB2 /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750A814221B55B1A003F2CB2 /* UILabel.swift */; };
 		7537C6F321A2EF2F00334171 /* IssueTwo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7537C6F221A2EF2F00334171 /* IssueTwo.storyboard */; };
 		7537C6F521A2F07800334171 /* IssueThree.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7537C6F421A2F07800334171 /* IssueThree.storyboard */; };
 		7537C6F721A2F08400334171 /* IssueFour.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7537C6F621A2F08400334171 /* IssueFour.storyboard */; };
@@ -87,6 +88,7 @@
 		750A813C21B54D1E003F2CB2 /* IssueFourTextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueFourTextViewController.swift; sourceTree = "<group>"; };
 		750A813E21B54E49003F2CB2 /* IssueFourGalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueFourGalleryViewController.swift; sourceTree = "<group>"; };
 		750A814021B54F10003F2CB2 /* IssueFourPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueFourPhotoViewController.swift; sourceTree = "<group>"; };
+		750A814221B55B1A003F2CB2 /* UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabel.swift; sourceTree = "<group>"; };
 		7537C6F221A2EF2F00334171 /* IssueTwo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = IssueTwo.storyboard; sourceTree = "<group>"; };
 		7537C6F421A2F07800334171 /* IssueThree.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = IssueThree.storyboard; sourceTree = "<group>"; };
 		7537C6F621A2F08400334171 /* IssueFour.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = IssueFour.storyboard; sourceTree = "<group>"; };
@@ -261,6 +263,7 @@
 			children = (
 				759D5A0421A1D34D00E285AC /* UINavigationController.swift */,
 				7537C70121A2F23E00334171 /* UIViewController.swift */,
+				750A814221B55B1A003F2CB2 /* UILabel.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -581,6 +584,7 @@
 				75D77AF021AA02F500AB24A0 /* IssueTwoSmallTextViewController.swift in Sources */,
 				753B2C5C218E8C1200FFE2D4 /* PhotoCell.swift in Sources */,
 				750A814121B54F10003F2CB2 /* IssueFourPhotoViewController.swift in Sources */,
+				750A814321B55B1A003F2CB2 /* UILabel.swift in Sources */,
 				75693FD52173B78200FE893E /* AnimationView.swift in Sources */,
 				750A813D21B54D1E003F2CB2 /* IssueFourTextViewController.swift in Sources */,
 				75693FBF2173A9F900FE893E /* StartViewController.swift in Sources */,

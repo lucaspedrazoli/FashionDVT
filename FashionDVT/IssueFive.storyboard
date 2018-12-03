@@ -65,7 +65,7 @@ Os preços vão de R$15 a R$39 e nós da redação indicamos a base (R$30,90), c
 O e-commerce foi lançado em setembro deste ano, com envios para todo o Brasil. Para ficar de olho!
 
 </mutableString>
-                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="22"/>
+                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="22"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1HM-Wz-QUw">
