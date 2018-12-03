@@ -13,11 +13,11 @@ class IssueOneTextViewController: UIViewController {
   
   private func addSwipeGestures() {
     image.isUserInteractionEnabled = true
-    let swipeLeft = UISwipeGestureRecognizer(target: self, action: #selector(swipeBack(sender:)))
+    let swipeBack = UISwipeGestureRecognizer(target: self, action: #selector(swipeBack(sender:)))
     let swipeDown = UISwipeGestureRecognizer(target: self, action: #selector(swipeQuit(sender:)))
-    swipeLeft.direction = .left
+    swipeBack.direction = .right
     swipeDown.direction = .down
-    image.addGestureRecognizer(swipeLeft)
+    image.addGestureRecognizer(swipeBack)
     image.addGestureRecognizer(swipeDown)
   }
   

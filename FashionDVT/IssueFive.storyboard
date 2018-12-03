@@ -95,6 +95,7 @@ O e-commerce foi lançado em setembro deste ano, com envios para todo o Brasil. 
                         <viewLayoutGuide key="safeArea" id="GNb-js-kRI"/>
                     </view>
                     <connections>
+                        <outlet property="button" destination="1HM-Wz-QUw" id="3Aq-UR-Vmh"/>
                         <outlet property="image" destination="F0a-CC-KJC" id="164-0s-8Au"/>
                     </connections>
                 </viewController>

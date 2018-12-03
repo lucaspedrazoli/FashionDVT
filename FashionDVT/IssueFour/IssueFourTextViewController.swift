@@ -13,11 +13,11 @@ class IssueFourTextViewController: UIViewController {
   
   private func addSwipeGestures() {
     image.isUserInteractionEnabled = true
-    let swipeLeft = UISwipeGestureRecognizer(target: self, action: #selector(swipeBack(sender:)))
+    let swipeBack = UISwipeGestureRecognizer(target: self, action: #selector(swipeBack(sender:)))
     let swipeDown = UISwipeGestureRecognizer(target: self, action: #selector(swipeQuit(sender:)))
-    swipeLeft.direction = .left
+    swipeBack.direction = .right
     swipeDown.direction = .down
-    image.addGestureRecognizer(swipeLeft)
+    image.addGestureRecognizer(swipeBack)
     image.addGestureRecognizer(swipeDown)
   }
   
@@ -31,7 +31,7 @@ class IssueFourTextViewController: UIViewController {
   @objc func swipeBack(sender: UISwipeGestureRecognizer) {
     UIView.animate(withDuration: 0.5, animations: {
       self.image.alpha = 0
-      self.navigationController?.popViewController(animated: true)
+      self.navigationController?.popToRootViewController(animated: true)
     })
   }
 }
