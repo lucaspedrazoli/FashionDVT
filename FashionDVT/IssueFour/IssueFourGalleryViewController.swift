@@ -64,11 +64,11 @@ class IssueFourGalleryViewController: UIViewController, UICollectionViewDelegate
   
   private func addSwipeGestures() {
     collectionView.isUserInteractionEnabled = true
-    let swipeLeft = UISwipeGestureRecognizer(target: self, action: #selector(swipeBack(sender:)))
+    let swipeBack = UISwipeGestureRecognizer(target: self, action: #selector(swipeBack(sender:)))
     let swipeDown = UISwipeGestureRecognizer(target: self, action: #selector(swipeQuit(sender:)))
-    swipeLeft.direction = .left
+    swipeBack.direction = .right
     swipeDown.direction = .down
-    collectionView.addGestureRecognizer(swipeLeft)
+    collectionView.addGestureRecognizer(swipeBack)
     collectionView.addGestureRecognizer(swipeDown)
   }
   
