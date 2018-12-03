@@ -4,6 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -40,20 +41,151 @@
             </objects>
             <point key="canvasLocation" x="100" y="139.880059970015"/>
         </scene>
-        <!--View Controller-->
+        <!--Issue Four Text View Controller-->
         <scene sceneID="J6w-01-8Ln">
             <objects>
-                <viewController id="4tC-Pp-AqP" sceneMemberID="viewController">
+                <viewController id="4tC-Pp-AqP" customClass="IssueFourTextViewController" customModule="FashionDVT" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GHx-vX-J2P">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pauta4_photo1" translatesAutoresizingMaskIntoConstraints="NO" id="uQF-Mg-kOz">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" bouncesZoom="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="DTj-Rs-tdr" customClass="TextView" customModule="FashionDVT" customModuleProvider="target">
+                                <rect key="frame" x="16" y="36" width="149" height="156"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="149" id="GU4-fP-t1g"/>
+                                    <constraint firstAttribute="height" constant="156" id="vjU-tz-VpJ"/>
+                                </constraints>
+                                <mutableString key="text">Beatriz Barbosa é a idealizadora da marca We.Me 3D, marca de acessórios confeccionados em impressora 3D. Sua marca foi lançada na London Fashion Week em setembro de 2017. Como se isso já não bastasse pra marca ser super cool, ela ainda quis imprimir as peças em um filamento que não agredisse o meio ambiente após o descarte. A inspiração para a criação da marca surgiu de um intercâmbio voluntário para a Índia. Nesse intercâmbio ela pôde ver como a cadeia produtiva da moda é agressiva tanto para o meio ambiente quanto para as pessoas da comunidade que a hospedou. O que a chocou muito na viagem foi a situação de extrema pobreza que as pessoas viviam, mas nos contou que não chegou a se sentir insegura e que todos a trataram super bem enquanto esteve lá. 
+O estalo de honrar essas pessoas que a receberam de braços abertos veio quando ela já estava de volta ao Brasil. Olhando as fotos da viagem, Beatriz percebeu que todas as imagens tinham uma coisa em comum: o lixo, fosse em pontos turísticos como o Taj Mahal ou na comunidade em que se hospedou. Então nasceu o desejo de criar algo que não virasse lixo, de ter um propósito e não fazer algo apenas por fazer. Ela já flertava com a impressora 3D da faculdade, e depois de fazer alguns testes acabou comprando a própria máquina. Os estudos para descobrir qual filamento usar na hora da impressão tomaram algum tempo, até que ela chegou na fibra que é feita a partir do milho. Além de ser um material que não causa alergia, ele se decompõe num período de 6 a 24 meses - ou seja, tempo infinitamente menor do que o plástico derivado do petróleo. 
+Depois de encontrar um propósito e a matéria-prima perfeita, Beatriz só precisava de um tema. Ela pensou então em homenagear os indianos, que a encantaram com seu código de conduta - e foi essa a inspiração da primeira coleção! As peças foram impressas em azul e verde com detalhes metálicos (como pinos de brinco e correntes de colar) em prata.
+Beatriz deu continuidade ao projeto mesmo depois de formada, e hoje a We.Me 3D está instalada na incubadora de projetos da Belas Artes.
+A segunda coleção desenvolvida por ela manteve esse cunho ambiental. Batizada de Fauna, é inspirada nos animais brasileiros que correm risco de extinção, como a Tartaruga de Pente. Das vendas dessa coleção, 5% vão para uma instituição de proteção aos animais. Algumas peças ainda tem pintura exclusiva de uma artista cujo nome é guardado a sete chaves - e que a Beatriz não revelou nem pra gente!
+Além disso, ela trabalhou em parceria com a influencer Enoara Monteiro, do Tocantins. A coleção, que foi lançada em outubro desse ano, foi inspirada no Capim Dourado e tem 20% do valor das vendas doados para uma instituição que ajuda pessoas em situação de risco.
+Todas as peças da We.Me 3D são superleves, com brincos que chegam a pesar apenas 0,5g. No site é possível personalizar os produtos, com 15 opções de cores disponíveis - o difícil é conseguir decidir entre as opções! Os braceletes e chockers foram pensados para que pessoas com pulsos e pescoços mais gordinhos ou mais finos pudessem usar! Ou seja, além de ajudar o meio ambiente e das pessoas que vivem nele, a marca também é democrática! 
+</mutableString>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="22"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9EH-Ao-TBx">
+                                <rect key="frame" x="292" y="584" width="83" height="83"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="83" id="2RR-rH-Wmm"/>
+                                    <constraint firstAttribute="height" constant="83" id="iKg-IU-Sqc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="18"/>
+                                <state key="normal" image="plus_icon"/>
+                                <connections>
+                                    <segue destination="qV0-a7-O8b" kind="show" id="SFW-xV-zTw"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="DTj-Rs-tdr" firstAttribute="leading" secondItem="KQm-lN-zG2" secondAttribute="leading" constant="16" id="3Xh-tA-ecD"/>
+                            <constraint firstItem="9EH-Ao-TBx" firstAttribute="bottom" secondItem="KQm-lN-zG2" secondAttribute="bottom" id="M4L-im-C3y"/>
+                            <constraint firstItem="9EH-Ao-TBx" firstAttribute="trailing" secondItem="KQm-lN-zG2" secondAttribute="trailing" id="N5v-Qf-H8e"/>
+                            <constraint firstItem="DTj-Rs-tdr" firstAttribute="top" secondItem="KQm-lN-zG2" secondAttribute="top" constant="16" id="WCB-Le-MiF"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="KQm-lN-zG2"/>
                     </view>
+                    <connections>
+                        <outlet property="button" destination="9EH-Ao-TBx" id="xEo-Cq-ibg"/>
+                        <outlet property="image" destination="uQF-Mg-kOz" id="e3a-cv-iag"/>
+                        <outlet property="textView" destination="DTj-Rs-tdr" id="bOj-uv-6si"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2hX-Zf-VfY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="839" y="142"/>
+            <point key="canvasLocation" x="837.60000000000002" y="141.67916041979012"/>
+        </scene>
+        <!--Issue Four Gallery View Controller-->
+        <scene sceneID="NMg-gU-jAy">
+            <objects>
+                <viewController id="qV0-a7-O8b" customClass="IssueFourGalleryViewController" customModule="FashionDVT" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lWQ-vP-QYu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="bi7-fm-k9y">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="cbI-Z2-zrh">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Ajn-fx-ap1">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="qV0-a7-O8b" id="EMq-EA-sU3"/>
+                                    <outlet property="delegate" destination="qV0-a7-O8b" id="LDQ-x4-eid"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="bi7-fm-k9y" firstAttribute="trailing" secondItem="8vw-ZC-Dg1" secondAttribute="trailing" id="Mhv-aj-f0s"/>
+                            <constraint firstItem="bi7-fm-k9y" firstAttribute="bottom" secondItem="8vw-ZC-Dg1" secondAttribute="bottom" id="eTM-7g-B61"/>
+                            <constraint firstItem="bi7-fm-k9y" firstAttribute="leading" secondItem="8vw-ZC-Dg1" secondAttribute="leading" id="qSg-S7-wEd"/>
+                            <constraint firstItem="bi7-fm-k9y" firstAttribute="top" secondItem="lWQ-vP-QYu" secondAttribute="top" id="ylX-NR-4Hf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8vw-ZC-Dg1"/>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="bi7-fm-k9y" id="5dS-ur-i0v"/>
+                        <segue destination="X6S-Pe-0cx" kind="show" identifier="showPhoto" id="D0A-6n-QRg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gn6-Zh-Mx1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1596" y="141.67916041979012"/>
+        </scene>
+        <!--Issue Four Photo View Controller-->
+        <scene sceneID="ZDX-0g-evl">
+            <objects>
+                <viewController id="X6S-Pe-0cx" customClass="IssueFourPhotoViewController" customModule="FashionDVT" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qaG-5x-4J2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Qh4-AZ-5yw">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Qh4-AZ-5yw" firstAttribute="top" secondItem="qaG-5x-4J2" secondAttribute="top" id="0cB-lx-ddm"/>
+                            <constraint firstItem="Qh4-AZ-5yw" firstAttribute="leading" secondItem="uKS-Cf-8BA" secondAttribute="leading" id="KGj-9l-oc4"/>
+                            <constraint firstItem="Qh4-AZ-5yw" firstAttribute="bottom" secondItem="uKS-Cf-8BA" secondAttribute="bottom" id="dwc-MZ-jLL"/>
+                            <constraint firstItem="Qh4-AZ-5yw" firstAttribute="trailing" secondItem="uKS-Cf-8BA" secondAttribute="trailing" id="lfZ-ER-hL7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="uKS-Cf-8BA"/>
+                    </view>
+                    <connections>
+                        <outlet property="photo" destination="Qh4-AZ-5yw" id="fL1-eg-Hzf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9T7-uC-w9f" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2316" y="139.880059970015"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="pauta4_photo1" width="4016" height="6016"/>
+        <image name="plus_icon" width="128" height="128"/>
+    </resources>
 </document>
