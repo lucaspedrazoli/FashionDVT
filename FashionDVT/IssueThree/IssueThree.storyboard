@@ -4,6 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -59,13 +60,13 @@
                                     <constraint firstAttribute="width" constant="149" id="ohS-ts-alk"/>
                                     <constraint firstAttribute="height" constant="156" id="wQh-Gp-JnX"/>
                                 </constraints>
-                                <mutableString key="text">O projeto “A arte” foi o tema do encontro com Heloísa Gomez, formada em moda em 2016 e estudante de artes visuais. Depois de brilhar com esse trabalho no Salão Satélite de Milão em 2017 e de expor as peças na SP-Arte do mesmo ano, ela conta como foram os processos para tudo ficar do jeitinho que ela queria!
+                                <string key="text">O projeto “A arte” foi o tema do encontro com Heloísa Gomez, formada em moda em 2016 e estudante de artes visuais. Depois de brilhar com esse trabalho no Salão Satélite de Milão em 2017 e de expor as peças na SP-Arte do mesmo ano, ela conta como foram os processos para tudo ficar do jeitinho que ela queria!
 Helô, como gosta de chamada, se inspirou no pensamento japonês, o Wabisabi, que consiste em valorizar a beleza da imperfeição. Dentro desse pensamento existe o Kintsugi, arte japonesa que põe esse pensamento em prática reconectando pedaços de cerâmica ou porcelana quebrados com prata ou ouro. E foram as técnicas do Kintsugi que a orientaram para criar uma coleção de roupas femininas.
 A partir daí surgiu a ideia de quebrar diversos pratos e utilizar os cacos para dar forma aos recortes de tecido que formariam as roupas. 
 O processo é assim: primeiro, a seda é posicionada sob um pedaço de plástico bolha e por cima vão os tufos de lã. Para que a seda e a lã se transformem em uma coisa só, Helô borrifa uma mistura de água e sabão, enrola tudo e pressiona. Os fios de lã acabam ficando entremeados com a seda, e o resultado é um tecido super resistente. Por conta da água, a seda acaba encolhendo bastante. Vários testes foram feitos até que ela conseguisse chegar na fórmula perfeita.
 Aí entra a parte divertida e até terapêutica do processo: quebrar os pratos! Os cacos formados são colocados em cima do tecido e recortados, mantendo a forma mas ampliando o tamanho. Esses retalhos são posicionados no manequim e por meio da moulage as peças vão ganhando forma. Porém, ao invés de costurar esses pedaços, eles são unidos pelo mesmo processo citado acima. Como o tecido que se forma é bastante resistente, isso permitiu que as peças não tivessem costura com linha. E, como a seda encolhe por causa do contato com a água e sabão, as peças ganham um plissado mais orgânico. Nos acessórios da coleção também foram utilizados cacos de cerâmica.
 Este ano, Heloísa inaugurou uma marca de streetwear masculina, lançada em setembro, a OMEZ Company. Caso você queira comprar uma das peças ou saber mais informações, entre em contato com a Helô! O insta dela é @heloisavivancos e o site é www.heloisavivancos.com
-</mutableString>
+</string>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="22"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -155,7 +156,7 @@ Este ano, Heloísa inaugurou uma marca de streetwear masculina, lançada em sete
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Sb2-qT-5Oe">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Sb2-qT-5Oe">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                         </subviews>
@@ -178,7 +179,7 @@ Este ano, Heloísa inaugurou uma marca de streetwear masculina, lançada em sete
         </scene>
     </scenes>
     <resources>
-        <image name="pauta3_photo1" width="3456" height="5184"/>
+        <image name="pauta3_photo1" width="484" height="722"/>
         <image name="plus_icon" width="128" height="128"/>
     </resources>
 </document>
