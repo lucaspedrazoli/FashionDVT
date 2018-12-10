@@ -7,7 +7,7 @@ class IssueSixIntroViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    animationView.setAnimation(named: "anima_benucci_v2")
+    animationView.setAnimation(named: "anima_benucci_v3")
     animationView.play(completion: { _ in
       self.performSegue(withIdentifier: "next", sender: nil)
     })
