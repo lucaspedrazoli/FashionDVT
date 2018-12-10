@@ -66,18 +66,8 @@ class IssueTwoGalleryViewController: UIViewController, UICollectionViewDelegate,
   private func addSwipeGestures() {
     collectionView.isUserInteractionEnabled = true
     let swipeBack = UISwipeGestureRecognizer(target: self, action: #selector(swipeBack(sender:)))
-    let swipeDown = UISwipeGestureRecognizer(target: self, action: #selector(swipeQuit(sender:)))
     swipeBack.direction = .right
-    swipeDown.direction = .down
     collectionView.addGestureRecognizer(swipeBack)
-    collectionView.addGestureRecognizer(swipeDown)
-  }
-  
-  @objc func swipeQuit(sender: UISwipeGestureRecognizer) {
-    UIView.animate(withDuration: 0.5, animations: {
-      self.collectionView.alpha = 0
-      self.navigationController?.popToRootViewController(animated: true)
-    })
   }
   
   @objc func swipeBack(sender: UISwipeGestureRecognizer) {
