@@ -40,20 +40,101 @@
             </objects>
             <point key="canvasLocation" x="100" y="169.56521739130437"/>
         </scene>
-        <!--View Controller-->
+        <!--Issue Six Text View Controller-->
         <scene sceneID="hYa-2W-fmm">
             <objects>
-                <viewController id="bN6-rL-BdM" sceneMemberID="viewController">
+                <viewController id="bN6-rL-BdM" customClass="IssueSixTextViewController" customModule="FashionDVT" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="05J-mf-97F">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pauta6_photo_texto" translatesAutoresizingMaskIntoConstraints="NO" id="sFh-Yd-aUm">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qXS-iv-ADH">
+                                <rect key="frame" x="292" y="584" width="83" height="83"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="83" id="0Fy-xm-Rke"/>
+                                    <constraint firstAttribute="width" constant="83" id="BaH-3Q-bg2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="18"/>
+                                <state key="normal" image="plus_icon"/>
+                                <connections>
+                                    <segue destination="jyc-Je-8oO" kind="show" id="k07-LD-oPB"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" bouncesZoom="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="LDy-vL-5pp" customClass="TextView" customModule="FashionDVT" customModuleProvider="target">
+                                <rect key="frame" x="16" y="36" width="149" height="156"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="156" id="RwO-cy-2yE"/>
+                                    <constraint firstAttribute="width" constant="149" id="eNX-PP-e52"/>
+                                </constraints>
+                                <mutableString key="text">Foi no 2º semestre do curso de Design de Produto que Ricardo Benucci percebeu a versatilidade do PVC, principal matéria-prima utilizada por ele em seus trabalhos. Em uma das disciplinas de design geral, ele precisava criar um produto e escolheu fazer um vestido de garrafa PET. No entanto, para tornar o material diferente e não deixá-lo com cara de artesanato, ele aproximou a matéria-prima do fogo, deixando-o mais maleável. Dessa maneira o plástico se contorce espontaneamente e se transforma em formas orgânicas. Nessa peça, as garrafas PET utilizadas eram transparentes, mas depois ele pintou de branco e o plástico PVC se tornou um "aviamento". Toda a parte de cima do vestido era feita com esse material e a saia foi feita de tule. 
+Depois dessa primeira experiência com o material, Ricardo desenvolveu uma série de outros produtos. O vestido foi porta de entrada para as famosas head-pieces criadas por ele, que são únicas e também foram feitas com o PVC, utilizando a mesma técnica. O flerte de Ricardo com a moda não termina por aí! Ele também desenvolveu uma clutch com aplicações de espelho simplesmente maravilhosa!!
+Mas foi com o centro de mesa leque que o estudante de design de produto foi para o Salão dos móveis de Milão esse ano. A peça, que pode ser usada como fruteira, cesto de pães ou objeto de decoração, é feita em módulos. É um objeto que estimula a criatividade, já que esses módulos são conectados com imã, o que permite o consumidor trabalhar a forma do produto. 
+Já com a luminária Lumine II, da coleção Aquae Motum inspiradas na fluidez, liberdade e poder da água, Ricardo foi para a SP Arte em 2017. As peças dessa coleção visam aproximar o usuário da arte, pois são verdadeiras esculturas. Ele nos conta que, para fazer as esculturas que iluminam, utiliza placas de plástico PVC entre 0,5 e 0,8 mm. Essa coleção foi dividida em dois, Lumine e Umbra (claro e escuro, respectivamente) e foi inspirada nos Irmãos Campana.
+Ricardo comenta que o principal material utilizado por ele, o plástico PVC, não gera gás poluente ao entrar em combustão e muito do material que sobra ele utiliza para fazer outras peças, como acessórios.
+
+</mutableString>
+                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="22"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="sFh-Yd-aUm" firstAttribute="leading" secondItem="lvf-6a-erd" secondAttribute="leading" id="5mj-Hv-g4J"/>
+                            <constraint firstItem="sFh-Yd-aUm" firstAttribute="trailing" secondItem="lvf-6a-erd" secondAttribute="trailing" id="7cb-Z0-Wh7"/>
+                            <constraint firstItem="sFh-Yd-aUm" firstAttribute="bottom" secondItem="lvf-6a-erd" secondAttribute="bottom" id="EJz-Vb-aoP"/>
+                            <constraint firstItem="qXS-iv-ADH" firstAttribute="bottom" secondItem="lvf-6a-erd" secondAttribute="bottom" id="IoF-DZ-V1P"/>
+                            <constraint firstItem="LDy-vL-5pp" firstAttribute="leading" secondItem="lvf-6a-erd" secondAttribute="leading" constant="16" id="JXY-k2-F5i"/>
+                            <constraint firstItem="qXS-iv-ADH" firstAttribute="trailing" secondItem="lvf-6a-erd" secondAttribute="trailing" id="Laq-fg-97t"/>
+                            <constraint firstItem="LDy-vL-5pp" firstAttribute="top" secondItem="lvf-6a-erd" secondAttribute="top" constant="16" id="gEh-Wr-ZJd"/>
+                            <constraint firstItem="sFh-Yd-aUm" firstAttribute="top" secondItem="05J-mf-97F" secondAttribute="top" id="xf4-W8-DbB"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="lvf-6a-erd"/>
                     </view>
+                    <connections>
+                        <outlet property="image" destination="sFh-Yd-aUm" id="S7J-yL-a04"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="79U-jQ-2M4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="834" y="170"/>
+            <point key="canvasLocation" x="832.79999999999995" y="169.56521739130437"/>
+        </scene>
+        <!--Issue Six Galley View Controller-->
+        <scene sceneID="gCY-dK-d6h">
+            <objects>
+                <viewController id="jyc-Je-8oO" customClass="IssueSixGalleyViewController" customModule="FashionDVT" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CDm-Ta-Ftw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Ehu-VE-tlV"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="USq-s5-tkU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1508" y="170"/>
+        </scene>
+        <!--Issue Six Photo View Controller-->
+        <scene sceneID="AGH-EO-Se6">
+            <objects>
+                <viewController id="4aW-Rh-WYE" customClass="IssueSixPhotoViewController" customModule="FashionDVT" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DiL-1L-dz8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="iGI-Va-0gf"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k90-Un-SFo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2182" y="170"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="pauta6_photo_texto" width="539" height="960"/>
+        <image name="plus_icon" width="128" height="128"/>
+    </resources>
 </document>
