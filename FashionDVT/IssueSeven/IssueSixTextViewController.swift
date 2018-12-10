@@ -30,7 +30,7 @@ class IssueSixTextViewController: UIViewController {
   @objc func swipeBack(sender: UISwipeGestureRecognizer) {
     UIView.animate(withDuration: 0.5, animations: {
       self.image.alpha = 0
-      self.navigationController?.popViewController(animated: true)
+      self.navigationController?.popToRootViewController(animated: true)
     })
   }
 }
