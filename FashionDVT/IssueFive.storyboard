@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -59,12 +58,12 @@
                                     <constraint firstAttribute="height" constant="156" id="Hon-QS-wF7"/>
                                     <constraint firstAttribute="width" constant="149" id="sKs-Wh-A2L"/>
                                 </constraints>
-                                <mutableString key="text">Com foco nos millennials, a marca de maquiagem Lacre 21 trata o empoderamento feminino com frequência. "A empresa nasceu a partir do momento em que percebemos que faltava uma marca de maquiagem no mercado nacional que tivesse um posicionamento definido e que tratasse dessas questões tão em voga atualmente" nos conta Maira Okamoto, gerente de produto da Lacre 21. A ideia é que nas campanhas só tenham pessoas comuns, na maior vibe gente como a gente. Com isso, a marca propõe tratar de assuntos como a desconstrução do padrão de beleza de forma intensa, porém leve e fun.
+                                <string key="text">Com foco nos millennials, a marca de maquiagem Lacre 21 trata o empoderamento feminino com frequência. "A empresa nasceu a partir do momento em que percebemos que faltava uma marca de maquiagem no mercado nacional que tivesse um posicionamento definido e que tratasse dessas questões tão em voga atualmente" nos conta Maira Okamoto, gerente de produto da Lacre 21. A ideia é que nas campanhas só tenham pessoas comuns, na maior vibe gente como a gente. Com isso, a marca propõe tratar de assuntos como a desconstrução do padrão de beleza de forma intensa, porém leve e fun.
 O lançamento da marca, que aconteceu em setembro deste ano na Beauty Fair, os levou para as melhores perfumarias do país.
 Os preços vão de R$15 a R$39 e nós da redação indicamos a base (R$30,90), carro chefe da marca com cobertura média e disponível em 16 tons. O glitter em gel (R$39,00), com ótima fixação, também é um produto super legal e que promete - e cumpre! - fazer toda a diferença!
 O e-commerce foi lançado em setembro deste ano, com envios para todo o Brasil. Para ficar de olho!
 
-</mutableString>
+</string>
                                 <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="22"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -120,16 +119,7 @@ O e-commerce foi lançado em setembro deste ano, com envios para todo o Brasil. 
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="9Vx-w7-7kR">
-                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </view>
-                                    </collectionViewCell>
-                                </cells>
+                                <cells/>
                                 <connections>
                                     <outlet property="dataSource" destination="ZKZ-D6-seq" id="O9B-r3-NUB"/>
                                     <outlet property="delegate" destination="ZKZ-D6-seq" id="Ohn-c1-kzI"/>

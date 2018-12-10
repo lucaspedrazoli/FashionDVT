@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -60,14 +59,14 @@
                                     <constraint firstAttribute="width" constant="149" id="GU4-fP-t1g"/>
                                     <constraint firstAttribute="height" constant="156" id="vjU-tz-VpJ"/>
                                 </constraints>
-                                <mutableString key="text">Beatriz Barbosa é a idealizadora da marca We.Me 3D, marca de acessórios confeccionados em impressora 3D. Sua marca foi lançada na London Fashion Week em setembro de 2017. Como se isso já não bastasse pra marca ser super cool, ela ainda quis imprimir as peças em um filamento que não agredisse o meio ambiente após o descarte. A inspiração para a criação da marca surgiu de um intercâmbio voluntário para a Índia. Nesse intercâmbio ela pôde ver como a cadeia produtiva da moda é agressiva tanto para o meio ambiente quanto para as pessoas da comunidade que a hospedou. O que a chocou muito na viagem foi a situação de extrema pobreza que as pessoas viviam, mas nos contou que não chegou a se sentir insegura e que todos a trataram super bem enquanto esteve lá. 
+                                <string key="text">Beatriz Barbosa é a idealizadora da marca We.Me 3D, marca de acessórios confeccionados em impressora 3D. Sua marca foi lançada na London Fashion Week em setembro de 2017. Como se isso já não bastasse pra marca ser super cool, ela ainda quis imprimir as peças em um filamento que não agredisse o meio ambiente após o descarte. A inspiração para a criação da marca surgiu de um intercâmbio voluntário para a Índia. Nesse intercâmbio ela pôde ver como a cadeia produtiva da moda é agressiva tanto para o meio ambiente quanto para as pessoas da comunidade que a hospedou. O que a chocou muito na viagem foi a situação de extrema pobreza que as pessoas viviam, mas nos contou que não chegou a se sentir insegura e que todos a trataram super bem enquanto esteve lá. 
 O estalo de honrar essas pessoas que a receberam de braços abertos veio quando ela já estava de volta ao Brasil. Olhando as fotos da viagem, Beatriz percebeu que todas as imagens tinham uma coisa em comum: o lixo, fosse em pontos turísticos como o Taj Mahal ou na comunidade em que se hospedou. Então nasceu o desejo de criar algo que não virasse lixo, de ter um propósito e não fazer algo apenas por fazer. Ela já flertava com a impressora 3D da faculdade, e depois de fazer alguns testes acabou comprando a própria máquina. Os estudos para descobrir qual filamento usar na hora da impressão tomaram algum tempo, até que ela chegou na fibra que é feita a partir do milho. Além de ser um material que não causa alergia, ele se decompõe num período de 6 a 24 meses - ou seja, tempo infinitamente menor do que o plástico derivado do petróleo. 
 Depois de encontrar um propósito e a matéria-prima perfeita, Beatriz só precisava de um tema. Ela pensou então em homenagear os indianos, que a encantaram com seu código de conduta - e foi essa a inspiração da primeira coleção! As peças foram impressas em azul e verde com detalhes metálicos (como pinos de brinco e correntes de colar) em prata.
 Beatriz deu continuidade ao projeto mesmo depois de formada, e hoje a We.Me 3D está instalada na incubadora de projetos da Belas Artes.
 A segunda coleção desenvolvida por ela manteve esse cunho ambiental. Batizada de Fauna, é inspirada nos animais brasileiros que correm risco de extinção, como a Tartaruga de Pente. Das vendas dessa coleção, 5% vão para uma instituição de proteção aos animais. Algumas peças ainda tem pintura exclusiva de uma artista cujo nome é guardado a sete chaves - e que a Beatriz não revelou nem pra gente!
 Além disso, ela trabalhou em parceria com a influencer Enoara Monteiro, do Tocantins. A coleção, que foi lançada em outubro desse ano, foi inspirada no Capim Dourado e tem 20% do valor das vendas doados para uma instituição que ajuda pessoas em situação de risco.
 Todas as peças da We.Me 3D são superleves, com brincos que chegam a pesar apenas 0,5g. No site é possível personalizar os produtos, com 15 opções de cores disponíveis - o difícil é conseguir decidir entre as opções! Os braceletes e chockers foram pensados para que pessoas com pulsos e pescoços mais gordinhos ou mais finos pudessem usar! Ou seja, além de ajudar o meio ambiente e das pessoas que vivem nele, a marca também é democrática! 
-</mutableString>
+</string>
                                 <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="22"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -120,16 +119,7 @@ Todas as peças da We.Me 3D são superleves, com brincos que chegam a pesar apen
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Ajn-fx-ap1">
-                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </view>
-                                    </collectionViewCell>
-                                </cells>
+                                <cells/>
                                 <connections>
                                     <outlet property="dataSource" destination="qV0-a7-O8b" id="EMq-EA-sU3"/>
                                     <outlet property="delegate" destination="qV0-a7-O8b" id="LDQ-x4-eid"/>
