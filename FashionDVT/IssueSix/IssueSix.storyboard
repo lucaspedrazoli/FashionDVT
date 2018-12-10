@@ -157,12 +157,17 @@ Ricardo comenta que o principal material utilizado por ele, o plástico PVC, nã
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PrY-GS-0YY">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PrY-GS-0YY">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="PrY-GS-0YY" firstAttribute="leading" secondItem="iGI-Va-0gf" secondAttribute="leading" id="63M-4v-JJr"/>
+                            <constraint firstItem="PrY-GS-0YY" firstAttribute="top" secondItem="DiL-1L-dz8" secondAttribute="top" id="9y9-Np-fri"/>
+                            <constraint firstItem="PrY-GS-0YY" firstAttribute="bottom" secondItem="iGI-Va-0gf" secondAttribute="bottom" id="RQC-ct-RIe"/>
+                            <constraint firstItem="PrY-GS-0YY" firstAttribute="trailing" secondItem="iGI-Va-0gf" secondAttribute="trailing" id="sP9-MY-VAe"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="iGI-Va-0gf"/>
                     </view>
                     <connections>
