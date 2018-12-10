@@ -60,7 +60,7 @@
                                 <fontDescription key="fontDescription" type="system" weight="black" pointSize="18"/>
                                 <state key="normal" image="plus_icon"/>
                                 <connections>
-                                    <segue destination="jyc-Je-8oO" kind="show" id="k07-LD-oPB"/>
+                                    <segue destination="jyc-Je-8oO" kind="show" id="1i4-DZ-EKd"/>
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" bouncesZoom="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="LDy-vL-5pp" customClass="TextView" customModule="FashionDVT" customModuleProvider="target">
@@ -95,6 +95,7 @@ Ricardo comenta que o principal material utilizado por ele, o plástico PVC, nã
                         <viewLayoutGuide key="safeArea" id="lvf-6a-erd"/>
                     </view>
                     <connections>
+                        <outlet property="button" destination="qXS-iv-ADH" id="wzA-UR-VNN"/>
                         <outlet property="image" destination="sFh-Yd-aUm" id="S7J-yL-a04"/>
                     </connections>
                 </viewController>
@@ -109,9 +110,40 @@ Ricardo comenta que o principal material utilizado por ele, o plástico PVC, nã
                     <view key="view" contentMode="scaleToFill" id="CDm-Ta-Ftw">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="JNd-gr-Ilg">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ymd-Ms-e8T">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="jyc-Je-8oO" id="uhl-fu-lWO"/>
+                                    <outlet property="delegate" destination="jyc-Je-8oO" id="QfN-Jh-h6D"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="JNd-gr-Ilg" firstAttribute="bottom" secondItem="Ehu-VE-tlV" secondAttribute="bottom" id="ajR-fN-0eG"/>
+                            <constraint firstItem="JNd-gr-Ilg" firstAttribute="trailing" secondItem="Ehu-VE-tlV" secondAttribute="trailing" id="mZF-8Z-QRk"/>
+                            <constraint firstItem="JNd-gr-Ilg" firstAttribute="top" secondItem="CDm-Ta-Ftw" secondAttribute="top" id="pNi-qF-9FE"/>
+                            <constraint firstItem="JNd-gr-Ilg" firstAttribute="leading" secondItem="Ehu-VE-tlV" secondAttribute="leading" id="q2c-Ku-uk1"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Ehu-VE-tlV"/>
                     </view>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="heroModalAnimationTypeString" value="pageIn(down)"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="collectionView" destination="JNd-gr-Ilg" id="wtW-Nl-iBE"/>
+                        <segue destination="4aW-Rh-WYE" kind="show" identifier="showPhoto" id="4Wa-4X-0lu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="USq-s5-tkU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -124,13 +156,22 @@ Ricardo comenta que o principal material utilizado por ele, o plástico PVC, nã
                     <view key="view" contentMode="scaleToFill" id="DiL-1L-dz8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PrY-GS-0YY">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="iGI-Va-0gf"/>
                     </view>
+                    <connections>
+                        <outlet property="photo" destination="PrY-GS-0YY" id="uYb-YX-o68"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k90-Un-SFo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2182" y="170"/>
+            <point key="canvasLocation" x="2181.5999999999999" y="169.56521739130437"/>
         </scene>
     </scenes>
     <resources>
