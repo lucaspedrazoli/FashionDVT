@@ -4,34 +4,449 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Test View Controller-->
+        <!--Issue Seven Photo View Controller-->
         <scene sceneID="K59-Zf-aV4">
             <objects>
-                <viewController storyboardIdentifier="IssueSeven" id="rTR-5p-qbZ" customClass="TestViewController" customModule="FashionDVT" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="IssueSeven" id="rTR-5p-qbZ" customClass="IssueSevenPhotoViewController" customModule="FashionDVT" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RFt-w2-zeh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="7" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bsd-mT-bGL">
-                                <rect key="frame" x="176" y="292" width="23" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="1J7-UA-4HO">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="1J7-UA-4HO" firstAttribute="top" secondItem="RFt-w2-zeh" secondAttribute="top" id="HE8-9j-5QY"/>
+                            <constraint firstItem="1J7-UA-4HO" firstAttribute="bottom" secondItem="iBJ-mB-1f9" secondAttribute="bottom" id="O0L-f5-8ls"/>
+                            <constraint firstItem="1J7-UA-4HO" firstAttribute="leading" secondItem="iBJ-mB-1f9" secondAttribute="leading" id="YXo-AK-Djl"/>
+                            <constraint firstItem="1J7-UA-4HO" firstAttribute="trailing" secondItem="iBJ-mB-1f9" secondAttribute="trailing" id="lhM-xt-oUE"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="iBJ-mB-1f9"/>
                     </view>
+                    <connections>
+                        <outlet property="image" destination="1J7-UA-4HO" id="ba9-ou-vde"/>
+                        <segue destination="uCq-Pp-SH2" kind="show" identifier="next" id="WgF-Tz-p7f"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rco-t4-9bq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="90" y="176"/>
+            <point key="canvasLocation" x="88.799999999999997" y="175.86206896551727"/>
+        </scene>
+        <!--Issue Seven Photo View Controller-->
+        <scene sceneID="ler-Fo-pMp">
+            <objects>
+                <viewController id="zmG-mR-Ui0" customClass="IssueSevenPhotoViewController" customModule="FashionDVT" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ClO-bk-2ty">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="9" translatesAutoresizingMaskIntoConstraints="NO" id="TL4-ua-6YP">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="TL4-ua-6YP" firstAttribute="leading" secondItem="PTL-ut-Rh6" secondAttribute="leading" id="DCn-rz-OhE"/>
+                            <constraint firstItem="TL4-ua-6YP" firstAttribute="bottom" secondItem="PTL-ut-Rh6" secondAttribute="bottom" id="rhc-A0-GaK"/>
+                            <constraint firstItem="TL4-ua-6YP" firstAttribute="top" secondItem="ClO-bk-2ty" secondAttribute="top" id="soX-ol-BJN"/>
+                            <constraint firstItem="TL4-ua-6YP" firstAttribute="trailing" secondItem="PTL-ut-Rh6" secondAttribute="trailing" id="zru-8U-B94"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="PTL-ut-Rh6"/>
+                    </view>
+                    <connections>
+                        <outlet property="image" destination="TL4-ua-6YP" id="uRJ-x7-ucg"/>
+                        <segue destination="c9Q-lO-RH1" kind="show" identifier="next" id="lRk-Q0-Csi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y7p-jE-Lph" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="377" y="855"/>
+        </scene>
+        <!--Issue Seven Photo View Controller-->
+        <scene sceneID="edK-7I-Z2K">
+            <objects>
+                <viewController id="c9Q-lO-RH1" customClass="IssueSevenPhotoViewController" customModule="FashionDVT" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ex9-Wi-Plp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="10" translatesAutoresizingMaskIntoConstraints="NO" id="44s-sv-jm3">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="44s-sv-jm3" firstAttribute="bottom" secondItem="9Mn-uk-deR" secondAttribute="bottom" id="EAw-jN-oRh"/>
+                            <constraint firstItem="44s-sv-jm3" firstAttribute="top" secondItem="ex9-Wi-Plp" secondAttribute="top" id="h5j-3D-SwZ"/>
+                            <constraint firstItem="44s-sv-jm3" firstAttribute="trailing" secondItem="9Mn-uk-deR" secondAttribute="trailing" id="nBb-ta-H5V"/>
+                            <constraint firstItem="44s-sv-jm3" firstAttribute="leading" secondItem="9Mn-uk-deR" secondAttribute="leading" id="tRa-Aj-bq6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="9Mn-uk-deR"/>
+                    </view>
+                    <connections>
+                        <outlet property="image" destination="44s-sv-jm3" id="YxK-kh-O4L"/>
+                        <segue destination="a43-ch-Mvp" kind="show" identifier="next" id="3O1-T5-Ghp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hrw-dB-Jx4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1094" y="859"/>
+        </scene>
+        <!--Issue Seven Photo View Controller-->
+        <scene sceneID="gWL-zF-OjA">
+            <objects>
+                <viewController id="a43-ch-Mvp" customClass="IssueSevenPhotoViewController" customModule="FashionDVT" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CdE-re-lLE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="11" translatesAutoresizingMaskIntoConstraints="NO" id="Og2-YD-dpf">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Og2-YD-dpf" firstAttribute="top" secondItem="CdE-re-lLE" secondAttribute="top" id="0Au-hk-KRc"/>
+                            <constraint firstItem="Og2-YD-dpf" firstAttribute="leading" secondItem="oWj-4E-2tL" secondAttribute="leading" id="9nD-0q-Lcu"/>
+                            <constraint firstItem="Og2-YD-dpf" firstAttribute="bottom" secondItem="oWj-4E-2tL" secondAttribute="bottom" id="L4w-L2-hPc"/>
+                            <constraint firstItem="Og2-YD-dpf" firstAttribute="trailing" secondItem="oWj-4E-2tL" secondAttribute="trailing" id="UiO-yi-NJT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="oWj-4E-2tL"/>
+                    </view>
+                    <connections>
+                        <outlet property="image" destination="Og2-YD-dpf" id="OqF-oI-ewY"/>
+                        <segue destination="zd7-GE-0o9" kind="show" identifier="next" id="u9h-bq-8ht"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NtZ-p1-9CW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1804" y="869"/>
+        </scene>
+        <!--Issue Seven Photo View Controller-->
+        <scene sceneID="wnL-la-Fca">
+            <objects>
+                <viewController id="zd7-GE-0o9" customClass="IssueSevenPhotoViewController" customModule="FashionDVT" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="p9V-Et-thz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="12" translatesAutoresizingMaskIntoConstraints="NO" id="9jv-o2-Uec">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="9jv-o2-Uec" firstAttribute="bottom" secondItem="JA1-KC-ZSP" secondAttribute="bottom" id="Ijb-Tt-StC"/>
+                            <constraint firstItem="9jv-o2-Uec" firstAttribute="leading" secondItem="JA1-KC-ZSP" secondAttribute="leading" id="a1r-PR-oAZ"/>
+                            <constraint firstItem="9jv-o2-Uec" firstAttribute="trailing" secondItem="JA1-KC-ZSP" secondAttribute="trailing" id="k19-Hb-8Cj"/>
+                            <constraint firstItem="9jv-o2-Uec" firstAttribute="top" secondItem="p9V-Et-thz" secondAttribute="top" id="z0K-4z-OAp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="JA1-KC-ZSP"/>
+                    </view>
+                    <connections>
+                        <outlet property="image" destination="9jv-o2-Uec" id="7F6-Q1-ckd"/>
+                        <segue destination="Kxk-db-una" kind="show" identifier="next" id="pGD-Zv-je7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TQW-mh-ggt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2489" y="877"/>
+        </scene>
+        <!--Issue Seven Photo View Controller-->
+        <scene sceneID="Obc-48-XnW">
+            <objects>
+                <viewController id="Kxk-db-una" customClass="IssueSevenPhotoViewController" customModule="FashionDVT" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ESl-cu-a0i">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="13" translatesAutoresizingMaskIntoConstraints="NO" id="7a7-Te-c7z">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="7a7-Te-c7z" firstAttribute="bottom" secondItem="3Hx-Ib-Jpp" secondAttribute="bottom" id="3fk-zf-HgL"/>
+                            <constraint firstItem="7a7-Te-c7z" firstAttribute="top" secondItem="ESl-cu-a0i" secondAttribute="top" id="IaA-Yt-yrA"/>
+                            <constraint firstItem="7a7-Te-c7z" firstAttribute="leading" secondItem="3Hx-Ib-Jpp" secondAttribute="leading" id="mGU-bG-0bc"/>
+                            <constraint firstItem="7a7-Te-c7z" firstAttribute="trailing" secondItem="3Hx-Ib-Jpp" secondAttribute="trailing" id="xbz-ae-K8f"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3Hx-Ib-Jpp"/>
+                    </view>
+                    <connections>
+                        <outlet property="image" destination="7a7-Te-c7z" id="UGb-fh-qux"/>
+                        <segue destination="tJS-oP-lsu" kind="show" identifier="next" id="REo-In-QsB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cEy-xa-9bR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3183" y="877"/>
+        </scene>
+        <!--Issue Seven Photo View Controller-->
+        <scene sceneID="e75-6U-MEg">
+            <objects>
+                <viewController id="tJS-oP-lsu" customClass="IssueSevenPhotoViewController" customModule="FashionDVT" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9Hp-CI-2XC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="14" translatesAutoresizingMaskIntoConstraints="NO" id="pXY-kK-ve4">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="pXY-kK-ve4" firstAttribute="bottom" secondItem="TZa-fT-78g" secondAttribute="bottom" id="7QN-DH-xwR"/>
+                            <constraint firstItem="pXY-kK-ve4" firstAttribute="trailing" secondItem="TZa-fT-78g" secondAttribute="trailing" id="GDl-bA-BBv"/>
+                            <constraint firstItem="pXY-kK-ve4" firstAttribute="top" secondItem="9Hp-CI-2XC" secondAttribute="top" id="ptu-xa-F7V"/>
+                            <constraint firstItem="pXY-kK-ve4" firstAttribute="leading" secondItem="TZa-fT-78g" secondAttribute="leading" id="rjy-i6-SqF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="TZa-fT-78g"/>
+                    </view>
+                    <connections>
+                        <outlet property="image" destination="pXY-kK-ve4" id="aE5-W5-1PX"/>
+                        <segue destination="C6M-MX-u0A" kind="show" identifier="next" id="fCY-H6-zeb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yre-Mr-kn4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3878" y="905"/>
+        </scene>
+        <!--Issue Seven Photo View Controller-->
+        <scene sceneID="ytE-L9-xLB">
+            <objects>
+                <viewController id="C6M-MX-u0A" customClass="IssueSevenPhotoViewController" customModule="FashionDVT" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Fs4-0w-8qG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="15" translatesAutoresizingMaskIntoConstraints="NO" id="0Zy-SR-1tF">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="0Zy-SR-1tF" firstAttribute="leading" secondItem="V2X-Av-Nph" secondAttribute="leading" id="302-hI-JTZ"/>
+                            <constraint firstItem="0Zy-SR-1tF" firstAttribute="trailing" secondItem="V2X-Av-Nph" secondAttribute="trailing" id="JhW-Om-Efd"/>
+                            <constraint firstItem="0Zy-SR-1tF" firstAttribute="bottom" secondItem="V2X-Av-Nph" secondAttribute="bottom" id="NJO-gC-7ds"/>
+                            <constraint firstItem="0Zy-SR-1tF" firstAttribute="top" secondItem="Fs4-0w-8qG" secondAttribute="top" id="qm3-VP-Ri9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="V2X-Av-Nph"/>
+                    </view>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isFinal" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="image" destination="0Zy-SR-1tF" id="BUJ-TV-mux"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P3O-iX-Kdq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4575" y="891"/>
+        </scene>
+        <!--Issue Seven Photo View Controller-->
+        <scene sceneID="Ro1-BI-Uib">
+            <objects>
+                <viewController id="uCq-Pp-SH2" customClass="IssueSevenPhotoViewController" customModule="FashionDVT" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jpo-ji-9jC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2" translatesAutoresizingMaskIntoConstraints="NO" id="ipq-CE-U02">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ipq-CE-U02" firstAttribute="bottom" secondItem="NO2-4D-RAX" secondAttribute="bottom" id="bM4-hH-5CB"/>
+                            <constraint firstItem="ipq-CE-U02" firstAttribute="top" secondItem="jpo-ji-9jC" secondAttribute="top" id="ljX-y9-lqv"/>
+                            <constraint firstItem="ipq-CE-U02" firstAttribute="leading" secondItem="NO2-4D-RAX" secondAttribute="leading" id="qnK-pa-CLt"/>
+                            <constraint firstItem="ipq-CE-U02" firstAttribute="trailing" secondItem="NO2-4D-RAX" secondAttribute="trailing" id="vtG-Wh-9BR"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="NO2-4D-RAX"/>
+                    </view>
+                    <connections>
+                        <outlet property="image" destination="ipq-CE-U02" id="Ks7-J3-ikz"/>
+                        <segue destination="kbf-1f-pWf" kind="show" identifier="next" id="4ZL-7H-lEr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Jf-k5-89D" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="764" y="173"/>
+        </scene>
+        <!--Issue Seven Photo View Controller-->
+        <scene sceneID="kFf-9X-SOJ">
+            <objects>
+                <viewController id="kbf-1f-pWf" customClass="IssueSevenPhotoViewController" customModule="FashionDVT" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ee6-od-H4s">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="3" translatesAutoresizingMaskIntoConstraints="NO" id="0X8-Qd-4Rl">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="0X8-Qd-4Rl" firstAttribute="top" secondItem="ee6-od-H4s" secondAttribute="top" id="UN2-rV-BiU"/>
+                            <constraint firstItem="0X8-Qd-4Rl" firstAttribute="bottom" secondItem="aZi-bI-j9w" secondAttribute="bottom" id="ZR4-KO-p1W"/>
+                            <constraint firstItem="0X8-Qd-4Rl" firstAttribute="leading" secondItem="aZi-bI-j9w" secondAttribute="leading" id="gMg-qf-gWy"/>
+                            <constraint firstItem="0X8-Qd-4Rl" firstAttribute="trailing" secondItem="aZi-bI-j9w" secondAttribute="trailing" id="j4H-Og-yKU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="aZi-bI-j9w"/>
+                    </view>
+                    <connections>
+                        <outlet property="image" destination="0X8-Qd-4Rl" id="xMZ-CH-4hB"/>
+                        <segue destination="Pj6-sV-ycL" kind="show" identifier="next" id="Qaa-DO-HgT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WtP-k6-vEV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1452" y="182"/>
+        </scene>
+        <!--Issue Seven Photo View Controller-->
+        <scene sceneID="5vI-VP-frO">
+            <objects>
+                <viewController id="Pj6-sV-ycL" customClass="IssueSevenPhotoViewController" customModule="FashionDVT" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jON-s2-P3s">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="4" translatesAutoresizingMaskIntoConstraints="NO" id="qjs-BV-RLh">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="qjs-BV-RLh" firstAttribute="trailing" secondItem="b7R-9k-9rH" secondAttribute="trailing" id="6vD-1h-pyQ"/>
+                            <constraint firstItem="qjs-BV-RLh" firstAttribute="bottom" secondItem="b7R-9k-9rH" secondAttribute="bottom" id="QTd-pm-wsx"/>
+                            <constraint firstItem="qjs-BV-RLh" firstAttribute="leading" secondItem="b7R-9k-9rH" secondAttribute="leading" id="fMa-kx-OkD"/>
+                            <constraint firstItem="qjs-BV-RLh" firstAttribute="top" secondItem="jON-s2-P3s" secondAttribute="top" id="r7i-FC-SN4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="b7R-9k-9rH"/>
+                    </view>
+                    <connections>
+                        <outlet property="image" destination="qjs-BV-RLh" id="TrQ-8Y-Vkl"/>
+                        <segue destination="DsU-uC-Klw" kind="show" identifier="next" id="1Pq-k2-u1A"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hj9-se-o2S" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2145" y="201"/>
+        </scene>
+        <!--Issue Seven Photo View Controller-->
+        <scene sceneID="l0i-3x-fQp">
+            <objects>
+                <viewController id="DsU-uC-Klw" customClass="IssueSevenPhotoViewController" customModule="FashionDVT" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1IJ-Aq-l0u">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="5" translatesAutoresizingMaskIntoConstraints="NO" id="auo-yW-D6M">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="auo-yW-D6M" firstAttribute="leading" secondItem="cKh-rv-LIr" secondAttribute="leading" id="7pW-Y7-7ML"/>
+                            <constraint firstItem="auo-yW-D6M" firstAttribute="top" secondItem="1IJ-Aq-l0u" secondAttribute="top" id="G6X-Nq-jpS"/>
+                            <constraint firstItem="auo-yW-D6M" firstAttribute="bottom" secondItem="cKh-rv-LIr" secondAttribute="bottom" id="Xdj-gr-24B"/>
+                            <constraint firstItem="auo-yW-D6M" firstAttribute="trailing" secondItem="cKh-rv-LIr" secondAttribute="trailing" id="c5r-OP-dl8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="cKh-rv-LIr"/>
+                    </view>
+                    <connections>
+                        <outlet property="image" destination="auo-yW-D6M" id="20D-sR-duU"/>
+                        <segue destination="6Iv-wn-QEv" kind="show" identifier="next" id="o5P-Ts-hd9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IzS-kr-2e0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2911" y="180"/>
+        </scene>
+        <!--Issue Seven Photo View Controller-->
+        <scene sceneID="kiy-nK-Zuw">
+            <objects>
+                <viewController id="6Iv-wn-QEv" customClass="IssueSevenPhotoViewController" customModule="FashionDVT" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="D7T-2W-LxZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="6" translatesAutoresizingMaskIntoConstraints="NO" id="WRN-Qs-YxA">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="WRN-Qs-YxA" firstAttribute="top" secondItem="D7T-2W-LxZ" secondAttribute="top" id="MWO-CF-DU5"/>
+                            <constraint firstItem="WRN-Qs-YxA" firstAttribute="leading" secondItem="mhy-Da-rb0" secondAttribute="leading" id="S5K-ha-hbB"/>
+                            <constraint firstItem="WRN-Qs-YxA" firstAttribute="bottom" secondItem="mhy-Da-rb0" secondAttribute="bottom" id="hCr-Sr-kFT"/>
+                            <constraint firstItem="WRN-Qs-YxA" firstAttribute="trailing" secondItem="mhy-Da-rb0" secondAttribute="trailing" id="zaQ-oO-pjb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="mhy-Da-rb0"/>
+                    </view>
+                    <connections>
+                        <outlet property="image" destination="WRN-Qs-YxA" id="7g9-ea-sgK"/>
+                        <segue destination="Zjh-E3-ecS" kind="show" identifier="next" id="7QF-Ag-3Qy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G6j-Ro-pXQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3622" y="207"/>
+        </scene>
+        <!--Issue Seven Photo View Controller-->
+        <scene sceneID="WNA-PT-EVY">
+            <objects>
+                <viewController id="Zjh-E3-ecS" customClass="IssueSevenPhotoViewController" customModule="FashionDVT" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KTH-PY-zdd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="7" translatesAutoresizingMaskIntoConstraints="NO" id="hUQ-dS-n88">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="hUQ-dS-n88" firstAttribute="leading" secondItem="NUg-kc-s9J" secondAttribute="leading" id="7Rr-We-FTt"/>
+                            <constraint firstItem="hUQ-dS-n88" firstAttribute="top" secondItem="KTH-PY-zdd" secondAttribute="top" id="QgZ-Uy-iPe"/>
+                            <constraint firstItem="hUQ-dS-n88" firstAttribute="trailing" secondItem="NUg-kc-s9J" secondAttribute="trailing" id="jIK-Ft-m0E"/>
+                            <constraint firstItem="hUQ-dS-n88" firstAttribute="bottom" secondItem="NUg-kc-s9J" secondAttribute="bottom" id="zh2-yb-dch"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="NUg-kc-s9J"/>
+                    </view>
+                    <connections>
+                        <outlet property="image" destination="hUQ-dS-n88" id="M0T-Jn-ejz"/>
+                        <segue destination="zmG-mR-Ui0" kind="show" identifier="next" id="PIs-9Y-cba"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7pP-J8-QFD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4319" y="215"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="1" width="3398" height="5097"/>
+        <image name="10" width="1172.1600341796875" height="1758.239990234375"/>
+        <image name="11" width="1036.800048828125" height="1555.199951171875"/>
+        <image name="12" width="1016.7000122070312" height="1524.9000244140625"/>
+        <image name="13" width="1024.800048828125" height="1537.199951171875"/>
+        <image name="14" width="3230" height="4845"/>
+        <image name="15" width="1244.1600341796875" height="1866.239990234375"/>
+        <image name="2" width="1019.4000244140625" height="1529.0999755859375"/>
+        <image name="3" width="1035.300048828125" height="1552.800048828125"/>
+        <image name="4" width="1244.1600341796875" height="1866.239990234375"/>
+        <image name="5" width="1244.1600341796875" height="1866.239990234375"/>
+        <image name="6" width="880.5" height="1320.5999755859375"/>
+        <image name="7" width="1036.800048828125" height="1555.199951171875"/>
+        <image name="9" width="1029.300048828125" height="1543.800048828125"/>
+    </resources>
 </document>
