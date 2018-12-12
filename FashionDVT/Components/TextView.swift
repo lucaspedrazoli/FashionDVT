@@ -4,15 +4,27 @@ class TextView: UITextView, UIGestureRecognizerDelegate {
 
   lazy var completion: () -> Void = {}
   var marginBottom: CGFloat = 150
+  var swipeLeft: () -> Void = { }
+  var swipeRight: () -> Void = { }
 
   override func awakeFromNib() {
     super.awakeFromNib()
+    isEditable = false
     let color = UIColor(red: 0.87, green: 0.89, blue: 0.89, alpha: 0.5)
     backgroundColor = color
     layer.borderColor = UIColor.black.cgColor
     layer.borderWidth = 0.3
     isScrollEnabled = false
     addDragGesture()
+    addSwipeGestures()
+  }
+  
+  @objc func back() {
+    swipeRight()
+  }
+  
+  @objc func foward() {
+    swipeLeft()
   }
 
   @objc func drag(_ recognizer: UIPanGestureRecognizer) {
@@ -35,6 +47,15 @@ class TextView: UITextView, UIGestureRecognizerDelegate {
       }
     }
     completion()
+  }
+  
+  private func addSwipeGestures() {
+    let back = UISwipeGestureRecognizer(target: self, action: #selector(self.back))
+    let foward = UISwipeGestureRecognizer(target: self, action: #selector(self.foward))
+    back.direction = .right
+    foward.direction = .left
+    addGestureRecognizer(back)
+    addGestureRecognizer(foward)
   }
 
   private func addDragGesture() {
