@@ -72,6 +72,9 @@ No fashion film produzido por elas, podemos ver um pouquinho mais sobre a coleç
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="black" pointSize="18"/>
                                 <state key="normal" image="plus_icon"/>
+                                <connections>
+                                    <action selector="openWebview" destination="Lj7-Lc-Xox" eventType="touchUpInside" id="KNH-2t-aYb"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

@@ -1,3 +1,4 @@
+import SafariServices
 import UIKit
 
 class IssueEightTextViewController: UIViewController {
@@ -9,6 +10,11 @@ class IssueEightTextViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     addSwipeGestures()
+  }
+  
+  @IBAction func openWebview() {
+    let svc = SFSafariViewController(url: URL(string:"https://www.youtube.com/watch?v=aRvJQiGnX6w&t=235s9")!)
+    self.present(svc, animated: true, completion: nil)
   }
   
   private func addSwipeGestures() {
