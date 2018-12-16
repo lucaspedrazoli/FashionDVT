@@ -33,11 +33,73 @@
                     </view>
                     <connections>
                         <outlet property="animationView" destination="dkW-gw-jBq" id="gfe-yu-3Rr"/>
+                        <segue destination="Lj7-Lc-Xox" kind="show" identifier="next" id="a7h-mg-thg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DUh-p8-BUo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="100" y="168.6656671664168"/>
         </scene>
+        <!--Issue Eight Text View Controller-->
+        <scene sceneID="BDJ-jR-wVi">
+            <objects>
+                <viewController id="Lj7-Lc-Xox" customClass="IssueEightTextViewController" customModule="FashionDVT" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hVN-gI-0q7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="indigo" translatesAutoresizingMaskIntoConstraints="NO" id="DHN-QN-jI0">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" bouncesZoom="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="g9S-Zz-FcJ" customClass="TextView" customModule="FashionDVT" customModuleProvider="target">
+                                <rect key="frame" x="16" y="40" width="149" height="156"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="149" id="4bn-40-PMg"/>
+                                    <constraint firstAttribute="height" constant="156" id="FXa-RR-gEN"/>
+                                </constraints>
+                                <string key="text">A marca Ensou, idealizada por Rita Chepken e Raquel Lima, nasceu da vontade de criar peças agênero, que pudessem ser usadas por homens e mulheres. Raquel e Rita se inspiraram no trabalho da artista Mira Schendel para representar em suas peças o vazio que vivemos hoje. "São tempos de superficialidade, ansiedade e incerteza, e as pessoas buscam preencher esse vazio por meio do consumo desenfreado das coisas", explica Raquel. As peças da coleção, de silhueta desconstruída, acabam misturando alfaiataria e streetwear, que dão um toque mais moderno às roupas.
+No projeto, elas também quiseram minimizar os impactos sociais e ambientais que a cadeia da indústria têxtil causa usando tecidos sustentáveis. O papel Tyvek foi a principal matéria-prima usada na coleção. Além de ser 100% reciclável, esse material também é resistente e impermeável. O trabalho conseguiu incluir mais colaboradores por meio da economia solidária, com a valorização do trabalho manual - o tricô. 
+No fashion film produzido por elas, podemos ver um pouquinho mais sobre a coleção de estreia da Ensou.</string>
+                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="22"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xzi-Vo-025">
+                                <rect key="frame" x="292" y="584" width="83" height="83"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="83" id="VEj-J2-JP7"/>
+                                    <constraint firstAttribute="width" constant="83" id="hUx-Om-Ff0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="18"/>
+                                <state key="normal" image="plus_icon"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="DHN-QN-jI0" firstAttribute="leading" secondItem="s1s-DB-DT0" secondAttribute="leading" id="58d-81-VDd"/>
+                            <constraint firstItem="g9S-Zz-FcJ" firstAttribute="leading" secondItem="s1s-DB-DT0" secondAttribute="leading" constant="16" id="BAO-xW-mHw"/>
+                            <constraint firstItem="g9S-Zz-FcJ" firstAttribute="top" secondItem="s1s-DB-DT0" secondAttribute="top" constant="20" id="EtM-KD-ZNH"/>
+                            <constraint firstItem="DHN-QN-jI0" firstAttribute="top" secondItem="hVN-gI-0q7" secondAttribute="top" id="HNk-Do-9gK"/>
+                            <constraint firstItem="xzi-Vo-025" firstAttribute="bottom" secondItem="s1s-DB-DT0" secondAttribute="bottom" id="Ogp-V3-lgP"/>
+                            <constraint firstItem="DHN-QN-jI0" firstAttribute="bottom" secondItem="s1s-DB-DT0" secondAttribute="bottom" id="aJD-sr-JEc"/>
+                            <constraint firstItem="DHN-QN-jI0" firstAttribute="trailing" secondItem="s1s-DB-DT0" secondAttribute="trailing" id="suf-oX-SvU"/>
+                            <constraint firstItem="xzi-Vo-025" firstAttribute="trailing" secondItem="s1s-DB-DT0" secondAttribute="trailing" id="zLk-fB-xlY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="s1s-DB-DT0"/>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="xzi-Vo-025" id="RbX-2Z-xFo"/>
+                        <outlet property="image" destination="DHN-QN-jI0" id="Ssd-4C-cT7"/>
+                        <outlet property="textView" destination="g9S-Zz-FcJ" id="NCl-BE-DPz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gzn-fT-C7K" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="853.60000000000002" y="167.76611694152925"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="indigo" width="540" height="960"/>
+        <image name="plus_icon" width="128" height="128"/>
+    </resources>
 </document>
